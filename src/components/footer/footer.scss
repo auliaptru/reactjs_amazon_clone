@@ -1,0 +1,168 @@
+.footer__container {
+    background: #242f3a;
+    .footer__wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        .footer__lists {
+            color: white;
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 5px;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__middle {
+        margin: 0;
+        padding: 30px;
+        border-top: 1px solid rgb(65, 65, 65);
+        .footer__bottom-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            .footer__logo {
+                background: url('https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-t11._CB574555271_.png');
+                background-repeat: repeat-x;
+                background-position: -10px -90px;
+                width: 76px;
+                height: 23px;
+                margin-right: 80px;
+                margin-bottom: -10px;
+                cursor: pointer;
+            }
+            .footer__preferences {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                color: white;
+                .box {
+                    border: 1px solid rgb(173, 172, 172);
+                    padding: 5px 25px 5px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .footer__aff {
+        margin: 0;
+        padding: 30px;
+        background: #13191f;
+        table {
+            max-width: 1000px;
+            margin: 0 auto;
+            tbody {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                tr {
+                    display: flex;
+                    align-items: start;
+                    gap: 40px;
+                    td {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        cursor: pointer;
+                        a {
+                            min-width: 90px;
+                            font-size: 12px;
+                            color: #dbdbdb;
+                            font-weight: 600;
+                            text-decoration: none;
+                            line-height: 1.3;
+                        }
+                        span {
+                            max-width: 90px;
+                            font-size: 12px;
+                            color: #919090;
+                            line-height: 1.1;
+                        }
+                        &:hover {
+                            a,
+                            span {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .tr-data4 {
+                    width: 96px;
+                    td {
+                        a {
+                            width: 120px;
+                        }
+                        span {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 35px;
+        color: #ddd;
+        font-weight: 600;
+        background: #13191f;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            li {
+                list-style: none;
+                a {
+                    color: inherit;
+                    font-size: 12px;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .footer__icon {
+                display: block;
+                margin-left: -10px;
+                .list-icon {
+                    background: url('https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-t11._CB574555271_.png');
+                    background-repeat: repeat-x;
+                    background-position: -136px -380px;
+                    width: 29px;
+                    height: 14px;
+                    position: relative;
+                    top: 2.2px;
+                }
+            }
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+}

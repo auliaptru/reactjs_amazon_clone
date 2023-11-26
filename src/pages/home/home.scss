@@ -1,0 +1,87 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(231, 231, 231), rgb(231, 231, 231));
+    &:after {
+        content: '';
+        position: absolute;
+        top: 100vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(
+            180deg,
+            rgba(231, 231, 231, 1),
+            rgba(231, 231, 231, 1)
+        );
+    }
+    .home__cards {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 63%;
+        z-index: 10;
+        .home__signin {
+            background-color: white;
+            padding: 20px 0;
+            .home__sigin-texts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                border-top: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                padding: 40px 0 20px 0;
+                button {
+                    display: block;
+                    height: 28px;
+                    width: 250px;
+                    border-radius: 5px;
+                    line-height: 28px;
+                    font-weight: 700;
+                    border: 1px solid orange;
+                    background: linear-gradient(#ffe093, orange);
+                    text-shadow: 0 1px 0 #ffe093;
+                    cursor: pointer;
+                }
+                span {
+                    a {
+                        color: #007185;
+                        text-decoration: none;
+                        transition: 0.3s all ease-in-out;
+                        &:hover {
+                            color: orangered;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            .home___totop {
+                background-color: #37475a;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    span {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                &:hover {
+                    background-color: rgba(54, 70, 89, 0.94);
+                }
+            }
+        }
+    }
+}

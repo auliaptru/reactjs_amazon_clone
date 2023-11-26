@@ -1,0 +1,199 @@
+{
+    "data": [
+        {
+            "id": "know",
+            "title": "Get to Know Us",
+            "lists": [
+                "Careers",
+                "Blog",
+                "About Amazon",
+                "Investor Relations",
+                "Amazon Devices",
+                "Amazon Science"
+            ]
+        },
+        {
+            "id": "money",
+            "title": "Make Money with Us",
+            "lists": [
+                "Sell products on Amazon",
+                "Sell on Amazon Business",
+                "Sell apps on Amazon",
+                "Become an Affiliate",
+                "Advertise Your Products",
+                "Self-Publish with Us",
+                "Host an Amazon Hub",
+                "> See More Make Money with Us"
+            ]
+        },
+        {
+            "id": "payment",
+            "title": "Amazon Payment Products",
+            "lists": [
+                "Amazon Business Card",
+                "Shop with Points",
+                "Reload Your Balance",
+                "Amazon Currency Converter"
+            ]
+        },
+        {
+            "id": "help",
+            "title": "Let Us Help You",
+            "lists": [
+                "Amazon and COVID-19",
+                "Your Account",
+                "Your Orders",
+                "Shipping Rates & Policies",
+                "Returns & Replacements",
+                "Manage Your Content and Devices",
+                "Amazon Assistan",
+                "Help"
+            ]
+        }
+    ],
+    "affiliates": {
+        "data1": [
+            {
+                "name": "Amazon Music",
+                "text": "Stream millions of songs",
+                "link": "https://music.amazon.com?ref=dm_aff_amz_com"
+            },
+            {
+                "name": "Amazon Ads",
+                "text": "Reach customers wherever they spend their time",
+                "link": "https://advertising.amazon.com/?ref=footer_advtsing_amzn_com"
+            },
+            {
+                "name": "6pm",
+                "text": "Score deals on fashion brands",
+                "link": "https://www.6pm.com/"
+            },
+            {
+                "name": "AbeBooks",
+                "text": "Books, art & collectibles",
+                "link": "https://www.abebooks.com/"
+            },
+            {
+                "name": "ACX",
+                "text": "Audiobook Publishing Made Easy",
+                "link": "https://advertising.amazon.com/?ref=footer_advtsing_amzn_com"
+            },
+            {
+                "name": "Sell on Amazon",
+                "text": "Start a Selling Account",
+                "link": "https://sell.amazon.com/?ld=AZUSSOA-footer-aff&ref_=footer_sell"
+            },
+            {
+                "name": "Amazon Business",
+                "text": "Everything For Your Business",
+                "link": "https://www.amazon.com/business?ref_=footer_retail_b2b"
+            }
+        ],
+        "data2": [
+            {
+                "name": "Amp",
+                "text": "Host your own live radio show with music you love",
+                "link": "https://www.onamp.com/"
+            },
+            {
+                "name": "AmazonGlobal",
+                "text": "Ship Orders Internationally",
+                "link": "https://www.amazon.com/gp/browse.html?node=230659011&ref_=footer_amazonglobal"
+            },
+            {
+                "name": "Home Services",
+                "text": "Experienced Pros Happiness Guarantee",
+                "link": "https://www.amazon.com/services?ref_=footer_services"
+            },
+            {
+                "name": "Amazon Web Services",
+                "text": "Scalable Cloud Computing Services",
+                "link": "https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=amazonfooter"
+            },
+            {
+                "name": "Audible",
+                "text": "Listen to Books & Original Audio Performances",
+                "link": "https://www.audible.com/"
+            },
+            {
+                "name": "Box Office Mojo",
+                "text": "Find Movie Box Office Data",
+                "link": "https://www.boxofficemojo.com/?ref_=amzn_nav_ftr"
+            },
+            {
+                "name": "Goodreads",
+                "text": "Book reviews & recommendations",
+                "link": "https://www.goodreads.com/"
+            }
+        ],
+        "data3": [
+            {
+                "name": "IMDb",
+                "text": "Movies, TV & Celebrities",
+                "link": "https://www.imdb.com/"
+            },
+            {
+                "name": "IMDbPro",
+                "text": "Get Info Entertainment Professionals Need",
+                "link": "https://pro.imdb.com/?ref_=amzn_nav_ftr"
+            },
+            {
+                "name": "Kindle Direct Publishing",
+                "text": "Indie Digital & Print Publishing Made Easy",
+                "link": "https://kdp.amazon.com/"
+            },
+            {
+                "name": "Prime Video Direct",
+                "text": "Video Distribution Made Easy",
+                "link": "https://videodirect.amazon.com/home/landing"
+            },
+            {
+                "name": "Shopbop",
+                "text": "Designer Fashion Brands",
+                "link": "https://www.shopbop.com/"
+            },
+            {
+                "name": "Woot!",
+                "text": "Deals and Shenanigans",
+                "link": "https://www.woot.com/"
+            },
+            {
+                "name": "Zappos",
+                "text": "Shoes & Clothing",
+                "link": "https://www.goodreads.com/"
+            }
+        ],
+        "data4": [
+            {
+                "name": "Ring",
+                "text": "Smart Home Security Systems",
+                "link": "https://ring.com/"
+            },
+            {
+                "name": "eero WiFi",
+                "text": "Stream 4K Video in Every Room",
+                "link": "https://eero.com/"
+            },
+            {
+                "name": "Blink",
+                "text": "Smart Security for Every Home",
+                "link": "https://blinkforhome.com/?ref=nav_footer"
+            },
+            {
+                "name": "Neighbors App",
+                "text": "Real-Time Crime & Safety Alerts",
+                "link": "https://shop.ring.com/pages/neighbors-app"
+            },
+            {
+                "name": "Amazon Subscription Boxes",
+                "text": "Top subscription boxes – right to your door",
+                "link": "https://www.amazon.com/gp/browse.html?node=14498690011&ref_=amzn_nav_ftr_swa"
+            },
+            {
+                "name": "PillPack",
+                "text": "Pharmacy Simplified",
+                "link": "https://www.pillpack.com/"
+            }
+        ]
+    }
+}

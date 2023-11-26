@@ -1,0 +1,97 @@
+.slider {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    h1 {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    .slider__products {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .slider__product {
+            height: 200px;
+            padding: 10px 0 20px 0;
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            transition-delay: 0.5s;
+            -webkit-animation-delay: 0.5s;
+            &::-webkit-scrollbar {
+                visibility: hidden;
+                height: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+                transition: background-color 2 ease;
+                border-radius: 5px;
+            }
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .slider__arrows {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            visibility: hidden;
+
+            .icon {
+                font-size: 40px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .arrow__left,
+        .arrow__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(77, 76, 76);
+            background: white;
+            padding: 30px 5px;
+            cursor: pointer;
+            transition: 0.2s all;
+            &:hover {
+                color: black;
+            }
+        }
+        .arrow__left {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            left: 0;
+        }
+        .arrow__right {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            right: 0;
+        }
+    }
+    .slider__products:hover .slider__product {
+        &::-webkit-scrollbar {
+            transition: all 0.5s ease-in-out;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #aaaa;
+            &:hover {
+                background: #7c7c7c;
+            }
+        }
+    }
+    .slider__products:hover .slider__arrows {
+        visibility: visible;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+    }
+}

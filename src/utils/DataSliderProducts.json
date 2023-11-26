@@ -1,0 +1,46 @@
+{
+    "books": {
+        "title": "Best Sellers in Books",
+        "images": [
+            "https://m.media-amazon.com/images/I/61BWsc9eGbL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/91n7p-j5aqL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/917Bc9C1MlL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81v6oWQZj1L._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81KuLAC1XdL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/61jNIPmV+3L._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81tdvyI0MeL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/71WlampeCuL._AC_SY200_.jpg"
+        ]
+    },
+    "games": {
+        "title": "Most wished for in Video Games",
+        "images": [
+            "https://m.media-amazon.com/images/I/91PED0k5yfL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81pUNVRNnFL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81VGpLvXQuL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/91hN+j+G7LL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/51eOztNdCkL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/61tE7IcuLmL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81gJUSx-TjL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/71FE4-P8hwL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/51-+I4EPGoL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/61AiVtMlReL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81whTB488bL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/61cygbdPK9L._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/81G1qFsRHDL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/51ojzJk77qL._AC_SY200_.jpg",
+            "https://m.media-amazon.com/images/I/719rfs3UNAL._AC_SY200_.jpg"
+        ]
+    }
+}
