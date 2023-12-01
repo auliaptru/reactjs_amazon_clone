@@ -1,4 +1,5 @@
-import React from 'react';
+import { TfiWorld } from 'react-icons/tfi';
+import { TbArrowsMoveVertical } from 'react-icons/tb';
 import { data, affiliates } from '../../utils/footerLists.json';
 import './footer.scss';
 
@@ -7,11 +8,11 @@ const Footer = () => {
         <div className='footer__container'>
             <div className='footer__wrapper'>
                 {data.map((item, i) => (
-                    <div className='footer__lists'>
+                    <div className='footer__lists' key={i}>
                         <h4>{item.title}</h4>
                         <ul>
-                            {item.lists.map((list) => (
-                                <li>
+                            {item.lists.map((list, i) => (
+                                <li key={i}>
                                     <a href=''>
                                         <span>{list}</span>
                                     </a>
@@ -27,10 +28,13 @@ const Footer = () => {
                     <div className='footer__logo'></div>
                     <div className='footer__preferences'>
                         <div className='footer__lang box'>
+                            <TfiWorld className='world-icon ' />
                             <span>English</span>
+                            <TbArrowsMoveVertical className='arrow-icon' />
                         </div>
                         <div className='footer__cop box'>
-                            <span>$ USD - U.S. Dollar</span>
+                            <span>$ </span>
+                            <span>USD - U.S. Dollar</span>
                         </div>
                         <div className='footer__reg box'>
                             <span>United States</span>

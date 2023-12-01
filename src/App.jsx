@@ -11,9 +11,8 @@ const App = () => {
     return (
         <div className='app' ref={appRef}>
             <Navbar appRef={appRef} isFocus={isFocus} setIsFocus={setIsFocus} />
-            <div className={`${isFocus ? 'black' : ''}`}>
-                <Home />
-            </div>
+            <div className={`${isFocus ? 'cover visible' : 'cover'}`}></div>
+            <Home />
         </div>
     );
 };

@@ -1,0 +1,30 @@
+.navbar__loc-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    .navbar__loc-icon {
+        background-position: -71px -378px;
+        width: 15px;
+        height: 18px;
+        margin-top: 12px;
+        margin-right: 5px;
+    }
+    .navbar__loc-texts {
+        display: flex;
+        flex-flow: column nowrap;
+        float: left;
+        span {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar__text1 {
+            font-size: 12px;
+        }
+        .navbar__text2 {
+            color: white;
+            font-size: 14px;
+            margin-top: -5px;
+            font-weight: 700;
+        }
+    }
+}
