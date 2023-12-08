@@ -2,9 +2,8 @@
 
 Amazon is a the largest and most diverse companies in the world.
 
-### Features
-
-Still in progress.
+### Update
+- Add sidebar & auto slide when user didn't click arrow icons.
  
 ### How to Run To run this application on your local, follow these steps:
 
