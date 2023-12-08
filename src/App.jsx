@@ -5,13 +5,24 @@ import './app.scss';
 
 const App = () => {
     const [isFocus, setIsFocus] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
 
     const appRef = useRef();
 
     return (
         <div className='app' ref={appRef}>
-            <Navbar appRef={appRef} isFocus={isFocus} setIsFocus={setIsFocus} />
-            <div className={`${isFocus ? 'cover visible' : 'cover'}`}></div>
+            <Navbar
+                appRef={appRef}
+                isFocus={isFocus}
+                setIsFocus={setIsFocus}
+                isHovered={isHovered}
+                setIsHovered={setIsHovered}
+            />
+            <div
+                className={`${
+                    isFocus || isHovered ? 'cover visible' : 'cover'
+                }`}
+            ></div>
             <Home />
         </div>
     );

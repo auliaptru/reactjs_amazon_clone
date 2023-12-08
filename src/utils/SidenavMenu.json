@@ -1,0 +1,151 @@
+{
+    "hmenu": [
+        {
+            "id": 1,
+            "title": "Digital Content & Devices",
+            "menu": [
+                {
+                    "name": "Amazon Music",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "Kindle E-readers & Books",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "Amazon Appstore",
+                    "arrow": "yes",
+                    "icon": null
+                }
+            ],
+            "submenu": [],
+            "label1": null,
+            "label2": null
+        },
+        {
+            "id": 2,
+            "title": "Shop by Department",
+            "menu": [
+                {
+                    "name": "Electronics",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "Computers",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "Smart Home",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "Arts & Crafts",
+                    "arrow": "yes",
+                    "icon": null
+                }
+            ],
+            "submenu": [
+                "Automotive",
+                "Baby",
+                "Beauty and personal care",
+                "Women's Fashion",
+                "Men's Fashion",
+                "Girls' Fashion",
+                "Boys' Fashion",
+                "Health and Household",
+                "Home and Kitchen",
+                "Industrial and Scientific",
+                "Luggage",
+                "Movies & Television",
+                "Pet supplies",
+                "Software",
+                "Sports and Outdoors",
+                "Tools & Home Improvement",
+                "Toys and Games",
+                "Video Games"
+            ],
+            "label1": "See All",
+            "label2": "See Less"
+        },
+        {
+            "id": 3,
+            "title": "Programs & Features",
+            "arrow": "yes",
+            "menu": [
+                {
+                    "name": "Gift Cards",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "Shop By Interest",
+                    "arrow": "no",
+                    "icon": null
+                },
+                {
+                    "name": "Amazon Live",
+                    "arrow": "yes",
+                    "icon": null
+                },
+                {
+                    "name": "International Shopping",
+                    "arrow": "yes",
+                    "icon": null
+                }
+            ],
+            "submenu": ["Amazon Second Chance"],
+            "label1": "See All",
+            "label2": "See Less"
+        },
+        {
+            "id": 3,
+            "title": "Help & Settings",
+            "menu": [
+                {
+                    "name": "Your Account",
+                    "arrow": "no",
+                    "icon": null
+                },
+                {
+                    "name": "English",
+                    "arrow": "no",
+                    "icon": {
+                        "url": "https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png",
+                        "width": "15px",
+                        "height": "15px",
+                        "position": "-77px -51px",
+                        "left": "3px"
+                    }
+                },
+                {
+                    "name": "United States",
+                    "arrow": "no",
+                    "icon": {
+                        "url": "https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png",
+                        "width": "18px",
+                        "height": "12px",
+                        "position": "-54px -108px"
+                    }
+                },
+                {
+                    "name": "Customer Service",
+                    "arrow": "no",
+                    "icon": null
+                },
+                {
+                    "name": "Sign in",
+                    "arrow": "no",
+                    "icon": null
+                }
+            ],
+            "submenu": [],
+            "label1": null,
+            "label2": null
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 import './fullScreenSlider.scss';
@@ -17,6 +17,24 @@ const initialState = {
 const FullScreenSlider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
     const [isClicked, setIsClicked] = useState(initialState);
+    const [slideAuto, setSlideAuto] = useState(true);
+
+    const slideRef = useRef(null);
+
+    // timer auto slide 5s
+    useEffect(() => {
+        if (slideRef.current) {
+            clearTimeout(slideRef.current);
+        }
+        slideRef.current = setTimeout(() => {
+            if (slideAuto) {
+                setSlideIndex((prev) =>
+                    prev === backgrounds.length - 1 ? 0 : prev + 1
+                );
+            }
+        }, 5000);
+        return () => clearTimeout(slideRef.current);
+    }, [slideIndex, slideAuto]);
 
     const prevSlide = () => {
         setSlideIndex((prev) =>
@@ -27,6 +45,7 @@ const FullScreenSlider = () => {
             left: true,
             right: false,
         });
+        setSlideAuto(false);
     };
 
     const nextSlide = () => {
@@ -38,6 +57,7 @@ const FullScreenSlider = () => {
             left: false,
             right: true,
         });
+        setSlideAuto(false);
     };
 
     if (!Array.isArray(backgrounds) || backgrounds.length <= 0) {
@@ -74,6 +94,7 @@ const FullScreenSlider = () => {
             </div>
             <div className='home__bg'>
                 <div
+                    ref={slideRef}
                     className='home__bg-slides'
                     style={{
                         transform: `translateX(-${slideIndex * 100}%)`,

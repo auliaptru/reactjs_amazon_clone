@@ -1,12 +1,13 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
 .nav__sprite {
     background-image: url('https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-t11._CB574555271_.png');
     background-repeat: repeat-x;
     background-position: 0 1000px;
-}
-
-.nav__a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .navbar {
@@ -56,13 +57,13 @@
                 padding: 6px 7px;
             }
         }
+
         .navbar__search {
             border: none;
             border-radius: 5px;
             flex: 1 1 auto;
             -webkit-flex: 1 1 auto;
         }
-
         .nav__icon {
             padding: 0;
             margin: 0;
@@ -86,7 +87,9 @@
                 font-weight: bold;
                 color: white;
                 margin: 0;
+                bottom: -4px;
                 padding: 10px 0 10px 10px;
+                cursor: pointer;
             }
             .navbar__lang:hover .navbar__lang-hover {
                 display: block;
@@ -96,7 +99,8 @@
                 font-size: 13px;
                 color: #d4d4d4;
                 text-decoration: none;
-                padding: 5px 0 8px 5px;
+                padding: 5px 0px 8px 8px;
+                cursor: pointer;
             }
             .navbar__accountList:hover .accountList__hover {
                 display: flex;
@@ -124,26 +128,30 @@
         }
     }
 
-    .navbar__bottom {
+    .navbar__main {
         background-color: #232f3e;
         display: flex;
         font-size: 13px;
-        .navbar__menu {
+        .navbar__allMenu {
             display: flex;
             align-items: center;
             gap: 5px;
             margin-left: 13px;
-            padding: 7px 5px;
+            padding: 9px 5px;
             cursor: pointer;
             &:hover {
                 outline: 1px solid lightgray;
             }
-            .menu-icon {
+            .allMenu__icon {
                 font-size: 25px;
+                background-position: -172px -255px;
+                width: 17px;
+                height: 14px;
             }
-            span {
-                font-weight: bold;
-                font-size: 16px;
+            .allMenu__label {
+                font-weight: 600;
+                font-size: 14px;
+                color: white;
             }
         }
         .navbar__links {
@@ -165,6 +173,56 @@
                 }
             }
         }
+    }
+
+    .navbar__subnav {
+        background-color: white;
+        display: flex;
+        font-size: 12px;
+        color: #0f1111;
+        .navbar__subnav-container {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0 9px 0 16px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            height: 33px;
+            overflow: hidden;
+            white-space: nowrap;
+            .nav__selected {
+                font-weight: 700;
+            }
+            li {
+                position: relative;
+                color: #333;
+                height: 31px;
+                line-height: 33px;
+                width: fit-content;
+                list-style: none;
+                border-bottom: 1px solid transparent;
+                a {
+                    padding: 0 10px;
+                    color: inherit;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                &:hover {
+                    color: #e47911;
+                    border-bottom: 2px solid #f90;
+                }
+            }
+        }
+    }
+    .navbar__hmenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100000;
+        height: 100vh;
     }
 }
 

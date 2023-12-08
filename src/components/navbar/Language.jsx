@@ -1,14 +1,11 @@
 import './language.scss';
 import { MdArrowDropDown } from 'react-icons/md';
 import { languages } from '../../utils/Languages.json';
+import { useState } from 'react';
 
 const Language = () => {
     return (
-        <a
-            href=''
-            className='nav__a'
-            aria-label='Choose a language for shopping'
-        >
+        <div className='nav__a'>
             <div className='navbar__lang-wrapper'>
                 <div className='flag'></div>
                 <span>EN</span>
@@ -65,7 +62,7 @@ const Language = () => {
                     <span>Change country/region.</span>
                 </a>
             </div>
-        </a>
+        </div>
     );
 };
 

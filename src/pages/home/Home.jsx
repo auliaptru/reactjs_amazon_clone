@@ -1,13 +1,11 @@
-import { useState } from 'react';
-import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
-import { books, games } from '../../utils/DataSliderProducts.json';
 import CardsHome from '../../components/cards/CardsHome';
 import ProductCarousel from '../../components/slider/ProductCarousel';
+import { books, games } from '../../utils/DataSliderProducts.json';
 import { data1, data2 } from '../../utils/DataCard.json';
-
-import './home.scss';
 import FullScreenSlider from '../../components/slider/FullScreenSlider';
 import Footer from '../../components/footer/Footer';
+
+import './home.scss';
 
 const Home = () => {
     return (
@@ -33,7 +31,7 @@ const Home = () => {
                         <span>See personalized recommendations</span>
                         <button>Sign in</button>
                         <span>
-                            New customer{' '}
+                            New customer
                             <a href=''>
                                 <span>Start here.</span>
                             </a>

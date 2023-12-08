@@ -1,6 +1,7 @@
 import { FaSearch } from 'react-icons/fa';
 import './search.scss';
 import { MdArrowDropDown } from 'react-icons/md';
+import { Tooltip } from 'react-tooltip';
 
 const Search = ({
     isFocus,
@@ -23,15 +24,20 @@ const Search = ({
             >
                 <div className='form__dropdown-label'>
                     <span>{selectedOption}</span>
+
                     <MdArrowDropDown className='dropdownIcon' />
-                <select
-                    className='form__dropdown-select'
-                    onChange={handleSelectChange}
-                >
-                    <option value='All'>All</option>
-                    <option value='Arts & Crafts'>Arts & Crafts</option>
-                    <option value='arts-crafts'>Beauty & Personal Care</option>
-                </select>
+                    <select
+                        className='form__dropdown-select'
+                        onChange={handleSelectChange}
+                        title='Search in'
+                        tabIndex='0'
+                    >
+                        <option value='All'>All</option>
+                        <option value='Arts & Crafts'>Arts & Crafts</option>
+                        <option value='arts-crafts'>
+                            Beauty & Personal Care
+                        </option>
+                    </select>
                 </div>
             </div>
 
