@@ -1,0 +1,40 @@
+.signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    .top {
+        position: absolute;
+        right: 80px;
+        top: -5px;
+        width: 4px;
+        height: 4px;
+        background: white;
+        display: inline-block;
+        padding: 7px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+    .signIn__content {
+        z-index: 10;
+        padding: 15px 0 20px 0px;
+        button {
+            width: 140px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffd814;
+        }
+        .signIn__texts {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            margin-top: 5px;
+            span {
+                color: #007185;
+            }
+        }
+    }
+}

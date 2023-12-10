@@ -1,4 +1,7 @@
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 import { MdArrowDropDown } from 'react-icons/md';
+import SignIn from './SignIn';
 import './accountList.scss';
 
 const lists = [
@@ -14,7 +17,21 @@ const lists = [
     'Memberships & Subscriptions',
 ];
 
-const AccountList = () => {
+const AccountList = ({  isShowSignin, setIsShowSignin }) => {
+    useEffect(() => {
+        let delayTimer;
+        delayTimer = setTimeout(() => {
+            setIsShowSignin(true);
+        }, 1000);
+        delayTimer = setTimeout(() => {
+            setIsShowSignin(false);
+        }, 10000);
+        return () => {
+            setIsShowSignin(false);
+            clearTimeout(delayTimer);
+        };
+    }, []);
+
     return (
         <div className='accountList__container'>
             <div className='accountList__display'>
@@ -62,8 +79,16 @@ const AccountList = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={`signIn__container ${isShowSignin && 'show'}`}>
+                <SignIn />
+            </div>
         </div>
     );
 };
 
+AccountList.propTypes = {
+    isShowSignin: PropTypes.bool,
+    setIsShowSignin: PropTypes.func,
+};
 export default AccountList;

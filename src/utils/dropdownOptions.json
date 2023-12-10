@@ -1,0 +1,116 @@
+{
+    "options": [
+        {
+            "value": "aps",
+            "label": "all departments"
+        },
+        {
+            "value": "arts-crafts",
+            "label": "arts & crafts"
+        },
+        {
+            "value": "automotive",
+            "label": "automotive"
+        },
+        {
+            "value": "baby",
+            "label": "baby"
+        },
+        {
+            "value": "beauty-personal",
+            "label": "beauty & personal"
+        },
+        {
+            "value": "stripbooks",
+            "label": "books"
+        },
+        {
+            "value": "fashion-boys",
+            "label": "Boys' Fashion"
+        },
+        {
+            "value": "computers",
+            "label": "computers"
+        },
+        {
+            "value": "deals",
+            "label": "deals"
+        },
+        {
+            "value": "digital-music",
+            "label": "digital music"
+        },
+        {
+            "value": "electronics",
+            "label": "electronics"
+        },
+        {
+            "value": "fashion-girls",
+            "label": "Girls' Fashion"
+        },
+        {
+            "value": "health-household",
+            "label": "health & household"
+        },
+        {
+            "value": "home-kitchen",
+            "label": "home & kitchen"
+        },
+        {
+            "value": "industrial",
+            "label": "industrial & scientific"
+        },
+        {
+            "value": "digital-text",
+            "label": "kindle store"
+        },
+        {
+            "value": "luggage",
+            "label": "luggage"
+        },
+        {
+            "value": "fashion-mens",
+            "label": "men's fashion"
+        },
+        {
+            "value": "movie",
+            "label": "movies & tv"
+        },
+        {
+            "value": "music",
+            "label": "music, CDs, & vinyl"
+        },
+        {
+            "value": "pet",
+            "label": "pet supplies"
+        },
+        {
+            "value": "digital-video",
+            "label": "prime video"
+        },
+        {
+            "value": "software",
+            "label": "software"
+        },
+        {
+            "value": "sporting",
+            "label": "sports & outdoors"
+        },
+        {
+            "value": "tool",
+            "label": "tools & home imporvements"
+        },
+        {
+            "value": "toys-games",
+            "label": "toys & games"
+        },
+        {
+            "value": "videogames",
+            "label": "video games"
+        },
+        {
+            "value": "fashion-womens",
+            "label": "women's fashion"
+        }
+    ]
+}

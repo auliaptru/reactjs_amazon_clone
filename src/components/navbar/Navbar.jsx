@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 import Logo from './Logo';
 import Location from './Location';
 import Search from './Search';
@@ -10,36 +11,19 @@ import HorizontalMenu from './HorizontalMenu';
 import './navbar.scss';
 
 const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
-    const [selectedOption, setSelectedOption] = useState('All');
-    const [isOpen, setIsOpen] = useState(false);
     const [isOpenHmenu, setIsOpenHmenu] = useState(false);
+    const [isShowSignin, setIsShowSignin] = useState(false);
 
     const handleMouseEnter = () => {
         setIsHovered(true);
+        setIsShowSignin(false);
     };
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
 
-    const inputRef = useRef(null);
-
-    const handleSelectChange = (event) => {
-        setSelectedOption(event.target.value);
-        inputRef.current.focus();
-    };
-
-    const handleFocusInput = () => {
-        setIsFocus(true);
-    };
-
-    const handleFocusBlur = () => {
-        setIsFocus(false);
-        setIsOpen(false);
-    };
-
     const handleOpenHmenu = () => {
         setIsOpenHmenu(true);
-        // setIsHovered(true);
     };
 
     return (
@@ -57,16 +41,7 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                 </div>
                 {/* SEARCH */}
                 <div className='navbar__search'>
-                    <Search
-                        isFocus={isFocus}
-                        isOpen={isOpen}
-                        setIsOpen={setIsOpen}
-                        handleFocusBlur={handleFocusBlur}
-                        handleFocusInput={handleFocusInput}
-                        handleSelectChange={handleSelectChange}
-                        selectedOption={selectedOption}
-                        inputRef={inputRef}
-                    />
+                    <Search isFocus={isFocus} setIsFocus={setIsFocus} />
                 </div>
                 {/* CHOOSE LANGUAGES */}
                 <div className='navbar__right'>
@@ -86,7 +61,10 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <AccountList />
+                        <AccountList
+                            isShowSignin={isShowSignin}
+                            setIsShowSignin={setIsShowSignin}
+                        />
                     </a>
                     {/* RETURNS & ORDERS */}
                     <a href='' className='navbar__returnOrder'>
@@ -158,6 +136,13 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
             </div>
         </nav>
     );
+};
+
+Navbar.propTypes = {
+    isFocus: PropTypes.bool,
+    isHovered: PropTypes.bool,
+    setIsHovered: PropTypes.func,
+    setIsFocus: PropTypes.func,
 };
 
 export default Navbar;
