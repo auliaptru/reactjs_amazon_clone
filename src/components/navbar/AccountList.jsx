@@ -17,21 +17,7 @@ const lists = [
     'Memberships & Subscriptions',
 ];
 
-const AccountList = ({  isShowSignin, setIsShowSignin }) => {
-    useEffect(() => {
-        let delayTimer;
-        delayTimer = setTimeout(() => {
-            setIsShowSignin(true);
-        }, 1000);
-        delayTimer = setTimeout(() => {
-            setIsShowSignin(false);
-        }, 10000);
-        return () => {
-            setIsShowSignin(false);
-            clearTimeout(delayTimer);
-        };
-    }, []);
-
+const AccountList = () => {
     return (
         <div className='accountList__container'>
             <div className='accountList__display'>
@@ -41,7 +27,6 @@ const AccountList = ({  isShowSignin, setIsShowSignin }) => {
             <div className='nav__icon'>
                 <MdArrowDropDown className='arrow-down' />
             </div>
-
             <div className='accountList__hover'>
                 <div className='top'></div>
                 <button className='navbar__sign-in'>
@@ -78,10 +63,6 @@ const AccountList = ({  isShowSignin, setIsShowSignin }) => {
                         </ul>
                     </div>
                 </div>
-            </div>
-
-            <div className={`signIn__container ${isShowSignin && 'show'}`}>
-                <SignIn />
             </div>
         </div>
     );

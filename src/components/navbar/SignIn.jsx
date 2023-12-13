@@ -5,7 +5,9 @@ const SignIn = () => {
         <div className='signIn'>
             <div className='top'></div>
             <div className='signIn__content'>
-                <button>Sign in</button>
+                <button>
+                    <span>Sign in</span>
+                </button>
                 <div className='signIn__texts'>
                     <p>New customer?</p>
                     <span>

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Logo from './Logo';
 import Location from './Location';
 import Search from './Search';
@@ -9,6 +9,7 @@ import ReturnOrder from './ReturnOrder';
 import Cart from './Cart';
 import HorizontalMenu from './HorizontalMenu';
 import './navbar.scss';
+import SignIn from './SignIn';
 
 const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
     const [isOpenHmenu, setIsOpenHmenu] = useState(false);
@@ -26,6 +27,20 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
         setIsOpenHmenu(true);
     };
 
+    useEffect(() => {
+        let delayTimer;
+        delayTimer = setTimeout(() => {
+            setIsShowSignin(true);
+        }, 1000);
+        delayTimer = setTimeout(() => {
+            setIsShowSignin(false);
+        }, 10000);
+        return () => {
+            setIsShowSignin(false);
+            clearTimeout(delayTimer);
+        };
+    }, []);
+
     return (
         <nav className='navbar'>
             <div className='navbar__top'>
@@ -35,9 +50,9 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         <Logo />
                     </a>
                     {/* LOCATIONS */}
-                    <a href='' className='navbar__loc'>
+                    <div href='' className='navbar__loc'>
                         <Location />
-                    </a>
+                    </div>
                 </div>
                 {/* SEARCH */}
                 <div className='navbar__search'>
@@ -61,11 +76,15 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <AccountList
-                            isShowSignin={isShowSignin}
-                            setIsShowSignin={setIsShowSignin}
-                        />
+                        <AccountList />
                     </a>
+                    <div
+                        className={`signIn__container ${
+                            isShowSignin && 'show'
+                        }`}
+                    >
+                        <SignIn />
+                    </div>
                     {/* RETURNS & ORDERS */}
                     <a href='' className='navbar__returnOrder'>
                         <ReturnOrder />

@@ -112,5 +112,139 @@
             "value": "fashion-womens",
             "label": "women's fashion"
         }
+    ],
+    "countries": [
+        {
+            "code": "AU",
+            "name": "Australia"
+        },
+        {
+            "code": "CA",
+            "name": "Canada"
+        },
+        {
+            "code": "CN",
+            "name": "China"
+        },
+        {
+            "code": "JP",
+            "name": "Japan"
+        },
+        {
+            "code": "MX",
+            "name": "Mexico"
+        },
+        {
+            "code": "SG",
+            "name": "Singapore"
+        },
+        {
+            "code": "GB",
+            "name": "United Kingdom"
+        },
+        {
+            "code": "AF",
+            "name": "Afghanistan"
+        },
+        {
+            "code": "AX",
+            "name": "Aland Islands"
+        },
+        {
+            "code": "AL",
+            "name": "Albania"
+        },
+        {
+            "code": "DZ",
+            "name": "Algeria"
+        },
+        {
+            "code": "AS",
+            "name": "American Samoa"
+        },
+        {
+            "code": "AD",
+            "name": "Andorra"
+        },
+        {
+            "code": "AO",
+            "name": "Angola"
+        },
+        {
+            "code": "AI",
+            "name": "Anguilla"
+        },
+        {
+            "code": "AG",
+            "name": "Antigua and Barbuda"
+        },
+        {
+            "code": "AR",
+            "name": "Argentina"
+        },
+        {
+            "code": "AM",
+            "name": "Armenia"
+        },
+        {
+            "code": "AW",
+            "name": "Aruba"
+        },
+        {
+            "code": "AU",
+            "name": "Australia"
+        },
+        {
+            "code": "AT",
+            "name": "Austria"
+        },
+        {
+            "code": "AZ",
+            "name": "Azerbaijan"
+        },
+        {
+            "code": "BS",
+            "name": "Bahamas, The"
+        },
+        {
+            "code": "BH",
+            "name": "Bahrain"
+        },
+        {
+            "code": "BD",
+            "name": "Bangladesh"
+        },
+        {
+            "code": "BB",
+            "name": "Barbados"
+        },
+        {
+            "code": "BY",
+            "name": "Belarus"
+        },
+        {
+            "code": "BE",
+            "name": "Belgium"
+        },
+        {
+            "code": "BZ",
+            "name": "Belize"
+        },
+        {
+            "code": "BJ",
+            "name": "Benin"
+        },
+        {
+            "code": "BM",
+            "name": "Bermuda"
+        },
+        {
+            "code": "BT",
+            "name": "Bhutan"
+        },
+        {
+            "code": "BO",
+            "name": "Bolivia"
+        }
     ]
 }
