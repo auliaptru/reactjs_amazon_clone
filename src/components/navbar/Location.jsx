@@ -4,9 +4,14 @@ import './location.scss';
 
 const Location = () => {
     const [isOpenPopover, setIsOpenPopover] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const handleOpenPopover = () => {
         setIsOpenPopover(true);
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
     };
 
     return (
@@ -24,6 +29,7 @@ const Location = () => {
                     <PopoverLocation
                         isOpenPopover={isOpenPopover}
                         setIsOpenPopover={setIsOpenPopover}
+                        isLoading={isLoading}
                     />
                 </div>
             )}

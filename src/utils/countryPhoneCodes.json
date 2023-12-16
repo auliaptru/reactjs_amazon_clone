@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "dataCallingCode": "93",
+            "dataCountryCode": "AF",
+            "dataAHtmlContent": "Afghanistan <span dir='ltr'>+93</span>",
+            "displayText": "AF +93"
+        },
+        {
+            "dataCallingCode": "355",
+            "dataCountryCode": "AL",
+            "dataAHtmlContent": "Albania <span dir='ltr'>+355</span>",
+            "displayText": "AL +355"
+        },
+        {
+            "dataCallingCode": "213",
+            "dataCountryCode": "DZ",
+            "dataAHtmlContent": "Algeria <span dir='ltr'>+213</span>",
+            "displayText": "DZ +213"
+        },
+        {
+            "dataCallingCode": "1",
+            "dataCountryCode": "AS",
+            "dataAHtmlContent": "American Samoa <span dir='ltr'>+1</span>",
+            "displayText": "AS +1"
+        },
+        {
+            "dataCallingCode": "376",
+            "dataCountryCode": "AD",
+            "dataAHtmlContent": "Andorra <span dir='ltr'>+376</span>",
+            "displayText": "AD +376"
+        },
+        {
+            "dataCallingCode": "244",
+            "dataCountryCode": "AO",
+            "dataAHtmlContent": "Angola <span dir='ltr'>+244</span>",
+            "displayText": "AO +244"
+        },
+        {
+            "dataCallingCode": "1",
+            "dataCountryCode": "AG",
+            "dataAHtmlContent": "Antigua & Barbuda <span dir='ltr'>+1</span>",
+            "displayText": "AG +1"
+        },
+        {
+            "dataCallingCode": "54",
+            "dataCountryCode": "AR",
+            "dataAHtmlContent": "Argentina <span dir='ltr'>+54</span>",
+            "displayText": "AR +54"
+        },
+        {
+            "dataCallingCode": "374",
+            "dataCountryCode": "AM",
+            "dataAHtmlContent": "Armenia <span dir='ltr'>+374</span>",
+            "displayText": "AM +374"
+        },
+        {
+            "dataCallingCode": "297",
+            "dataCountryCode": "AW",
+            "dataAHtmlContent": "Aruba <span dir='ltr'>+297</span>",
+            "displayText": "AW +297"
+        }
+    ]
+}

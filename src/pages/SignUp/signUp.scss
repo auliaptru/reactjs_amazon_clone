@@ -1,0 +1,123 @@
+.signUp__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .signUp__wrapper {
+        width: 360px;
+        margin: 20px 0;
+        .signUp__top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                display: inline-block;
+                background-image: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
+                background-position: -5px -130px;
+                background-size: 400px 750px;
+                background-repeat: no-repeat;
+                width: 103px;
+                height: 31px;
+            }
+        }
+        .signUp__form {
+            margin-top: 30px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            .signUp__form-input {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+                label {
+                    font-size: 13px;
+                    font-weight: 700;
+                    margin-bottom: 2px;
+                }
+                input {
+                    padding: 8px;
+                    width: 100%;
+                }
+                .signUp__email-wrapper {
+                    display: flex;
+                    position: relative;
+                    .signUp__selectNum {
+                        // display: none;
+                        opacity: 0;
+                        position: absolute;
+                        height: 30px;
+                        top: 1px;
+                        left: 0;
+                        z-index: 2;
+                        select {
+                            border: none;
+                            background-color: white;
+                            height: 33px;
+                            cursor: text;
+                        }
+                    }
+                    .signUp__email {
+                        width: 100%;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                    span {
+                        z-index: 1;
+                        height: 35px;
+                        position: absolute;
+                        left: 7px;
+                        top: 6px;
+                        color: #0066c0;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .signUp__pw-wrapper {
+                .signUp__pw-alert {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                    .alertIcon {
+                        display: inline-block;
+                        background-image: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
+                        background-position: -166px -130px;
+                        background-size: 400px 750px;
+                        background-repeat: no-repeat;
+                        width: 14px;
+                        height: 13px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .signUp__submit {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p {
+                    font-size: 13px;
+                    line-height: 19px;
+                }
+                button {
+                    width: 100%;
+                    height: 30px;
+                    background: #ffd814;
+                    border: 1px solid #fcd200;
+                    box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

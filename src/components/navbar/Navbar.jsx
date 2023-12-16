@@ -14,18 +14,7 @@ import SignIn from './SignIn';
 const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
     const [isOpenHmenu, setIsOpenHmenu] = useState(false);
     const [isShowSignin, setIsShowSignin] = useState(false);
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-        setIsShowSignin(false);
-    };
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
-
-    const handleOpenHmenu = () => {
-        setIsOpenHmenu(true);
-    };
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         let delayTimer;
@@ -40,6 +29,22 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
             clearTimeout(delayTimer);
         };
     }, []);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        setIsShowSignin(false);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 500);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
+    const handleOpenHmenu = () => {
+        setIsOpenHmenu(true);
+    };
 
     return (
         <nav className='navbar'>
@@ -67,7 +72,7 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Language />
+                        <Language isLoading={isLoading} />
                     </a>
                     {/* ACCOUNT & LIST */}
                     <a

@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
 import { MdArrowDropDown } from 'react-icons/md';
-import SignIn from './SignIn';
 import './accountList.scss';
 
 const lists = [
