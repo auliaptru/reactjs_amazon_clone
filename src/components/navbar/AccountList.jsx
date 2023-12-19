@@ -28,11 +28,11 @@ const AccountList = () => {
             <div className='accountList__hover'>
                 <div className='top'></div>
                 <button className='navbar__sign-in'>
-                    <a href=''>Sign In</a>
+                    <a href='/login'>Sign In</a>
                 </button>
                 <div className='navbar__sign-up'>
                     <p>New Customer</p>
-                    <a href=''>Start here.</a>
+                    <a href='/register'>Start here.</a>
                 </div>
                 <div className='line'></div>
                 <div className='navbar__lists'>

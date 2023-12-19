@@ -3,61 +3,61 @@
         {
             "dataCallingCode": "93",
             "dataCountryCode": "AF",
-            "dataAHtmlContent": "Afghanistan <span dir='ltr'>+93</span>",
+            "dataCountryName": "Afghanistan",
             "displayText": "AF +93"
         },
         {
             "dataCallingCode": "355",
             "dataCountryCode": "AL",
-            "dataAHtmlContent": "Albania <span dir='ltr'>+355</span>",
+            "dataCountryName": "Albania",
             "displayText": "AL +355"
         },
         {
             "dataCallingCode": "213",
             "dataCountryCode": "DZ",
-            "dataAHtmlContent": "Algeria <span dir='ltr'>+213</span>",
+            "dataCountryName": "Algeria",
             "displayText": "DZ +213"
         },
         {
             "dataCallingCode": "1",
             "dataCountryCode": "AS",
-            "dataAHtmlContent": "American Samoa <span dir='ltr'>+1</span>",
+            "dataCountryName": "American Samoa",
             "displayText": "AS +1"
         },
         {
             "dataCallingCode": "376",
             "dataCountryCode": "AD",
-            "dataAHtmlContent": "Andorra <span dir='ltr'>+376</span>",
+            "dataCountryName": "Andorra",
             "displayText": "AD +376"
         },
         {
             "dataCallingCode": "244",
             "dataCountryCode": "AO",
-            "dataAHtmlContent": "Angola <span dir='ltr'>+244</span>",
+            "dataCountryName": "Angola",
             "displayText": "AO +244"
         },
         {
             "dataCallingCode": "1",
             "dataCountryCode": "AG",
-            "dataAHtmlContent": "Antigua & Barbuda <span dir='ltr'>+1</span>",
+            "dataCountryName": "Antigua & Barbuda",
             "displayText": "AG +1"
         },
         {
             "dataCallingCode": "54",
             "dataCountryCode": "AR",
-            "dataAHtmlContent": "Argentina <span dir='ltr'>+54</span>",
+            "dataCountryName": "Argentina",
             "displayText": "AR +54"
         },
         {
             "dataCallingCode": "374",
             "dataCountryCode": "AM",
-            "dataAHtmlContent": "Armenia <span dir='ltr'>+374</span>",
+            "dataCountryName": "Armenia",
             "displayText": "AM +374"
         },
         {
             "dataCallingCode": "297",
             "dataCountryCode": "AW",
-            "dataAHtmlContent": "Aruba <span dir='ltr'>+297</span>",
+            "dataCountryName": "Aruba",
             "displayText": "AW +297"
         }
     ]

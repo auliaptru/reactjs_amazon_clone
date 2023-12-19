@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import './app.scss';
-import SignUp from './pages/SignUp/SignUp';
+import SignIn from './pages/SignIn/SignIn';
 
 const App = () => {
     const [isFocus, setIsFocus] = useState(false);
@@ -24,8 +24,8 @@ const App = () => {
                     isFocus || isHovered ? 'cover visible' : 'cover'
                 }`}
             ></div>
-            {/* <Home /> */}
-            <SignUp />
+            <Home />
+            {/* <SignIn /> */}
         </div>
     );
 };

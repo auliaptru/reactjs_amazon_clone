@@ -42,14 +42,27 @@
                     margin-bottom: 2px;
                 }
                 input {
-                    padding: 8px;
                     width: 100%;
+                    padding: 8px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: 1px solid #a6a6a6;
+                    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5),
+                        0 1px 0 rgba(0, 0, 0, 0.07) inset;
+                    &:focus {
+                        border-color: #007185;
+                        box-shadow: 0 0 0 3px #c8f3fa,
+                            0 1px 2px rgba(15, 17, 17, 0.15) inset;
+                    }
+                }
+                .input__alert {
+                    border-color: #cc0c39;
+                    box-shadow: 0 0 0 1px #cc0c39 inset;
                 }
                 .signUp__email-wrapper {
                     display: flex;
                     position: relative;
                     .signUp__selectNum {
-                        // display: none;
                         opacity: 0;
                         position: absolute;
                         height: 30px;
@@ -65,18 +78,48 @@
                     }
                     .signUp__email {
                         width: 100%;
-                        input {
-                            width: 100%;
+                    }
+
+                    .signUp__options-show {
+                        position: absolute;
+                        left: -2px;
+                        width: auto;
+                        overflow: hidden;
+                        background: #fff;
+                        border: 1px solid #bbbfbf;
+                        border-radius: 3px;
+                        box-shadow: 0 2px 5px rgba(15, 17, 17, 0.15);
+                        z-index: 1110;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+                            width: 200px;
+                            padding: 10px 0;
+                            overflow-y: auto;
+                            li {
+                                padding: 0 15px;
+                                list-style: none;
+                                font-size: 13px;
+                                border: 1px solid transparent;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: #f0f2f2;
+                                    border: 1px solid #d5d9d9;
+                                }
+                            }
                         }
                     }
+
                     span {
                         z-index: 1;
+                        width: auto;
                         height: 35px;
                         position: absolute;
                         left: 7px;
-                        top: 6px;
+                        top: 7px;
                         color: #0066c0;
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -107,6 +150,13 @@
                 p {
                     font-size: 13px;
                     line-height: 19px;
+                    a {
+                        color: #0066c0;
+                        &:hover {
+                            color: #c45500;
+                            text-decoration: underline;
+                        }
+                    }
                 }
                 button {
                     width: 100%;
@@ -116,8 +166,100 @@
                     box-shadow: rgba(213, 217, 217, 0.5) 0px 2px 5px 0px;
                     border-radius: 5px;
                     cursor: pointer;
+                    &:hover {
+                        background-color: #f7ca00;
+                    }
+                }
+            }
+
+            .divider__container {
+                margin-top: 30px;
+                .divider {
+                    height: 44px;
+                    margin-bottom: -18px;
+                    background: linear-gradient(
+                        to bottom,
+                        rgba(0, 0, 0, 0.2),
+                        rgba(0, 0, 0, 0.03) 3px,
+                        transparent
+                    );
+                    z-index: 0;
+                    &::after {
+                        content: '';
+                        display: block;
+                        z-index: 1;
+                        width: 100%;
+                        height: 44px;
+                        background: linear-gradient(
+                            to right,
+                            #fff,
+                            rgba(255, 255, 255, 0),
+                            #fff
+                        );
+                    }
+                }
+            }
+
+            .signIn {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                font-size: 13px;
+                padding-bottom: 10px;
+                p {
+                    .link {
+                        color: #0066c0;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 3px;
+                            height: 6px;
+                            background-image: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
+                            background-size: 400px 750px;
+                            background-repeat: no-repeat;
+                            background-position: -346px -86px;
+                            position: absolute;
+                            top: 50%;
+                            right: -10px;
+                            margin-top: -2px;
+                        }
+                        &:hover {
+                            color: #c45500;
+                            text-decoration: underline;
+                            &::after {
+                                background-position: -346px -101px;
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+.form__alert {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    .alertIcon {
+        display: inline-block;
+        background-image: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
+        background-position: -166px -130px;
+        background-size: 400px 750px;
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 13px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+.error {
+    color: #c40000;
+    .alertIcon {
+        background-position: -141px -130px;
     }
 }
