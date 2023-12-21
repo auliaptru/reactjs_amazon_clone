@@ -26,24 +26,8 @@ const Home = () => {
                 <ProductCarousel products={games} />
                 <CardsHome data={data2} />
                 <ProductCarousel products={games} />
-                <div className='home__signin'>
-                    <div className='home__sigin-texts'>
-                        <span>See personalized recommendations</span>
-                        <button>Sign in</button>
-                        <span>
-                            New customer
-                            <a href=''>
-                                <span>Start here.</span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
+
                 <div className='footer'>
-                    <div className='home___totop'>
-                        <a href=''>
-                            <span>Back to top</span>
-                        </a>
-                    </div>
                     <Footer />
                 </div>
             </div>

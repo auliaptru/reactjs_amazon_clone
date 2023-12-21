@@ -95,7 +95,7 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         <ReturnOrder />
                     </a>
                     {/* CART */}
-                    <a href='' className='navbar__cart'>
+                    <a href='/cart' className='navbar__cart'>
                         <Cart />
                     </a>
                 </div>
