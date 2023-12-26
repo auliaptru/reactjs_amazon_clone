@@ -6,6 +6,9 @@ Amazon is a the largest and most diverse companies in the world.
 - Add sidebar & auto slide when user didn't click arrow icons (8 Dec)
 - Add auto show sign-in box and suggestion box on search when user choose All Departments (10 Dec)
 - Add Choose Location popover when user clicked Deliver to menu in Navbar (13 Dec)
+- Add Sign-up page (16 Dec)
+- Add Sign-in page (19 Dec)
+- Add Cart page before user sign-in (21 Dec)
  
 ### How to Run To run this application on your local, follow these steps:
 
