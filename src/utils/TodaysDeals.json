@@ -1,0 +1,100 @@
+{
+    "carouselData": [
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Alldeals_white._CB468586681_.png",
+            "name": "All Deals"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/DiscoTec/2023/Deals/DealMoment/WinterSale/TodaysDeal/DM_FS_TodaysDeal_Bubbler_85x85.png",
+            "name": "Featured Deals"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/DiscoTec/2023/Shoulder/W3_4/TodaysDeals_Bubblers/ShoulderDeals_HolidayDeals_todaysdealbubbler.png",
+            "name": "Holiday"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/01/goldbox/B07XKF5RM3.01.RMXXXXXX2.png",
+            "name": "Amazon Devices"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/PrivateBrands/2023/APB-1181932_Bubbler_white_320x320.png",
+            "name": "Amazon Brands"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/SBP/2023/PD23/Homepage/SBE_PD23_ImageCarousel_240x224.jpg",
+            "name": "Small Business"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Computers_white._CB468586682_.png",
+            "name": "Computer & Accessories"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Electronics_white._CB468586680_.png",
+            "name": "Electronics"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Home_white._CB468586683_.png",
+            "name": "Home"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Fashion_white._CB468586683_.png",
+            "name": "Fashion"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Beauty_white._CB468586681_.png",
+            "name": "Beauty"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Kitchen_white._CB468586676_.png",
+            "name": "Kitchen"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Alldeals_white._CB468586681_.png",
+            "name": "All Deals"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/DiscoTec/2023/Deals/DealMoment/WinterSale/TodaysDeal/DM_FS_TodaysDeal_Bubbler_85x85.png",
+            "name": "Featured Deals"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/DiscoTec/2023/Shoulder/W3_4/TodaysDeals_Bubblers/ShoulderDeals_HolidayDeals_todaysdealbubbler.png",
+            "name": "Holiday"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/01/goldbox/B07XKF5RM3.01.RMXXXXXX2.png",
+            "name": "Amazon Devices"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/PrivateBrands/2023/APB-1181932_Bubbler_white_320x320.png",
+            "name": "Amazon Brands"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/SBP/2023/PD23/Homepage/SBE_PD23_ImageCarousel_240x224.jpg",
+            "name": "Small Business"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Computers_white._CB468586682_.png",
+            "name": "Computer & Accessories"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Electronics_white._CB468586680_.png",
+            "name": "Electronics"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Home_white._CB468586683_.png",
+            "name": "Home"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Fashion_white._CB468586683_.png",
+            "name": "Fashion"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Beauty_white._CB468586681_.png",
+            "name": "Beauty"
+        },
+        {
+            "img": "https://m.media-amazon.com/images/G/01/goldbox/images/faceout/Kitchen_white._CB468586676_.png",
+            "name": "Kitchen"
+        }
+    ]
+}

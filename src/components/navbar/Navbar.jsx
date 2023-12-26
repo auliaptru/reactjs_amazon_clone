@@ -51,7 +51,7 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
             <div className='navbar__top'>
                 <div className='navbar__top-left'>
                     {/* LOGO */}
-                    <a href='' className='navbar__logo'>
+                    <a href='/' className='navbar__logo'>
                         <Logo />
                     </a>
                     {/* LOCATIONS */}
@@ -109,7 +109,7 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                 </div>
                 <ul className='navbar__links'>
                     <li>
-                        <a href=''>Today&apos;s Deals</a>
+                        <a href='/gp'>Today&apos;s Deals</a>
                     </li>
                     <li>
                         <a href=''>Customer Service</a>
@@ -122,32 +122,6 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                     </li>
                     <li>
                         <a href=''>Sell</a>
-                    </li>
-                </ul>
-            </div>
-
-            {/* SUBNAV MENU */}
-            <div className='navbar__subnav'>
-                <ul className='navbar__subnav-container'>
-                    <li>
-                        <a href='' className='nav__selected'>
-                            Today&apos;s Deals
-                        </a>
-                    </li>
-                    <li>
-                        <a href=''>Coupons</a>
-                    </li>
-                    <li>
-                        <a href=''>Renewed Deals</a>
-                    </li>
-                    <li>
-                        <a href=''>Outlet</a>
-                    </li>
-                    <li>
-                        <a href=''>Digital Deals</a>
-                    </li>
-                    <li>
-                        <a href=''>Amazon Warehouse</a>
                     </li>
                 </ul>
             </div>

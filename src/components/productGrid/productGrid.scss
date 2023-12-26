@@ -1,0 +1,12 @@
+.productGrid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    .productGrid__filter {
+        flex: 1;
+    }
+    .productGrid__grid {
+        flex: 4.5;
+        border-bottom: 1px solid #d5d5d5;
+    }
+}
