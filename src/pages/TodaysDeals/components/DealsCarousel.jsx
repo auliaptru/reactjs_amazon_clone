@@ -4,64 +4,47 @@ import './dealsCarousel.scss';
 
 const DealsCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [displayedThemes, setDisplayedThemes] = useState([]);
-    const [widthCarousel, setWidthCarousel] = useState(0);
+    const [translateX, setTranslateX] = useState(null);
 
-    const productRef = useRef(null);
-
-    useEffect(() => {
-        if (productRef.current) {
-            setWidthCarousel(productRef.current.offsetWidth);
-        }
-        const remainingThemes = carouselData.length - currentIndex;
-        const themesToShow =
-            remainingThemes < itemsPerPage ? remainingThemes : itemsPerPage;
-        const updatedDisplayedThemes = carouselData.slice(
-            currentIndex,
-            currentIndex + themesToShow
-        );
-        setDisplayedThemes(updatedDisplayedThemes);
-    }, [currentIndex]);
-
+    const slideRef = useRef(null);
     const itemsPerPage = 11;
+    const widthCarousel = 125.5;
 
     const handleScrollLeft = () => {
-        if (currentIndex - itemsPerPage >= 0) {
-            setCurrentIndex((prev) => prev - itemsPerPage);
-        } else {
-            const lastPageIndex =
-                Math.floor(displayedThemes.length / itemsPerPage) *
+        let newIndex = currentIndex - itemsPerPage;
+        if (newIndex < 0) {
+            newIndex =
+                Math.floor((carouselData.length - 1) / itemsPerPage) *
                 itemsPerPage;
-            setCurrentIndex(lastPageIndex);
         }
+        setCurrentIndex(newIndex);
+        setTranslateX(`-${newIndex * widthCarousel}`);
     };
 
     const handleScrollRight = () => {
-        if (currentIndex + itemsPerPage < carouselData.length) {
-            // setTimeout(() => {
-            setCurrentIndex((prev) => prev + itemsPerPage);
-            // }, 100);
-        } else {
-            // setTimeout(() => {
-            setCurrentIndex(0);
-            // }, 100);
+        let newIndex = currentIndex + itemsPerPage;
+        if (newIndex > carouselData.length) {
+            newIndex = 0;
         }
+        setCurrentIndex(newIndex);
+        setTranslateX(`-${newIndex * widthCarousel}`);
     };
-    console.log(currentIndex);
+
     return (
         <div className='deals__carousel-container'>
             <div className='carousel__arrow left' onClick={handleScrollLeft}>
                 <i className='arrowLeft-icon'></i>
             </div>
-            <div className='deals__carousel-content' ref={productRef}>
+            <div className='deals__carousel-content' ref={slideRef}>
                 <ol
                     style={{
                         transition: 'transform 0.3s ease',
-                        transform: `translateX(-${currentIndex * 100}px)`,
+                        transform: `translateX(${translateX}px) translateZ(0px)`,
+                        width: `${widthCarousel}`,
                     }}
                 >
-                    {displayedThemes.map((data, i) => (
-                        <li key={i}>
+                    {carouselData.map((data, index) => (
+                        <li key={index}>
                             <div className='carousel__img'>
                                 <img src={data.img} alt='' />
                             </div>

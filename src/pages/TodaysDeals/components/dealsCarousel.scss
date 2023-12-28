@@ -14,7 +14,7 @@
         padding: 6px;
         border-radius: 7px;
         height: 40px;
-        width: 40px;
+        width: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,7 +27,7 @@
             background-position: -123px -7px;
             background-size: 400px 900px;
             background-repeat: no-repeat;
-            width: 11px;
+            width: 13px;
             height: 15px;
         }
         .arrowRight-icon {
@@ -36,61 +36,40 @@
             background-position: -105px -7px;
             background-size: 400px 900px;
             background-repeat: no-repeat;
-            width: 11px;
+            width: 13px;
             height: 15px;
         }
-    }
-    .left {
-        position: absolute;
-        left: 20px;
-    }
-    .right {
-        position: absolute;
-        right: 20px;
     }
     .deals__carousel-content {
         position: relative;
         overflow: hidden;
-        margin-left: 60px;
         ol {
-            width: auto;
+            width: 3360px;
+            position: relative;
+            height: 150px;
             display: flex;
             align-items: start;
-            // justify-content: space-between;
             gap: 26px;
-            animation: slide 0.5s ease;
-            // white-space: nowrap;
-            transition: animation 0.3s ease;
-            // width: 1360px;
-            @keyframes slide {
-                0% {
-                    transform: translateX(0);
-                }
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
+            overflow-x: visible;
             li {
-                max-width: 100px;
-                width: 100px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 list-style: none;
                 text-align: center;
-                vertical-align: top;
-                word-wrap: break-word;
                 cursor: pointer;
+                max-width: 125px;
+                height: auto;
                 .carousel__img {
-                    width: 100%;
-                    height: 100%;
+                    width: 100px;
+                    height: 100px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     img {
-                        width: 100px;
-                        height: 100px;
+                        width: 100%;
+                        height: 100%;
                         background-color: white;
                         border-radius: 50%;
                         object-fit: cover;
@@ -103,6 +82,12 @@
                     line-height: 20px;
                     font-weight: 600;
                 }
+            }
+            .visible {
+                visibility: visible;
+            }
+            .hidden {
+                visibility: hidden;
             }
         }
     }
