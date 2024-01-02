@@ -1,0 +1,22 @@
+.coupons {
+    .coupons__img {
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .coupons__content {
+        display: flex;
+        padding: 10px 20px;
+        .coupons__filter {
+            flex: 1;
+        }
+        .coupons__cards {
+            flex: 5;
+        }
+    }
+}

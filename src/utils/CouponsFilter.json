@@ -1,0 +1,107 @@
+{
+    "categories": [
+        {
+            "name": "Grocery & Gourmet",
+            "items": [
+                {
+                    "name": "Breakfast Foods",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213781011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_9"
+                },
+                {
+                    "name": "Beverages & Coffee",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213781011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_10"
+                },
+                {
+                    "name": "Snack Food",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213781011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_11"
+                },
+                {
+                    "name": "Chocolate",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213781011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_12"
+                },
+                {
+                    "name": "Gluten-Free",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213781011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_13"
+                },
+                {
+                    "name": "Baking Goods & Cooking Supplies",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213781011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_14"
+                },
+                {
+                    "name": "Pay with SNAP EBT",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=19097785011&ref_=omps_coupons_ln"
+                }
+            ]
+        },
+        {
+            "name": "Beauty",
+            "items": [
+                {
+                    "name": "Makeup",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213780011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_16"
+                },
+                {
+                    "name": "Skin Care",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213780011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_17"
+                },
+                {
+                    "name": "Hair Care",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213780011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_18"
+                },
+                {
+                    "name": "Tools & Accessories",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213780011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_19"
+                }
+            ]
+        },
+        {
+            "name": "Other Categories",
+            "items": [
+                {
+                    "name": "Automotive",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213787011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_20"
+                },
+                {
+                    "name": "Electronics",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20338622011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_21"
+                },
+                {
+                    "name": "Home & Kitchen",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20378563011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_22"
+                },
+                {
+                    "name": "Lawn & Garden",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20533021011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_23"
+                },
+                {
+                    "name": "Sports & Outdoors",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20378564011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_24"
+                },
+                {
+                    "name": "Office & School Supplies",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213786011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_25"
+                },
+                {
+                    "name": "Pet Supplies",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20380013011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_26"
+                },
+                {
+                    "name": "Toys & Baby",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=13213784011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_27"
+                },
+                {
+                    "name": "Clothing, Shoes & Jewelry",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20361684011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_28"
+                },
+                {
+                    "name": "Handmade",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=21599793011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_29"
+                },
+                {
+                    "name": "Renewed",
+                    "url": "/gp/browse.html?rw_useCurrentProtocol=1&node=20338264011&ref_=amb_link_A2zi3q8eTaivigbPMYdncg_30"
+                }
+            ]
+        }
+    ]
+}

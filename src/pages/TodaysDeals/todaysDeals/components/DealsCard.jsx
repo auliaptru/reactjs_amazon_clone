@@ -1,5 +1,5 @@
 import './dealsCard.scss';
-import { products } from '../../../utils/DealsProducts.json';
+import { products } from '../../../../utils/DealsProducts.json';
 
 const DealsCard = () => {
     return (

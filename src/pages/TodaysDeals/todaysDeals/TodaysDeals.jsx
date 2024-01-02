@@ -1,40 +1,18 @@
-import Footer from '../../components/footer/Footer';
-import Navbar from '../../components/navbar/Navbar';
-import ProductGrid from '../../components/productGrid/ProductGrid';
+import Footer from '../../../components/footer/Footer';
+import Navbar from '../../../components/navbar/Navbar';
+import ProductGrid from '../../../components/productGrid/ProductGrid';
 import DealsCarousel from './components/DealsCarousel';
 import DealsFilter from './components/DealsFilter';
 import './todaysDeals.scss';
 import DealsCard from './components/DealsCard';
+import Subnav from '../../../components/subnav/Subnav';
 
 const TodaysDeals = () => {
     return (
         <div className='deals'>
             <Navbar />
             <div className='deals__container'>
-                <div className='deals__subnav'>
-                    <ul>
-                        <li>
-                            <a href='' className='deals__selected'>
-                                Today&apos;s Deals
-                            </a>
-                        </li>
-                        <li>
-                            <a href=''>Coupons</a>
-                        </li>
-                        <li>
-                            <a href=''>Renewed Deals</a>
-                        </li>
-                        <li>
-                            <a href=''>Outlet</a>
-                        </li>
-                        <li>
-                            <a href=''>Digital Deals</a>
-                        </li>
-                        <li>
-                            <a href=''>Amazon Warehouse</a>
-                        </li>
-                    </ul>
-                </div>
+                <Subnav />
                 <div className='deals__image'>
                     <img
                         src='https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2023/Deals/DealMoment/WinterSale/TodaysDeal/DM_FS_ONFIG_TodaysDeal_DT_gold_1500x125.jpg'

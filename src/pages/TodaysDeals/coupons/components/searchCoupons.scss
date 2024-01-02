@@ -1,0 +1,44 @@
+.searchCoupons {
+    margin-right: 50px;
+    .searchCoupons__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .searchCoupons__input {
+            display: flex;
+            align-items: center;
+            position: relative;
+            .searchIcon {
+                position: absolute;
+                left: 8px;
+                i {
+                    display: inline-block;
+                    background: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+                    background-size: 400px 900px;
+                    background-position: -271px -86px;
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+            input {
+                width: 350px;
+                height: 35px;
+            }
+        }
+        .searchCoupons__btn {
+            background-color: #303333;
+            border: 1px solid #0f1111;
+            width: 80px;
+            height: 35px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}

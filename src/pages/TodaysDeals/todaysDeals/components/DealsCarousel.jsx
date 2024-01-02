@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { carouselData } from '../../../utils/TodaysDeals.json';
+import { carouselData } from '../../../../utils/TodaysDeals.json';
 import './dealsCarousel.scss';
 
 const DealsCarousel = () => {

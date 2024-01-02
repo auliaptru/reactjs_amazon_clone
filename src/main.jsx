@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignUp from './pages/SignUp/SignUp.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import Cart from './pages/Cart/Cart.jsx';
-import TodaysDeals from './pages/TodaysDeals/TodaysDeals.jsx';
+import TodaysDeals from './pages/TodaysDeals//todaysDeals/TodaysDeals.jsx';
+import Coupons from './pages/TodaysDeals/coupons/Coupons.jsx';
 import App from './App.jsx';
 import './index.css';
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
     {
         path: '/gp',
         element: <TodaysDeals />,
+    },
+    {
+        path: '/coupons',
+        element: <Coupons />,
     },
 ]);
 
