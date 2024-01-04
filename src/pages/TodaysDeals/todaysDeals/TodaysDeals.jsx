@@ -4,8 +4,9 @@ import ProductGrid from '../../../components/productGrid/ProductGrid';
 import DealsCarousel from './components/DealsCarousel';
 import DealsFilter from './components/DealsFilter';
 import './todaysDeals.scss';
-import DealsCard from './components/DealsCard';
+import DealsCard from '../components/DealsCard';
 import Subnav from '../../../components/subnav/Subnav';
+import { products } from '../../../utils/DealsProducts.json';
 
 const TodaysDeals = () => {
     return (
@@ -25,7 +26,7 @@ const TodaysDeals = () => {
                 <div className='deals__content'>
                     <ProductGrid
                         filterComponents={<DealsFilter />}
-                        gridComponents={<DealsCard />}
+                        gridComponents={<DealsCard products={products} />}
                     />
                 </div>
                 <div className='deals__pagination'>

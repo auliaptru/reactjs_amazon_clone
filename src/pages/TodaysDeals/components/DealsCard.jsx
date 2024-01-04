@@ -1,7 +1,7 @@
 import './dealsCard.scss';
-import { products } from '../../../../utils/DealsProducts.json';
+// import { products } from '../../../utils/DealsProducts.json';
 
-const DealsCard = () => {
+const DealsCard = ({ products }) => {
     return (
         <div className='deals__grid-container'>
             {products.map((product, i) => (

@@ -1,0 +1,154 @@
+.couponContents__container {
+    .couponContents__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        span {
+            color: #007185;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 28px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                color: #c7511f;
+            }
+        }
+    }
+    .couponContents__carousel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+        .carousel__arrow {
+            background-color: white;
+            padding: 6px;
+            border-radius: 7px;
+            height: 38px;
+            width: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(191, 190, 190);
+            box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+            cursor: pointer;
+            position: relative;
+            .arrowLeft-icon {
+                display: inline-block;
+                background-image: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+                background-position: -123px -7px;
+                background-size: 400px 900px;
+                background-repeat: no-repeat;
+                width: 13px;
+                height: 15px;
+            }
+            .arrowRight-icon {
+                display: inline-block;
+                background-image: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+                background-position: -105px -7px;
+                background-size: 400px 900px;
+                background-repeat: no-repeat;
+                width: 13px;
+                height: 15px;
+            }
+        }
+        .couponContents__cards {
+            overflow: hidden;
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: start;
+                gap: 20px;
+                // width: 970px;
+                height: 430px;
+                li {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    max-width: 200px;
+                    width: 200px;
+                    .couponContents__card {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        width: 165px;
+                        padding: 10px;
+                        border: 2px dashed transparent;
+                        transition: 0.2s all ease;
+                        cursor: pointer;
+                        &:hover {
+                            border: 2px dashed #ddd;
+                            box-shadow: 0 8px 8px -2px rgba(221, 221, 221, 0.8);
+                        }
+                        .card__wrapper {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            .card__img {
+                                width: 100%;
+                                height: 170px;
+                                margin-bottom: 10px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            .card__title {
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #007600;
+                            }
+                            .card__description {
+                                margin-top: 30px;
+                                height: 40px;
+                                overflow: hidden;
+                                p {
+                                    color: #007185;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    word-wrap: break-word;
+                                }
+                            }
+                            &:hover {
+                                transition: 0.2s all ease;
+                                .card__title,
+                                .card__description {
+                                    text-decoration: underline;
+                                    text-decoration-color: red;
+                                }
+                            }
+                        }
+                        .card__clipBtn {
+                            width: 100%;
+                            margin-top: 10px;
+                            button {
+                                font-size: 13px;
+                                font-weight: 500;
+                                width: 100%;
+                                height: 30px;
+                                background-color: #ffd814;
+                                border: 1px solid #fcd200;
+                                border-radius: 8px;
+                                box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: #f7ca00;
+                                    border-color: #f2c200;
+                                }
+                            }
+                        }
+                    }
+                    .card__footer {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

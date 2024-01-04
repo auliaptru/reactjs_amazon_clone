@@ -1,27 +1,23 @@
-.deals {
-    padding: 0;
-    .deals__container {
-        display: flex;
-        flex-direction: column;
-        .deals__image {
-            width: 100%;
-            height: 100%;
-            img {
+.renewedDeals {
+    margin: 20px;
+    .renewedDeals__wrapper {
+        position: relative;
+        .renewedDeals__products {
+            padding-left: 10px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
+                border-top: 1px solid #d5d5d5;
             }
         }
-
-        .deals__content {
-            width: 100%;
-        }
-        .deals__pagination {
+        .renewedDeals__pagination {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 0;
-            background: rgb(234, 237, 237);
+            padding: 20px 0;
+            position: relative;
             ul {
                 display: flex;
                 align-items: center;
@@ -33,11 +29,10 @@
                         border: 1px solid #6c6e73;
                         border-radius: 8px;
                         padding: 8px 15px;
-                        font-size: 16px;
+                        font-size: 14px;
                         outline: none;
                         cursor: pointer;
                     }
-
                     .disabled {
                         border-color: #d5d9d9 !important;
                         background: white;
@@ -56,15 +51,17 @@
                     }
                 }
             }
-        }
-        .deals__img {
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            .pagination__link {
+                position: absolute;
+                right: 0;
+                top: 10px;
+                color: #007185;
+                font-size: 14px;
+                font-weight: 600;
+                &:hover {
+                    color: #c7511f;
+                }
+                // margin-left: 20px;
             }
         }
     }

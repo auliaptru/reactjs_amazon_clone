@@ -22,7 +22,11 @@ const Coupons = () => {
                         <CouponsFilter />
                     </div>
                     <div className='coupons__cards'>
-                        <CouponsCards />
+                        <CouponsCards
+                            widthSlide='970px'
+                            widthCard='165px'
+                            widthCarousel={195}
+                        />
                     </div>
                 </div>
             </div>

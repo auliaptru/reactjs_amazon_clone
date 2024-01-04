@@ -8,6 +8,7 @@ import TodaysDeals from './pages/TodaysDeals//todaysDeals/TodaysDeals.jsx';
 import Coupons from './pages/TodaysDeals/coupons/Coupons.jsx';
 import App from './App.jsx';
 import './index.css';
+import RenewedDeals from './pages/TodaysDeals/renewedDeals/RenewedDeals.jsx';
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
     {
         path: '/coupons',
         element: <Coupons />,
+    },
+    {
+        path: '/renewed-deals',
+        element: <RenewedDeals />,
     },
 ]);
 
