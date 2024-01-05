@@ -24,51 +24,6 @@ const DealsCard = ({ products }) => {
                     </div>
                 </div>
             ))}
-            {/* <div className='deals__grid-card'>
-                <div className='deals__grid-img'>
-                    <img
-                        src='https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg'
-                        alt=''
-                    />
-                </div>
-                <div className='deals__grid-text'>
-                    <span className='discount'>Up to 35% off</span>{' '}
-                    <span>Deals</span>
-                </div>
-                <div className='deals__grid-title'>
-                    <p>Home Products from Amazon Brands</p>
-                </div>
-            </div>
-            <div className='deals__grid-card'>
-                <div className='deals__grid-img'>
-                    <img
-                        src='https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg'
-                        alt=''
-                    />
-                </div>
-                <div className='deals__grid-text'>
-                    <span className='discount'>Up to 35% off</span>{' '}
-                    <span>Deals</span>
-                </div>
-                <div className='deals__grid-title'>
-                    <p>Home Products from Amazon Brands</p>
-                </div>
-            </div>
-            <div className='deals__grid-card'>
-                <div className='deals__grid-img'>
-                    <img
-                        src='https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg'
-                        alt=''
-                    />
-                </div>
-                <div className='deals__grid-text'>
-                    <span className='discount'>Up to 35% off</span>{' '}
-                    <span>Deals</span>
-                </div>
-                <div className='deals__grid-title'>
-                    <p>Home Products from Amazon Brands</p>
-                </div>
-            </div> */}
         </div>
     );
 };

@@ -2,6 +2,7 @@
     margin: 20px;
     .renewedDeals__wrapper {
         position: relative;
+        margin-top: 170px;
         .renewedDeals__products {
             padding-left: 10px;
             &::after {
@@ -61,7 +62,76 @@
                 &:hover {
                     color: #c7511f;
                 }
-                // margin-left: 20px;
+            }
+        }
+        .renewedDeals__promise {
+            margin-top: 10px;
+            h1 {
+                text-align: center;
+                font-weight: normal;
+                letter-spacing: 0.01rem;
+                font-size: 28px;
+            }
+            .renewedDeals__grid {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                .renewedDeals__grid-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    p {
+                        text-align: center;
+                        line-height: 20px;
+                        font-weight: 500;
+                        max-width: 300px;
+                    }
+                    span {
+                        position: absolute;
+                        bottom: -30px;
+                        color: #007185;
+                        &:hover {
+                            color: #c7511f;
+                        }
+                    }
+                }
+            }
+        }
+        .renewedDeals__freqQuestions {
+            padding: 50px 0;
+            h1 {
+                font-weight: normal;
+                font-size: 28px;
+                text-align: center;
+            }
+            .renewedDeals__freqQuestions-wrapper {
+                display: flex;
+                flex-direction: column;
+                .question__box {
+                    padding: 10px 0;
+                    hr {
+                        display: block;
+                        background-color: transparent;
+                        border-bottom-width: 0;
+                        border-left-width: 0;
+                        border-right-width: 0;
+                        border-top: 1px solid #bbbfbf;
+                        height: 1px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .text {
+                margin-bottom: 10px;
+            }
+            span {
+                color: #007185;
+                &:hover {
+                    color: #c7511f;
+                }
             }
         }
     }

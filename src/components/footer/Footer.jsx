@@ -3,22 +3,24 @@ import { TbArrowsMoveVertical } from 'react-icons/tb';
 import { data, affiliates } from '../../utils/footerLists.json';
 import './footer.scss';
 
-const Footer = () => {
+const Footer = ({ isFooterTop }) => {
     return (
         <div className='footer'>
             <div className='footer__container'>
-                <div className='footer__top'>
-                    <div className='footer__personalized'>
-                        <span>See personalized recommendations</span>
-                        <button>Sign in</button>
-                        <span>
-                            New customer?
-                            <a href=''>
-                                <span>Start here.</span>
-                            </a>
-                        </span>
+                {isFooterTop && (
+                    <div className='footer__top'>
+                        <div className='footer__personalized'>
+                            <span>See personalized recommendations</span>
+                            <button>Sign in</button>
+                            <span>
+                                New customer?
+                                <a href=''>
+                                    <span>Start here.</span>
+                                </a>
+                            </span>
+                        </div>
                     </div>
-                </div>
+                )}
 
                 <div className='footer__center'>
                     <div className='footer__totop'>

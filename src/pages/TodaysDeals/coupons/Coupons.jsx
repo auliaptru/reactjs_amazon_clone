@@ -1,7 +1,7 @@
 import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
 import Subnav from '../../../components/subnav/Subnav';
-import CouponsCards from './components/CouponsContents';
+import CouponsContents from './components/CouponsContents';
 import CouponsFilter from './components/CouponsFilter';
 import './coupons.scss';
 
@@ -22,15 +22,11 @@ const Coupons = () => {
                         <CouponsFilter />
                     </div>
                     <div className='coupons__cards'>
-                        <CouponsCards
-                            widthSlide='970px'
-                            widthCard='165px'
-                            widthCarousel={195}
-                        />
+                        <CouponsContents />
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer isFooterTop={false} />
         </>
     );
 };

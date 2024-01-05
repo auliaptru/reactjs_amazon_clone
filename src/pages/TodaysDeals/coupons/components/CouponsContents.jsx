@@ -9,7 +9,12 @@ const CouponsContents = () => {
             <div className='couponContents__search'>
                 <SearchCoupons />
             </div>
-            <CouponsCard data={slides} />
+            <CouponsCard
+                data={slides}
+                widthSlide='970px'
+                widthCard='165px'
+                widthCarousel={195}
+            />
         </div>
     );
 };

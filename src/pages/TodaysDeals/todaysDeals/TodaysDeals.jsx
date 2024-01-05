@@ -65,7 +65,7 @@ const TodaysDeals = () => {
                     />
                 </div>
             </div>
-            <Footer />
+            <Footer isFooterTop={true} />
         </div>
     );
 };

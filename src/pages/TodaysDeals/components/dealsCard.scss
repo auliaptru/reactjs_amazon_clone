@@ -9,26 +9,14 @@
         height: 100%;
         padding: 20px;
         position: relative;
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0; /* Meletakkan pseudo-element setelah card */
-            right: 0;
-            width: 100%;
-            height: 100%;
-            border-bottom: 1px solid #d5d5d5;
-            border-right: 1px solid #d5d5d5;
-        }
-        // border: 1px solid #d5d5d5;
-        // border-top: 1px solid #d5dbdb;
-        // border-left: 1px solid #d5dbdb;
-        // border-right: 1px solid #d5dbdb;
-        // border-bottom: 1px solid #d5dbdb;
+        border-bottom: 1px solid #d5dbdb;
+        border-right: 1px solid #d5dbdb;
         .deals__grid-img {
             width: 260px;
             height: 250px;
             position: relative;
             margin: auto;
+            cursor: pointer;
             img {
                 position: absolute;
                 margin: auto;
@@ -72,19 +60,25 @@
         }
         .deals__grid-title {
             margin-top: 5px;
-            cursor: pointer;
             max-width: 250px;
             padding: 0 10px;
+            cursor: pointer;
             &:hover {
-                color: #c7511f;
+                color: red;
             }
             p {
                 font-size: 0.9em;
                 font-weight: 600;
                 max-height: 2.8em;
                 line-height: 1.4;
-                text-overflow: ellipsis;
+                // text-overflow: ellipsis;
+                cursor: pointer;
             }
         }
+    }
+    .deals__grid-card + .deals__grid-title:hover {
+        // &:hover {
+        color: #c7511f;
+        // }
     }
 }
