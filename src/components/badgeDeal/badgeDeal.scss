@@ -1,0 +1,18 @@
+.badgeDeal__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    span {
+        font-weight: 700;
+    }
+    .deal__label {
+        padding: 3px 5px;
+        border-radius: 2px;
+        color: white;
+        background-color: var(--dark-red);
+    }
+    .deal__messaging {
+        color: var(--dark-red);
+        background-color: white;
+    }
+}

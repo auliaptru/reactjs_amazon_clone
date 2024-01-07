@@ -2,6 +2,11 @@
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
+    --dark-red: #cc0c39;
+    --dark-cyan: #007185;
+    --light-gray: #d5dbdb;
+    --burnt-sienna: #c7511f;
+    --green: #007600;
 }
 
 * {

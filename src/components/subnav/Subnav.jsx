@@ -17,7 +17,7 @@ const Subnav = () => {
                     <a href='/renewed-deals'>Renewed Deals</a>
                 </li>
                 <li>
-                    <a href=''>Outlet</a>
+                    <a href='/outlet'>Outlet</a>
                 </li>
                 <li>
                     <a href=''>Digital Deals</a>

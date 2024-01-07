@@ -1,76 +1,100 @@
 {
     "products": [
         {
-            "name": "Home Products from Amazon Brands",
-            "img": "https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg",
-            "discount": 35
+            "image": "https://m.media-amazon.com/images/I/61VHOAj35xL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 20% off",
+            "name": "Beauty and Grooming from Amazon Brands",
+            "link": "https://www.amazon.com/deal/5ffa1dc4?showVariations=true&pf_rd_r=7294JYND9W3WEZF03SKX&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_img_0_5ffa1dc4_dt_sl14_34"
         },
         {
-            "name": "Sony Headphones, Speakers and Home Theater ",
-            "img": "https://m.media-amazon.com/images/I/31BXEEUVfFL._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/71dcPZ2MbOL._AC_UF226,226_FMjpg_.png",
+            "discount": "Deal",
+            "name": "Dresses, Shoes, and more from the Luxury Stores Designer Sale",
+            "link": "https://www.amazon.com/s?i=luxury&rh=n%3A120392460011&s=date-desc-rank&fs=true&ds=v1%3Al3NOGCanPkOQHdsY41Plz3DhY%2BXJ6ZdIC5jPcf2AzNE&qid=1700520157&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_1_9fb85ba6_dt_sl14_34"
         },
         {
-            "name": "PlayStation 5 Console - Marvel’s Spider-Man 2 Bundle (slim)",
-            "img": "https://m.media-amazon.com/images/I/61cygbdPK9L._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/61OLtl4np3L._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Deal",
+            "name": "Spend $60, Get $15 Amazon Credit on Household Supplies",
+            "link": "https://www.amazon.com/fmc/m/30007794?pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_2_ee8f57d9_dt_sl14_34"
         },
         {
-            "name": "Save 20% on Best Selling Gifts from Dr. Barbara Sturm",
-            "img": "https://m.media-amazon.com/images/I/71gt120ApqL._AC_UF226,226_FMjpg_.png",
-            "discount": 37
+            "image": "https://m.media-amazon.com/images/I/41Jb-vtA7bL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 34% off",
+            "name": "Start the New Year Healthy with Amazon Brands",
+            "link": "https://www.amazon.com/deal/edb16d8d?showVariations=true&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_3_edb16d8d_dt_sl14_34"
         },
         {
-            "name": "Home Products from Amazon Brands",
-            "img": "https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg",
-            "discount": 35
+            "image": "https://m.media-amazon.com/images/I/41hxwZS7SEL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 25% off",
+            "name": "Home Storage & Organization from Amazon Basics",
+            "link": "https://www.amazon.com/deal/b90e4f14?showVariations=true&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_4_b90e4f14_dt_sl14_34"
         },
         {
-            "name": "Sony Headphones, Speakers and Home Theater ",
-            "img": "https://m.media-amazon.com/images/I/31BXEEUVfFL._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/31H4ycdM1FL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 68% off",
+            "name": "Amazon Essentials Women's Apparel",
+            "link": "https://www.amazon.com/deal/481ec261?pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_5_481ec261_dt_sl14_34"
         },
         {
-            "name": "PlayStation 5 Console - Marvel’s Spider-Man 2 Bundle (slim)",
-            "img": "https://m.media-amazon.com/images/I/61cygbdPK9L._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/5103wR7Qd6L._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 40% off",
+            "name": "Health Essentials from Gold Bond, Mederma, Mucinex and more",
+            "link": "https://www.amazon.com/deal/a5394f9a?showVariations=true&moreDeals=3834e78c&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_6_a5394f9a_dt_sl14_34"
         },
         {
-            "name": "Save 20% on Best Selling Gifts from Dr. Barbara Sturm",
-            "img": "https://m.media-amazon.com/images/I/71gt120ApqL._AC_UF226,226_FMjpg_.png",
-            "discount": 37
+            "image": "https://m.media-amazon.com/images/I/51zSqLYOPwL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 42% off",
+            "name": "Health and Household devices from Omron, Guardian, Homedics and more",
+            "link": "https://www.amazon.com/deal/49693926?showVariations=true&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_7_49693926_dt_sl14_34"
         },
         {
-            "name": "Home Products from Amazon Brands",
-            "img": "https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg",
-            "discount": 35
+            "image": "https://m.media-amazon.com/images/I/61VHOAj35xL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 20% off",
+            "name": "Beauty and Grooming from Amazon Brands",
+            "link": "https://www.amazon.com/deal/5ffa1dc4?showVariations=true&pf_rd_r=7294JYND9W3WEZF03SKX&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_img_0_5ffa1dc4_dt_sl14_34"
         },
         {
-            "name": "Sony Headphones, Speakers and Home Theater ",
-            "img": "https://m.media-amazon.com/images/I/31BXEEUVfFL._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/71dcPZ2MbOL._AC_UF226,226_FMjpg_.png",
+            "discount": "Deal",
+            "name": "Dresses, Shoes, and more from the Luxury Stores Designer Sale",
+            "link": "https://www.amazon.com/s?i=luxury&rh=n%3A120392460011&s=date-desc-rank&fs=true&ds=v1%3Al3NOGCanPkOQHdsY41Plz3DhY%2BXJ6ZdIC5jPcf2AzNE&qid=1700520157&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_1_9fb85ba6_dt_sl14_34"
         },
         {
-            "name": "PlayStation 5 Console - Marvel’s Spider-Man 2 Bundle (slim)",
-            "img": "https://m.media-amazon.com/images/I/61cygbdPK9L._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/61OLtl4np3L._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Deal",
+            "name": "Spend $60, Get $15 Amazon Credit on Household Supplies",
+            "link": "https://www.amazon.com/fmc/m/30007794?pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_2_ee8f57d9_dt_sl14_34"
         },
         {
-            "name": "Save 20% on Best Selling Gifts from Dr. Barbara Sturm",
-            "img": "https://m.media-amazon.com/images/I/71gt120ApqL._AC_UF226,226_FMjpg_.png",
-            "discount": 37
+            "image": "https://m.media-amazon.com/images/I/41Jb-vtA7bL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 34% off",
+            "name": "Start the New Year Healthy with Amazon Brands",
+            "link": "https://www.amazon.com/deal/edb16d8d?showVariations=true&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_3_edb16d8d_dt_sl14_34"
         },
         {
-            "name": "Home Products from Amazon Brands",
-            "img": "https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg",
-            "discount": 35
+            "image": "https://m.media-amazon.com/images/I/41hxwZS7SEL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 25% off",
+            "name": "Home Storage & Organization from Amazon Basics",
+            "link": "https://www.amazon.com/deal/b90e4f14?showVariations=true&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_4_b90e4f14_dt_sl14_34"
         },
         {
-            "name": "Sony Headphones, Speakers and Home Theater ",
-            "img": "https://m.media-amazon.com/images/I/31BXEEUVfFL._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/31H4ycdM1FL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 68% off",
+            "name": "Amazon Essentials Women's Apparel",
+            "link": "https://www.amazon.com/deal/481ec261?pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_5_481ec261_dt_sl14_34"
         },
         {
-            "name": "PlayStation 5 Console - Marvel’s Spider-Man 2 Bundle (slim)",
-            "img": "https://m.media-amazon.com/images/I/61cygbdPK9L._AC_UF226,226_FMjpg_.jpg"
+            "image": "https://m.media-amazon.com/images/I/5103wR7Qd6L._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 40% off",
+            "name": "Health Essentials from Gold Bond, Mederma, Mucinex and more",
+            "link": "https://www.amazon.com/deal/a5394f9a?showVariations=true&moreDeals=3834e78c&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_6_a5394f9a_dt_sl14_34"
         },
         {
-            "name": "Save 20% on Best Selling Gifts from Dr. Barbara Sturm",
-            "img": "https://m.media-amazon.com/images/I/71gt120ApqL._AC_UF226,226_FMjpg_.png",
-            "discount": 37
+            "image": "https://m.media-amazon.com/images/I/51zSqLYOPwL._AC_UF226,226_FMjpg_.jpg",
+            "discount": "Up to 42% off",
+            "name": "Health and Household devices from Omron, Guardian, Homedics and more",
+            "link": "https://www.amazon.com/deal/49693926?showVariations=true&pf_rd_r=HT1GXWS5KEGHXTTP939F&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=4ec8afa9-2097-4b21-a8c6-defe88813034&pf_rd_s=slot-14&ref=dlx_deals_gd_dcl_tlt_7_49693926_dt_sl14_34"
         }
     ]
 }

@@ -4,11 +4,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignUp from './pages/SignUp/SignUp.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import Cart from './pages/Cart/Cart.jsx';
-import TodaysDeals from './pages/TodaysDeals//todaysDeals/TodaysDeals.jsx';
-import Coupons from './pages/TodaysDeals/coupons/Coupons.jsx';
+import TodaysDeals from './pages/Subnav/TodaysDeals/TodaysDeals.jsx';
+import Coupons from './pages/Subnav/Coupons/Coupons.jsx';
+import RenewedDeals from './pages/Subnav/RenewedDeals/RenewedDeals.jsx';
 import App from './App.jsx';
 import './index.css';
-import RenewedDeals from './pages/TodaysDeals/renewedDeals/RenewedDeals.jsx';
+import Outlet from './pages/Subnav/Outlet/Outlet.jsx';
 
 const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     {
         path: '/renewed-deals',
         element: <RenewedDeals />,
+    },
+    {
+        path: '/outlet',
+        element: <Outlet />,
     },
 ]);
 

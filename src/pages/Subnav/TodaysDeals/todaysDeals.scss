@@ -21,7 +21,7 @@
             align-items: center;
             justify-content: center;
             padding: 40px 0;
-            background: rgb(234, 237, 237);
+            background: #eaeded;
             ul {
                 display: flex;
                 align-items: center;
@@ -33,7 +33,7 @@
                         border: 1px solid #6c6e73;
                         border-radius: 8px;
                         padding: 8px 15px;
-                        font-size: 16px;
+                        font-size: 14px;
                         outline: none;
                         cursor: pointer;
                     }
@@ -46,8 +46,8 @@
                         cursor: text;
                     }
                     .actived {
-                        color: #007185;
-                        border-color: #007185;
+                        color: var(--dark-cyan);
+                        border-color: var(--dark-cyan);
                         font-weight: bold;
                         background-color: #edfdff;
                         &:hover {

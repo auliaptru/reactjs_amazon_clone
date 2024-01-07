@@ -150,14 +150,19 @@ const departments = [
 
 const products = [
     {
-        name: 'Certified Refurbished eero WiFi routers and range extenders',
-        img: 'https://m.media-amazon.com/images/I/71gt120ApqL._AC_UF226,226_FMjpg_.png',
-        discount: 36,
+        image: 'https://m.media-amazon.com/images/I/31Jh6teontL._AC_UF226,226_FMjpg_.jpg',
+        discount: '20% off',
+        name: 'Certified Refurbished Fire TV Streaming Devices (4K & HD)',
     },
     {
+        image: 'https://m.media-amazon.com/images/I/21jrJOs442L._AC_UF226,226_FMjpg_.jpg',
+        discount: 'Up to 36% off',
+        name: 'Certified Refurbished eero WiFi routers and range extenders',
+    },
+    {
+        image: 'https://m.media-amazon.com/images/I/41jWhC+CUvL._AC_UF226,226_FMjpg_.jpg',
+        discount: 'Up to 38% off',
         name: 'Honeywell Home Thermostats Renewed',
-        img: 'https://m.media-amazon.com/images/I/419TiCXsO-L._AC_UF226,226_FMjpg_.jpg',
-        discount: 38,
     },
 ];
 

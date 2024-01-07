@@ -1,8 +1,8 @@
-import CardsHome from '../../components/cards/CardsHome';
+import CardsHome from './components/Cards';
 import ProductCarousel from '../../components/slider/ProductCarousel';
 import { books, games } from '../../utils/DataSliderProducts.json';
 import { data1, data2 } from '../../utils/DataCard.json';
-import FullScreenSlider from '../../components/slider/FullScreenSlider';
+import FullScreenSlider from '../Home/components/FullScreenSlider';
 import Footer from '../../components/footer/Footer';
 
 import './home.scss';

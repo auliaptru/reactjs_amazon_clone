@@ -1,5 +1,5 @@
-import Card from '../card/Card';
-import './cardsHome.scss';
+import Card from './Card';
+import './cards.scss';
 
 const CardsHome = ({ data }) => {
     return (
