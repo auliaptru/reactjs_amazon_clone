@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { carouselData } from '../../../../utils/TodaysDeals.json';
 import './dealsCarousel.scss';
 
@@ -40,6 +40,7 @@ const DealsCarousel = () => {
                     style={{
                         transition: 'transform 0.3s ease',
                         transform: `translateX(${translateX}px) translateZ(0px)`,
+                        transformStyle: 'preserve-3d',
                         width: `${widthCarousel}`,
                     }}
                 >

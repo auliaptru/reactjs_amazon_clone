@@ -1,6 +1,8 @@
+import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
 import Subnav from '../../../components/subnav/Subnav';
-import { products } from '../../../utils/OutletData';
+import OutletCarousel from './components/OutletCarousel';
+import { categories } from '../../../utils/OutletData';
 import './outlet.scss';
 
 const Outlet = () => {
@@ -30,93 +32,27 @@ const Outlet = () => {
                     </div>
                 </div>
                 <div className='outlet__carousel-wrapper'>
-                    <div className='outlet__carousel'>
-                        <div className='carousel__top'>
-                            <div className='carousel__title'>
-                                <h2>Kitchen Outlet</h2>
-                                <span>
-                                    <a href='#'>See More</a>
-                                </span>
+                    <OutletCarousel />
+                </div>
+                <div className='outlet__categories-wrapper'>
+                    <div className='categories__title'>
+                        <img
+                            src='https://images-na.ssl-images-amazon.com/images/G/01/AmazonServices/Site/US/Product/FBA/Outlet/Merchandising/IMAGE_BLOCK_03_orange_v3._CB1198675309_.jpg'
+                            alt=''
+                        />
+                    </div>
+                    <div className='categories__list'>
+                        {categories.map((cate, index) => (
+                            <div className='category' key={index}>
+                                <a href={cate.link}>
+                                    <img src={cate.image} alt={cate.alt} />
+                                </a>
                             </div>
-                            <span>Page 1 of 7</span>
-                        </div>
-                        <div className='carousel__products'>
-                            <div
-                                className='carousel__arrow left'
-                                // onClick={() =>
-                                //     handleScrollLeft(slide.id, index)
-                                // }
-                            >
-                                <i className='arrowLeft-icon'></i>
-                            </div>
-                            <ul className='carousel__products-wrapper'>
-                                {products.map((product, index) => (
-                                    <li className='product__card' key={index}>
-                                        <div className='product__card-wrapper'>
-                                            <div className='product__img'>
-                                                <img
-                                                    src={product.imageURL}
-                                                    alt=''
-                                                />
-                                            </div>
-                                            <p className='product__name'>
-                                                {product.name}
-                                            </p>
-                                            <div className='product__review'>
-                                                <i className='iconReview'></i>
-                                                <span className='total'>
-                                                    {product.reviews}
-                                                </span>
-                                            </div>
-                                            <div className='product__price'>
-                                                <span className='price__symbol'>
-                                                    $
-                                                </span>
-                                                <span className='price__whole'>
-                                                    {product.price.whole}
-                                                </span>
-                                                <span className='price__friction'>
-                                                    {product.price.friction}
-                                                </span>
-                                            </div>
-                                            <div className='product__discount'>
-                                                <span className='discount__name'>
-                                                    {product.price.list
-                                                        ? 'List:'
-                                                        : 'Typical:'}
-                                                </span>
-                                                <span className='discount__percentage'>
-                                                    <span className='strike'>
-                                                        <span>$</span>
-                                                        {product.price.list
-                                                            ? product.price.list
-                                                            : product.price
-                                                                  .typical}
-                                                    </span>
-                                                    (
-                                                    {
-                                                        product.price
-                                                            .discountPercentage
-                                                    }
-                                                    )
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div
-                                className='carousel__arrow right'
-                                // onClick={() =>
-                                //     handleScrollLeft(slide.id, index)
-                                // }
-                            >
-                                <i className='arrowRight-icon'></i>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
+            <Footer isFooterTop={true} />
         </>
     );
 };

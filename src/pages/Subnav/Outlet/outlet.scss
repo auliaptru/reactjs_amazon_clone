@@ -38,162 +38,38 @@
     }
     .outlet__carousel-wrapper {
         padding-top: 20px;
-        .outlet__carousel {
-            .carousel__top {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-bottom: 1px solid gray;
-                span {
-                    font-size: 14px;
-                    font-weight: 600;
-                }
-                .carousel__title {
-                    display: flex;
-                    align-items: flex-end;
-                    gap: 8px;
-                    padding-bottom: 10px;
-                    span {
-                        position: relative;
-                        bottom: 6px;
-                        font-size: 14px;
-                        color: var(--dark-cyan);
-                        font-weight: 600;
-                    }
-                }
-            }
-            .carousel__products {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+    }
+    .outlet__categories-wrapper {
+        max-width: 1500px;
+        margin-top: 70px;
+        .categories__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 100px;
+            background-color: #f49443;
+            img {
                 width: 100%;
-                .carousel__products-wrapper {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .categories__list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            .category {
+                flex: 1 1 20%;
+                margin-bottom: -6px;
+                width: 100%;
+                img {
                     width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    gap: 20px;
-                    .product__card {
-                        list-style: none;
-                        .product__card-wrapper {
-                            width: 160px;
-                            height: 320px;
-                            display: flex;
-                            flex-direction: column;
-                            .product__img {
-                                max-width: 160px;
-                                max-height: 160px;
-                                vertical-align: top;
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: contain;
-                                }
-                            }
-                            .product__name {
-                                position: relative;
-                                display: inline-block;
-                                line-height: 1.3em;
-                                max-height: 3.9em;
-                                word-break: normal;
-                                word-wrap: break-word;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                font-size: 15px;
-                            }
-                            .product__review {
-                                margin-top: 5px;
-                                i {
-                                    display: inline-block;
-                                    background: url('https://m.media-amazon.com/images/S/sash/9DuIU8ZS5i377uD.png');
-                                    background-position: -2px -43px;
-                                    background-size: 512px 512px;
-                                    background-repeat: no-repeat;
-                                    width: 80px;
-                                    height: 18px;
-                                }
-                                span {
-                                    font-size: 13px;
-                                    letter-spacing: 0.03rem;
-                                    margin-left: 5px;
-                                    font-weight: 600;
-                                    position: relative;
-                                    top: -4px;
-                                }
-                            }
-                            .product__price {
-                                .price__symbol {
-                                    position: relative;
-                                    top: -6px;
-                                    font-size: 12px;
-                                }
-                                .price__whole {
-                                    font-size: 21px;
-                                    font-weight: 600;
-                                }
-                                .price__friction {
-                                    font-size: 12px;
-                                    position: relative;
-                                    top: -6px;
-                                    letter-spacing: 0.02rem;
-                                    margin-left: 1px;
-                                }
-                            }
-                            .product__discount {
-                                display: flex;
-                                align-items: center;
-                                gap: 3px;
-                                .discount__name {
-                                    font-size: 14px;
-                                }
-                                .discount__percentage {
-                                    font-size: 12px;
-                                    letter-spacing: 0.03rem;
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 3px;
-                                    .strike {
-                                        line-height: 16px;
-                                        text-decoration: line-through;
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
         }
-    }
-}
-
-.carousel__arrow {
-    background-color: white;
-    padding: 6px;
-    border-radius: 7px;
-    height: 38px;
-    width: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(191, 190, 190);
-    box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
-    cursor: pointer;
-    position: relative;
-    .arrowLeft-icon {
-        display: inline-block;
-        background-image: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
-        background-position: -123px -7px;
-        background-size: 400px 900px;
-        background-repeat: no-repeat;
-        width: 13px;
-        height: 15px;
-    }
-    .arrowRight-icon {
-        display: inline-block;
-        background-image: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
-        background-position: -105px -7px;
-        background-size: 400px 900px;
-        background-repeat: no-repeat;
-        width: 13px;
-        height: 15px;
     }
 }
