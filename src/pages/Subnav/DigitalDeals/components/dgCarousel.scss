@@ -1,0 +1,31 @@
+.dgCarousel {
+    .dgCarousel__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .dgCarousel__products {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            .product__top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h2 {
+                    text-align: left;
+                    font-size: 22px;
+                    margin-bottom: 30px;
+                    margin-left: 35px;
+                }
+                span {
+                    font-size: 12px;
+                    margin-right: 50px;
+                    color: #565959;
+                    font-weight: 600;
+                }
+            }
+            .dgCarousel__products-wrapper {
+            }
+        }
+    }
+}

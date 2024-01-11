@@ -10,6 +10,7 @@ import RenewedDeals from './pages/Subnav/RenewedDeals/RenewedDeals.jsx';
 import App from './App.jsx';
 import './index.css';
 import Outlet from './pages/Subnav/Outlet/Outlet.jsx';
+import DigitalDeals from './pages/Subnav/DigitalDeals/DigitalDeals.jsx';
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     {
         path: '/outlet',
         element: <Outlet />,
+    },
+    {
+        path: '/digital-deals',
+        element: <DigitalDeals />,
     },
 ]);
 

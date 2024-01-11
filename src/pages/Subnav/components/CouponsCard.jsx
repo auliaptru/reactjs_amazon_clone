@@ -11,7 +11,6 @@ const CouponsCard = ({ data, widthSlide, widthCard, widthCarousel }) => {
 
     const slideIdRef = useRef(null);
     const itemsPerSlide = 5;
-    // const widthCarousel = 195;
 
     useEffect(() => {
         updateTranslateX(

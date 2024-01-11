@@ -85,7 +85,7 @@ const RenewedDeals = () => {
                                     <h2>{data.name}</h2>
                                     <p>{data.desc}</p>
                                     <span>
-                                        <a href=''>{data.link && data.link}</a>
+                                        <a href='#'>{data.link && data.link}</a>
                                     </span>
                                 </div>
                             ))}
@@ -104,7 +104,7 @@ const RenewedDeals = () => {
                         </div>
                         <p className='text'>Other questions?</p>
                         <span>
-                            <a href=''>Visit our Help Center ></a>
+                            <a href='#'>Visit our Help Center</a>
                         </span>
                     </div>
                 </div>

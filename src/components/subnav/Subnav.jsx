@@ -20,7 +20,7 @@ const Subnav = () => {
                     <a href='/outlet'>Outlet</a>
                 </li>
                 <li>
-                    <a href=''>Digital Deals</a>
+                    <a href='/digital-deals'>Digital Deals</a>
                 </li>
                 <li>
                     <a href=''>Amazon Warehouse</a>
