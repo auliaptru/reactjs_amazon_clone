@@ -1,0 +1,13 @@
+.warehouse {
+    display: flex;
+    .warehouse__left {
+        flex: 1;
+        padding: 20px;
+    }
+    .warehouse__right {
+        overflow: hidden;
+        flex: 5.5;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+}

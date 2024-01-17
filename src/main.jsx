@@ -11,6 +11,7 @@ import App from './App.jsx';
 import './index.css';
 import Outlet from './pages/Subnav/Outlet/Outlet.jsx';
 import DigitalDeals from './pages/Subnav/DigitalDeals/DigitalDeals.jsx';
+import Warehouse from './pages/Subnav/Warehouse/Warehouse.jsx';
 
 const router = createBrowserRouter([
     {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     {
         path: '/digital-deals',
         element: <DigitalDeals />,
+    },
+    {
+        path: '/warehouse',
+        element: <Warehouse />,
     },
 ]);
 

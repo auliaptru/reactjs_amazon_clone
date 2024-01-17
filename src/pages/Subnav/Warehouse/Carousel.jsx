@@ -1,18 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
-import './productCarousel.scss';
+import './carousel.scss';
 
-const SliderProducts = ({ products, style }) => {
+const Carousel = ({ products, style }) => {
     const [showScrollLeft, setShowScrollLeft] = useState(true);
     const [showScrollRight, setShowScrollRight] = useState(false);
 
     const productRef = useRef(null);
 
     useEffect(() => {
-        const slider = productRef.current;
+        const carousel = productRef.current;
 
         const handleScroll = () => {
-            if (slider) {
+            if (carousel) {
                 const { scrollLeft, scrollWidth, clientWidth } =
                     productRef.current;
 
@@ -21,9 +21,9 @@ const SliderProducts = ({ products, style }) => {
             }
         };
 
-        if (slider) {
-            slider.addEventListener('scroll', handleScroll);
-            return () => slider.removeEventListener('scroll', handleScroll);
+        if (carousel) {
+            carousel.addEventListener('scroll', handleScroll);
+            return () => carousel.removeEventListener('scroll', handleScroll);
         }
     }, []);
 
@@ -40,36 +40,42 @@ const SliderProducts = ({ products, style }) => {
     };
 
     return (
-        <div className='slider'>
+        <div className='carousel'>
             <h1>{products.title}</h1>
-            <div className='slider__products'>
+            <div className='carousel__products'>
                 <div
-                    className='slider__arrows arrow__left'
+                    className='carousel__arrows arrow__left'
                     id='left-arrow'
                     onClick={handleScrollLeft}
                     style={{ opacity: showScrollLeft ? 0.5 : 1 }}
                 >
                     <IoIosArrowBack className='icon' />
                 </div>
-                <div className='slider__product scroll' ref={productRef}>
+                <ul className='carousel__product scroll' ref={productRef}>
                     {products.images.map((product, i) => (
-                        <div className='image__wrapper' key={i} style={style}>
-                            <img src={product} alt='Product' />
-                        </div>
+                        <li key={i}>
+                            <div className='image__wrapper' style={style}>
+                                <img
+                                    className='image'
+                                    src={product}
+                                    alt='Product'
+                                />
+                            </div>
+                        </li>
                     ))}
-                </div>
+                </ul>
                 <div
-                    className='slider__arrows arrow__right'
+                    className='carousel__arrows arrow__right'
                     id='right-arrow'
                     onClick={handleScrollRight}
                     style={{ opacity: showScrollRight ? 0.5 : 1 }}
                 >
                     <IoIosArrowForward className='icon' />
                 </div>
-                <div className='slider__arrows'></div>
+                <div className='carousel__arrows'></div>
             </div>
         </div>
     );
 };
 
-export default SliderProducts;
+export default Carousel;

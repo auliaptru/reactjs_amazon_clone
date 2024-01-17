@@ -24,6 +24,12 @@ const Subnav = () => {
                 <li>
                     <a href='/warehouse'>Amazon Warehouse</a>
                 </li>
+                <li>
+                    <a href='/digital-deals'>Digital Deals</a>
+                </li>
+                <li>
+                    <a href='/woot-delas'>Woot! Deals</a>
+                </li>
             </ul>
         </div>
     );
