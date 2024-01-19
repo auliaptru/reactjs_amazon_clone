@@ -1,4 +1,4 @@
-import BadgeDeal from '../../../../components/badgeDeal/BadgeDeal';
+import BadgeDeal from '../../../../../components/badgeDeal/BadgeDeal';
 import './cards.scss';
 
 const Cards = ({ item }) => {

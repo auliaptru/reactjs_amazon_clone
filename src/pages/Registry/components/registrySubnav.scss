@@ -1,0 +1,86 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.registry__subnav-wrapper {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    .registry__subnav-logo {
+        display: flex;
+        align-items: center;
+        height: 68px;
+        margin-left: 54px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #064f70;
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: #064f70;
+        }
+    }
+    .registry__subnav-group {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+        .subnav__item {
+            height: 66px;
+            display: flex;
+            align-items: center;
+            box-sizing: content-box;
+            padding: 0 8px;
+            outline: 0;
+            border-width: 0 0 2px 0;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                border-width: 0 0 2px 0;
+                border-bottom: solid #064f70;
+            }
+            span {
+                margin-right: 2px;
+            }
+            .arrow {
+                display: inline-block;
+                margin: 0 2px 2px 4px;
+                border: solid;
+                border-width: 0 2px 2px 0;
+                width: 8px;
+                height: 8px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+            }
+            .subnav__hover {
+                display: none;
+                position: absolute;
+                top: 73px;
+                right: -30px;
+                background-color: white;
+                width: 250px;
+                transition: opacity 0.3s ease;
+                border: 1px solid #999;
+                .subnav__item {
+                    height: 25px;
+                    margin: 10px;
+                    &:hover {
+                        color: #064f70;
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+        .submenu:hover {
+            .subnav__hover {
+                display: block;
+            }
+        }
+    }
+}

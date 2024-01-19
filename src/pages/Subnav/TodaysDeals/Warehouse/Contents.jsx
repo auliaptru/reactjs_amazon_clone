@@ -1,14 +1,6 @@
 import './contents.scss';
-import ProductCarousel from '../../../components/slider/ProductCarousel';
-import { categories, sliders } from '../../../utils/Warehouse';
+import { categories, sliders } from '../../../../utils/Warehouse';
 import Carousel from './Carousel';
-
-const styleImgSlider = {
-    // display: 'block',
-    // width: '100%',
-    // maxWidth: '200px',
-    // maxHeight: 'calc((300/200)*200px)',
-};
 
 const Contents = () => {
     return (

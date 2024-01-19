@@ -1,5 +1,5 @@
 import './couponsFilter.scss';
-import { categories } from '../../../../utils/CouponsFilter.json';
+import { categories } from '../../../../../utils/CouponsFilter.json';
 
 const CouponsFilter = () => {
     return (

@@ -1,8 +1,7 @@
-import './dgCarousel.scss';
-import BadgeDeal from '../../../../components/badgeDeal/BadgeDeal';
-import { useRef, useState } from 'react';
-import Carousel from '../../../../components/slider/Carousel';
+import { useState } from 'react';
+import Carousel from '../../../../../components/slider/Carousel';
 import Cards from './Cards';
+import './dgCarousel.scss';
 
 const DgCarousel = ({ data }) => {
     const [numSlide, setNumSlide] = useState(1);

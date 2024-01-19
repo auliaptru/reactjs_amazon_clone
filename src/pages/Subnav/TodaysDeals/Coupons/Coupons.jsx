@@ -1,6 +1,6 @@
-import Footer from '../../../components/footer/Footer';
-import Navbar from '../../../components/navbar/Navbar';
-import Subnav from '../../../components/subnav/Subnav';
+import Footer from '../../../../components/footer/Footer';
+import Navbar from '../../../../components/navbar/Navbar';
+import Subnav from '../../../../components/subnav/Subnav';
 import CouponsContents from './components/CouponsContents';
 import CouponsFilter from './components/CouponsFilter';
 import './coupons.scss';

@@ -1,9 +1,9 @@
-import Footer from '../../../components/footer/Footer';
-import Navbar from '../../../components/navbar/Navbar';
-import ProductGrid from '../../../components/productGrid/ProductGrid';
-import CouponsCard from '../components/CouponsCard';
-import DealsCard from '../components/DealsCard';
-import Filter from '../components/Filter';
+import Footer from '../../../../components/footer/Footer';
+import Navbar from '../../../../components/navbar/Navbar';
+import ProductGrid from '../../../../components/productGrid/ProductGrid';
+import CouponsCard from '../../components/CouponsCard';
+import DealsCard from '../../components/DealsCard';
+import Filter from '../../components/Filter';
 import {
     data,
     avaliability,
@@ -11,7 +11,7 @@ import {
     products,
     promise,
     freqQuestions,
-} from '../../../utils/RenewedDealsData';
+} from '../../../../utils/RenewedDealsData';
 import './renewedDeals.scss';
 
 const RenewedDeals = () => {

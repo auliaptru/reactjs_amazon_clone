@@ -1,5 +1,5 @@
-import Footer from '../../../components/footer/Footer';
-import Navbar from '../../../components/navbar/Navbar';
+import Footer from '../../../../components/footer/Footer';
+import Navbar from '../../../../components/navbar/Navbar';
 import Contents from './Contents';
 import Sidenav from './Sidenav';
 import Subnav from './Subnav';

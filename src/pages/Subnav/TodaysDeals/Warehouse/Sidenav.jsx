@@ -1,5 +1,5 @@
 import './sidenav.scss';
-import { navigations } from '../../../utils/Warehouse';
+import { navigations } from '../../../../utils/Warehouse';
 
 const Sidenav = () => {
     return (

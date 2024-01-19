@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { products } from '../../../../utils/OutletData';
+import { products } from '../../../../../utils/OutletData';
 import './outletCarousel.scss';
 
 const OutletCarousel = () => {

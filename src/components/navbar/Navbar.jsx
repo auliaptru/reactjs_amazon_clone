@@ -8,8 +8,8 @@ import AccountList from './AccountList';
 import ReturnOrder from './ReturnOrder';
 import Cart from './Cart';
 import HorizontalMenu from './HorizontalMenu';
-import './navbar.scss';
 import SignIn from './SignIn';
+import './navbar.scss';
 
 const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
     const [isOpenHmenu, setIsOpenHmenu] = useState(false);
@@ -112,10 +112,10 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         <a href='/gp'>Today&apos;s Deals</a>
                     </li>
                     <li>
-                        <a href=''>Customer Service</a>
+                        <a href='/registry'>Registry</a>
                     </li>
                     <li>
-                        <a href=''>Registry</a>
+                        <a href=''>Customer Service</a>
                     </li>
                     <li>
                         <a href=''>Gift Cards</a>

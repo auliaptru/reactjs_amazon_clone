@@ -5,13 +5,14 @@ import SignUp from './pages/SignUp/SignUp.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import Cart from './pages/Cart/Cart.jsx';
 import TodaysDeals from './pages/Subnav/TodaysDeals/TodaysDeals.jsx';
-import Coupons from './pages/Subnav/Coupons/Coupons.jsx';
-import RenewedDeals from './pages/Subnav/RenewedDeals/RenewedDeals.jsx';
+import Coupons from './pages/Subnav/TodaysDeals/Coupons/Coupons.jsx';
+import RenewedDeals from './pages/Subnav/TodaysDeals/RenewedDeals/RenewedDeals.jsx';
+import Outlet from './pages/Subnav/TodaysDeals/Outlet/Outlet.jsx';
+import DigitalDeals from './pages/Subnav/TodaysDeals/DigitalDeals/DigitalDeals.jsx';
+import Warehouse from './pages/Subnav/TodaysDeals/Warehouse/Warehouse.jsx';
 import App from './App.jsx';
 import './index.css';
-import Outlet from './pages/Subnav/Outlet/Outlet.jsx';
-import DigitalDeals from './pages/Subnav/DigitalDeals/DigitalDeals.jsx';
-import Warehouse from './pages/Subnav/Warehouse/Warehouse.jsx';
+import Registry from './pages/Registry/Registry.jsx';
 
 const router = createBrowserRouter([
     {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
     {
         path: '/warehouse',
         element: <Warehouse />,
+    },
+    {
+        path: '/registry',
+        element: <Registry />,
     },
 ]);
 

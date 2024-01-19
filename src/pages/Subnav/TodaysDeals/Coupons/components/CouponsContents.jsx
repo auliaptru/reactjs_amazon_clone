@@ -1,6 +1,6 @@
-import { slides } from '../../../../utils/CouponsData.json';
+import { slides } from '../../../../../utils/CouponsData.json';
 import SearchCoupons from './SearchCoupons';
-import CouponsCard from '../../components/CouponsCard';
+import CouponsCard from '../../../components/CouponsCard';
 import './couponsContents.scss';
 
 const CouponsContents = () => {
