@@ -3,12 +3,11 @@ import './registrySubnav.scss';
 
 const RegistrySubnav = () => {
     const [isSticky, setSticky] = useState(false);
-    const [isShow, setShow] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const offset = window.scrollY;
-            if (offset > 100) {
+            if (offset > 150) {
                 setSticky(true);
             } else {
                 setSticky(false);

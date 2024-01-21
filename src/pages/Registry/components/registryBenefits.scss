@@ -1,0 +1,36 @@
+.registry__benefits {
+    margin: 10px 50px;
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .registry__benefits-cards {
+        margin: 30px 0 50px 0;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        .registry__benefits-card {
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 60px;
+                height: 70px;
+                object-fit: contain;
+            }
+            h1 {
+                text-align: center;
+                font-size: 18px;
+            }
+            span {
+                text-align: center;
+                font-size: 14px;
+                max-width: 210px;
+            }
+        }
+    }
+}

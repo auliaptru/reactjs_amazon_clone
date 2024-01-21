@@ -1,6 +1,9 @@
 import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/navbar/Navbar';
+import RegistryBenefits from './components/RegistryBenefits';
+import RegistrySearch from './components/RegistrySearch';
 import RegistrySubnav from './components/RegistrySubnav';
+import RegistryTypes from './components/RegistryTypes';
 import './registry.scss';
 
 const Registry = () => {
@@ -30,6 +33,15 @@ const Registry = () => {
                         </div>
                     </div>
                 </div>
+                <RegistrySearch />
+                <RegistryTypes />
+                <div className='registry__banner'>
+                    <img
+                        src='https://m.media-amazon.com/images/G/01/US-hq/2024/img/Home/XCM_CUTTLE_1684200_3588186_1500x100_en_US._CB585771562_.jpg'
+                        alt=''
+                    />
+                </div>
+                <RegistryBenefits />
             </div>
             <Footer />
         </>

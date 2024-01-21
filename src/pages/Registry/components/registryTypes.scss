@@ -1,0 +1,39 @@
+.registry__types-container {
+    padding: 20px;
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .registry__types-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .registry__types-card {
+            display: flex;
+            flex-direction: column;
+            max-width: 195px;
+            max-height: 250px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .types__card-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px;
+                padding: 20px 15px;
+                span {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
