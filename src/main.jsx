@@ -13,6 +13,7 @@ import Warehouse from './pages/Subnav/TodaysDeals/Warehouse/Warehouse.jsx';
 import App from './App.jsx';
 import './index.css';
 import Registry from './pages/Registry/Registry.jsx';
+import CustomerService from './pages/CustomerService/CustomerService.jsx';
 
 const router = createBrowserRouter([
     {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
     {
         path: '/registry',
         element: <Registry />,
+    },
+    {
+        path: '/customer',
+        element: <CustomerService />,
     },
 ]);
 

@@ -115,7 +115,7 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                         <a href='/registry'>Registry</a>
                     </li>
                     <li>
-                        <a href=''>Customer Service</a>
+                        <a href='/customer'>Customer Service</a>
                     </li>
                     <li>
                         <a href=''>Gift Cards</a>
