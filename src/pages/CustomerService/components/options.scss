@@ -1,0 +1,17 @@
+.sc__options {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    width: 300px;
+    padding: 7px 7px 7px 20px;
+    .sc__options-tools {
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -14,6 +14,7 @@ import App from './App.jsx';
 import './index.css';
 import Registry from './pages/Registry/Registry.jsx';
 import CustomerService from './pages/CustomerService/CustomerService.jsx';
+import DigitalServices from './pages/CustomerService/DigitalServices.jsx';
 
 const router = createBrowserRouter([
     {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
     {
         path: '/customer',
         element: <CustomerService />,
+    },
+    {
+        path: '/customer/digital-services',
+        element: <DigitalServices />,
     },
 ]);
 

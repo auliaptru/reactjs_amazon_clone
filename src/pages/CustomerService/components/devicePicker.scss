@@ -1,0 +1,44 @@
+.device__picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    .device__picker-wrapper {
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 985px;
+        a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 235px;
+            height: 80px;
+            padding: 5px 15px;
+            background-color: #f7f7f7;
+            border: 1px solid #f7f7f7;
+            transition: all 0.5s ease;
+            &:hover {
+                background-color: #f2f2f2;
+                border-color: #d5dbdb;
+            }
+            .dp__option {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                }
+                span {
+                    line-height: 20px;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

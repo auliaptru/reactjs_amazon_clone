@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const HelpContent = () => {
     const [isSelected, setSelected] = useState(false);
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState('Take Quick Actions');
     const [contents, setContents] = useState([]);
 
     const handleSelected = (topic) => {
@@ -45,9 +45,7 @@ const HelpContent = () => {
                                 <li
                                     key={i}
                                     className={
-                                        isSelected === data.label
-                                            ? 'selected'
-                                            : ''
+                                        value === data.label ? 'selected' : ''
                                     }
                                     onClick={() => handleSelected(data.label)}
                                 >

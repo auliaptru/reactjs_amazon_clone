@@ -1,8 +1,8 @@
 import Navbar from '../../components/navbar/Navbar';
-import './customerService.scss';
-import { issueData } from '../../utils/CustomerService';
 import HelpContent from './components/HelpContent';
 import Footer from '../../components/footer/Footer';
+import { issueData } from '../../utils/CustomerService';
+import './customerService.scss';
 
 const CustomerService = () => {
     return (
@@ -17,7 +17,9 @@ const CustomerService = () => {
                         <a href=''>Home</a>
                     </div>
                     <div className='cs__nav-item'>
-                        <a href=''>Digital Services and Device Support</a>
+                        <a href='/customer/digital-services' target='_blank'>
+                            Digital Services and Device Support
+                        </a>
                     </div>
                 </div>
                 <div className='cs__container'>
