@@ -15,6 +15,7 @@ import './index.css';
 import Registry from './pages/Registry/Registry.jsx';
 import CustomerService from './pages/CustomerService/CustomerService.jsx';
 import DigitalServices from './pages/CustomerService/DigitalServices.jsx';
+import GiftCards from './pages/GiftCards/GiftCards.jsx';
 
 const router = createBrowserRouter([
     {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
     {
         path: '/customer/digital-services',
         element: <DigitalServices />,
+    },
+    {
+        path: '/gift-cards',
+        element: <GiftCards />,
     },
 ]);
 

@@ -1,0 +1,69 @@
+.carouselgc {
+    padding: 15px 18px;
+    position: relative;
+    .carouselgc__arrows {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        z-index: 3;
+        display: block;
+        background-color: transparent;
+        padding: 10px;
+        height: 100px;
+        width: 45px;
+        box-shadow: 2px 0px 10px 2px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: opacity 0.5s ease;
+
+        .prevArrow__icon {
+            background: url('https://m.media-amazon.com/images/S/sash/ydDD9hnRfziI$y7.png');
+            background-position: 0 0;
+            width: 34px;
+            height: 52px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-size: 68px 52px;
+        }
+
+        .nextArrow__icon {
+            background: url('https://m.media-amazon.com/images/S/sash/ydDD9hnRfziI$y7.png');
+            background-position: -34px 0;
+            width: 34px;
+            height: 52px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-size: 68px 52px;
+        }
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+
+    .carouselgc__wrapper {
+        background-color: #eaeaea;
+        padding: 10px 20px 5px 20px;
+        .carousel__wrapper {
+            max-width: 1500px;
+            height: 300px;
+            position: relative;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .carouselgc__wrapper:hover {
+        .carouselgc__arrows {
+            opacity: 1;
+        }
+    }
+}
