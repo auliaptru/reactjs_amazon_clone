@@ -18,7 +18,7 @@ const Contents = () => {
                 />
             </div>
             <div className='slider'>
-                <Carousel products={sliders} style={styleImgSlider} />
+                <Carousel products={sliders} />
             </div>
             <hr />
             <div className='categories'>

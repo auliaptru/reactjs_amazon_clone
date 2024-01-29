@@ -1,30 +1,24 @@
-import { useState } from 'react';
+import './navType.scss';
 
-const NavType = () => {
-    const [selected, setSelected] = useState('gc');
-
+const NavType = ({ data, setSelectedType }) => {
     return (
         <div className='nav__type'>
-            <nav>
-                <img
-                    src='https://m.media-amazon.com/images/G/01/GiftCards/GCLP/LOGO_GC_space.png'
-                    alt=''
-                />
-                <ul>
-                    <li>
-                        <a href=''>Amazon Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href=''>Amazon Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href=''>Amazon Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href=''>Amazon Gift Cards</a>
-                    </li>
-                </ul>
-            </nav>
+            {data.map((data, i) => (
+                <nav className='nav__type-wrapper' key={i}>
+                    <img src={data.title} alt='' />
+                    <ul className='nav__type-lists'>
+                        {data.lists.map((list, i) => (
+                            <li
+                                className='nav__type-list'
+                                key={i}
+                                onClick={() => setSelectedType(list.type)}
+                            >
+                                {list.text}
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            ))}
         </div>
     );
 };

@@ -40,7 +40,7 @@ const Carousel = ({ products, style }) => {
     };
 
     return (
-        <div className='carousel'>
+        <div className='carousel__warehouse'>
             <h1>{products.title}</h1>
             <div className='carousel__products'>
                 <div

@@ -1,0 +1,27 @@
+.nav__type {
+    .nav__type-wrapper {
+        display: flex;
+        padding: 5px 10px;
+        img {
+            width: auto;
+            height: 30px;
+        }
+        .nav__type-lists {
+            display: flex;
+            align-items: start;
+            gap: 40px;
+            list-style: none;
+            padding-left: 50px;
+            .nav__type-list {
+                font-size: 15px;
+                cursor: pointer;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 10px;
+                &:hover {
+                    color: #008296;
+                    border-bottom-color: #008296;
+                }
+            }
+        }
+    }
+}

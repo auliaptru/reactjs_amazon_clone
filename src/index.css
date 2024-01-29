@@ -25,3 +25,18 @@ body {
 .nav__globe {
     background: url('https://m.media-amazon.com/images/S/sash/fe2UeLQmJ11kKHN.png');
 }
+
+.arrowIcon {
+    display: inline-block;
+    background: url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+    background-size: 400px 900px;
+    width: 11px;
+    height: 15px;
+}
+
+.arrowLeft {
+    background-position: -123px -7px;
+}
+.arrowRight {
+    background-position: -105px -7px;
+}

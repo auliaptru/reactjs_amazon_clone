@@ -25,7 +25,7 @@ const OutletCarousel = () => {
 
     const handleRight = () => {
         let newIndex = currentIndex + itemsPerPage;
-        if (newIndex > products.length) {
+        if (newIndex > products.length - 1) {
             newIndex = 0;
         }
         setCurrentIndex(newIndex);
@@ -33,21 +33,16 @@ const OutletCarousel = () => {
         setNumSlide((prev) => (prev === totalSlides ? 1 : prev + 1));
     };
 
-    // const currentItems = products.slice(
-    //     currentIndex,
-    //     currentIndex + itemsPerPage
-    // );
-
     return (
         <div className='outlet__carousel'>
-            <div className='carousel__top'>
-                <div className='carousel__title'>
+            <div className='outlet__carousel-top'>
+                <div className='oc__title'>
                     <h2>Kitchen Outlet</h2>
                     <span>
                         <a href='#'>See More</a>
                     </span>
                 </div>
-                <div className='carousel__totalSlide'>
+                <div className='oc__totalSlide'>
                     <span>
                         Page {numSlide} of {totalSlides}
                     </span>
@@ -56,13 +51,13 @@ const OutletCarousel = () => {
                     )}
                 </div>
             </div>
-            <div className='carousel__products-container'>
+            <div className='outlet__carousel-container'>
                 <div className='carousel__arrow left' onClick={handleLeft}>
                     <i className='arrowLeft-icon'></i>
                 </div>
-                <div className='carousel__products-wrapper' ref={slideRef}>
+                <div className='oc__products-wrapper' ref={slideRef}>
                     <ol
-                        className='carousel__products'
+                        className='oc__products'
                         style={{
                             transition: 'transform 0.1s ease',
                             transform: `translateX(${translateX}px) translateZ(0px)`,
@@ -77,28 +72,28 @@ const OutletCarousel = () => {
                                 <li
                                     className={
                                         index === currentIndex
-                                            ? 'product__card active'
-                                            : 'product__card'
+                                            ? 'oc__product-card active'
+                                            : 'oc__product-card'
                                     }
                                     key={index}
                                 >
-                                    <div className='product__card-wrapper'>
-                                        <div className='product__img'>
+                                    <div className='oc__card-wrapper'>
+                                        <div className='oc__card-img'>
                                             <img
                                                 src={product.imageURL}
                                                 alt=''
                                             />
                                         </div>
-                                        <p className='product__name'>
+                                        <p className='oc__card-name'>
                                             {product.name}
                                         </p>
-                                        <div className='product__review'>
+                                        <div className='oc__card-review'>
                                             <i className='iconReview'></i>
                                             <span className='total'>
                                                 {formattedReview}
                                             </span>
                                         </div>
-                                        <div className='product__price'>
+                                        <div className='oc__card-price'>
                                             <span className='price__symbol'>
                                                 $
                                             </span>
@@ -112,7 +107,7 @@ const OutletCarousel = () => {
 
                                         {product.price.list ||
                                         product.price.typical ? (
-                                            <div className='product__discount'>
+                                            <div className='oc__card-discount'>
                                                 <span className='discount__name'>
                                                     {product.price.list
                                                         ? 'List:'

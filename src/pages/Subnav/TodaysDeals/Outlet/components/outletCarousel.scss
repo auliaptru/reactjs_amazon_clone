@@ -1,7 +1,7 @@
 .outlet__carousel {
     display: flex;
     flex-direction: column;
-    .carousel__top {
+    .outlet__carousel-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -10,7 +10,7 @@
             font-size: 14px;
             font-weight: 600;
         }
-        .carousel__title {
+        .oc__title {
             display: flex;
             align-items: flex-end;
             gap: 8px;
@@ -23,7 +23,7 @@
                 font-weight: 600;
             }
         }
-        .carousel__totalSlide {
+        .oc__totalSlide {
             display: flex;
             align-items: center;
             gap: 10px;
@@ -39,7 +39,7 @@
             }
         }
     }
-    .carousel__products-container {
+    .outlet__carousel-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -79,11 +79,11 @@
             }
         }
 
-        .carousel__products-wrapper {
+        .oc__products-wrapper {
             overflow: hidden;
             width: 100%;
             padding: 0 20px;
-            .carousel__products {
+            .oc__products {
                 display: flex;
                 align-items: center;
                 gap: 20px;
@@ -91,13 +91,12 @@
                     opacity: 1;
                     visibility: visible;
                 }
-                .product__card {
-                    // visibility: hidden;
+                .oc__product-card {
                     list-style: none;
-                    .product__card-wrapper {
+                    .oc__card-wrapper {
                         width: 160px;
                         height: 320px;
-                        .product__img {
+                        .oc__card-img {
                             max-width: 160px;
                             max-height: 160px;
                             vertical-align: top;
@@ -107,7 +106,7 @@
                                 object-fit: contain;
                             }
                         }
-                        .product__name {
+                        .oc__card-name {
                             position: relative;
                             display: inline-block;
                             line-height: 1.3em;
@@ -122,7 +121,7 @@
                             -webkit-line-clamp: 3;
                             -webkit-box-orient: vertical;
                         }
-                        .product__review {
+                        .oc__card-review {
                             margin-top: 5px;
                             i {
                                 display: inline-block;
@@ -142,7 +141,7 @@
                                 top: -4px;
                             }
                         }
-                        .product__price {
+                        .oc__card-price {
                             margin-top: -5px;
                             .price__symbol {
                                 position: relative;
@@ -161,7 +160,7 @@
                                 margin-left: 1px;
                             }
                         }
-                        .product__discount {
+                        .oc__card-discount {
                             display: flex;
                             align-items: center;
                             gap: 3px;
