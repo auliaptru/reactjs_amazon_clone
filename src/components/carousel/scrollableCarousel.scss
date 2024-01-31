@@ -1,0 +1,123 @@
+.scrollableCarousel {
+    margin-top: 20px;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    h1 {
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    .sc__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        .sc__wrapper {
+            height: 230px;
+            padding: 10px 0 20px 0;
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            transition-delay: 0.5s;
+            -webkit-animation-delay: 0.5s;
+            li {
+                list-style: none;
+                position: relative;
+                .image__wrapper {
+                    display: block;
+                    max-width: 200px;
+                    height: 100%;
+                    position: relative;
+                    width: 140px;
+                    .image {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+            &::-webkit-scrollbar {
+                visibility: hidden;
+                height: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
+                transition: background-color 2 ease;
+                border-radius: 5px;
+            }
+            img {
+                cursor: pointer;
+            }
+        }
+        #arrowLeft,
+        #arrowRight {
+            .icon {
+                font-size: 40px;
+                padding: 0;
+                margin: 0;
+            }
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+        }
+        #arrowLeft {
+            left: 0;
+        }
+        #arrowRight {
+            right: 0;
+        }
+        .sc__arrows-left,
+        .sc__arrows-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(77, 76, 76);
+            box-shadow: 0 1px 3px #888;
+            background: white;
+            padding: 30px 5px;
+            cursor: pointer;
+            transition: 0.2s all;
+            &:hover {
+                color: black;
+            }
+        }
+        .sc__arrows-left {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .sc__arrows-right {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+    .sc__container:hover .sc__wrapper {
+        &::-webkit-scrollbar {
+            transition: all 0.5s ease-in-out;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #aaaa;
+            &:hover {
+                background: #7c7c7c;
+            }
+        }
+    }
+    .sc__container:hover .sc__arrows-left {
+        visibility: visible;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+    }
+    .sc__container:hover .sc__arrows-right {
+        visibility: visible;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+    }
+}

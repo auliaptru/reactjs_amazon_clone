@@ -1,0 +1,83 @@
+.contentType__carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 20px;
+    .carousel__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #d5d9d9;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+        cursor: pointer;
+    }
+    .carousel__contents {
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        .carousel__contents-wrapper {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 0 15px;
+            list-style: none;
+            height: 100%;
+            .carousel__content {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+                cursor: pointer;
+                transition: 0.3s all ease;
+                .cc__image {
+                    width: 160px;
+                    max-width: 160px;
+                    height: 196px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+                .cc__title {
+                    font-size: 14px;
+                    vertical-align: top;
+                    margin-top: 10px;
+                    font-weight: 600;
+                    line-height: 1.3em;
+                }
+                .cc__contributor {
+                    font-size: 14px;
+                    color: #555;
+                }
+                .cc__price {
+                    font-weight: 600;
+                    .cc__price-icon {
+                        position: relative;
+                        top: -6px;
+                        font-size: 12px;
+                    }
+                    .cc__price-whole {
+                        font-size: 21px;
+                    }
+                    .cc__price-decimal {
+                        position: relative;
+                        top: -6px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .carousel__content:hover {
+                .cc__title {
+                    color: var(--burnt-sienna);
+                }
+            }
+        }
+    }
+}

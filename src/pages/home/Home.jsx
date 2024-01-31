@@ -1,11 +1,12 @@
 import CardsHome from './components/Cards';
-import ProductCarousel from '../../components/slider/ProductCarousel';
+import ProductCarousel from './components/ProductCarousel';
+import FullScreenSlider from './components/FullScreenSlider';
+import Footer from '../../components/footer/Footer';
 import { books, games } from '../../utils/DataSliderProducts.json';
 import { data1, data2 } from '../../utils/DataCard.json';
-import FullScreenSlider from '../Home/components/FullScreenSlider';
-import Footer from '../../components/footer/Footer';
 
 import './home.scss';
+import ScrollableCarousel from '../../components/carousel/ScrollableCarousel';
 
 const Home = () => {
     return (
@@ -16,17 +17,24 @@ const Home = () => {
             </div>
             <div className='home__cards'>
                 <CardsHome data={data1} />
-                <ProductCarousel products={books} />
-                <ProductCarousel products={games} />
+                <ScrollableCarousel data={games} isHidden={true} />
+                <ScrollableCarousel data={games} isHidden={true} />
+                {/* <ProductCarousel products={books} /> */}
+                {/* <ProductCarousel products={games} /> */}
                 <CardsHome data={data2} />
-                <ProductCarousel products={books} />
-                <ProductCarousel products={games} />
+                <ScrollableCarousel data={games} isHidden={true} />
+                <ScrollableCarousel data={books} isHidden={true} />
+                {/* <ProductCarousel products={books} />
+                <ProductCarousel products={games} /> */}
                 <CardsHome data={data2} />
-                <ProductCarousel products={books} />
-                <ProductCarousel products={games} />
+                <ScrollableCarousel data={books} isHidden={true} />
+                <ScrollableCarousel data={games} isHidden={true} />
+                {/* <ProductCarousel products={books} />
+                <ProductCarousel products={games} /> */}
                 <CardsHome data={data2} />
-                <ProductCarousel products={games} />
-
+                <ScrollableCarousel data={books} isHidden={true} />
+                {/* <ScrollableCarousel data={games} isHidden={true} /> */}
+                {/* <ProductCarousel products={games} /> */}
                 <div className='footer'>
                     <Footer />
                 </div>

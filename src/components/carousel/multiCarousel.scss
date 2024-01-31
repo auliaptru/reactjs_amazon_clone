@@ -1,0 +1,26 @@
+.multiCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    .carousel__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        cursor: pointer;
+    }
+    .multiCarousel__content {
+        width: 100%;
+        overflow: hidden;
+        .multiCarousel__content-wrapper {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            padding: 0 15px;
+            list-style: none;
+            height: 100%;
+        }
+    }
+}

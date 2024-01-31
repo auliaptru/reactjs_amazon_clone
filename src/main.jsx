@@ -4,18 +4,18 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import SignUp from './pages/SignUp/SignUp.jsx';
 import SignIn from './pages/SignIn/SignIn.jsx';
 import Cart from './pages/Cart/Cart.jsx';
-import TodaysDeals from './pages/Subnav/TodaysDeals/TodaysDeals.jsx';
-import Coupons from './pages/Subnav/TodaysDeals/Coupons/Coupons.jsx';
-import RenewedDeals from './pages/Subnav/TodaysDeals/RenewedDeals/RenewedDeals.jsx';
-import Outlet from './pages/Subnav/TodaysDeals/Outlet/Outlet.jsx';
-import DigitalDeals from './pages/Subnav/TodaysDeals/DigitalDeals/DigitalDeals.jsx';
-import Warehouse from './pages/Subnav/TodaysDeals/Warehouse/Warehouse.jsx';
+import TodaysDeals from './pages/Navbar/TodaysDeals/TodaysDeals.jsx';
+import Coupons from './pages/Navbar/TodaysDeals/Coupons/Coupons.jsx';
+import RenewedDeals from './pages/Navbar/TodaysDeals/RenewedDeals/RenewedDeals.jsx';
+import Outlet from './pages/Navbar/TodaysDeals/Outlet/Outlet.jsx';
+import DigitalDeals from './pages/Navbar/TodaysDeals/DigitalDeals/DigitalDeals.jsx';
+import Warehouse from './pages/Navbar/TodaysDeals/Warehouse/Warehouse.jsx';
 import App from './App.jsx';
+import Registry from './pages/Navbar/Registry/Registry.jsx';
+import CustomerService from './pages/Navbar/CustomerService/CustomerService.jsx';
+import DigitalServices from './pages/Navbar/CustomerService/DigitalServices.jsx';
+import GiftCards from './pages/Navbar/GiftCards/GiftCards.jsx';
 import './index.css';
-import Registry from './pages/Registry/Registry.jsx';
-import CustomerService from './pages/CustomerService/CustomerService.jsx';
-import DigitalServices from './pages/CustomerService/DigitalServices.jsx';
-import GiftCards from './pages/GiftCards/GiftCards.jsx';
 
 const router = createBrowserRouter([
     {

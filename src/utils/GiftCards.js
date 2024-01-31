@@ -200,6 +200,11 @@ const navTypes = [
                 contributor: 'Visa',
             },
         ],
+        boxData:[
+            {
+                
+            }
+        ]
     },
 ];
 
