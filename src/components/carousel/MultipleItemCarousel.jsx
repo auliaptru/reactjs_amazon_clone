@@ -28,7 +28,7 @@ const MultipleItemCarousel = ({
 
     const handleNextClick = () => {
         let newIndex = currentIndex + displayedItems;
-        if (newIndex > data.length) {
+        if (newIndex > data.length - 1) {
             newIndex = 0;
         }
         setCurrentIndex(newIndex);
@@ -51,7 +51,7 @@ const MultipleItemCarousel = ({
                         gap: `${gapItem}px`,
                     }}
                 >
-                    <Content currentIndex={currentIndex} />
+                    <Content currentIndex={currentIndex} data={data} />
                 </ol>
             </div>
             <div className='carousel__arrow' onClick={handleNextClick}>

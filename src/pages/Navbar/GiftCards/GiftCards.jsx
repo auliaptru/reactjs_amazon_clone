@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
 import WideCarousel from './components/WideCarousel';
-import NavType from './components/NavType';
-import Subnav from './components/Subnav';
-import ContentGrid from './components/GiftCardsContent';
+import NavType from './components/NavType/NavType';
+import Subnav from './components/GiftCardsSubnav/Subnav';
 import { navTypes } from '../../../utils/GiftCards';
 import './giftCards.scss';
+import SelectedNav from './components/NavType/SelectedNav';
 
 const GiftCards = () => {
     const [selectedType, setSelectedType] = useState('gc');
@@ -22,7 +22,7 @@ const GiftCards = () => {
                     data={filteredData}
                     setSelectedType={setSelectedType}
                 />
-                <ContentGrid data={filteredData} />
+                <SelectedNav selectedNav={selectedType} data={filteredData} />
             </div>
             <Footer />
         </>

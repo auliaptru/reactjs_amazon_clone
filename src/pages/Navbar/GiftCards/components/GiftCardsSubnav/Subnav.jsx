@@ -1,9 +1,9 @@
-import NavFlyout from './NavFlyout';
+import NavFlyout from '../NavFlyout';
 import {
     giftCardsMenu,
     byOccasion,
     byBrand,
-} from '../../../../utils/GiftCards';
+} from '../../../../../utils/GiftCards';
 import './subnav.scss';
 
 const Subnav = () => {

@@ -1,0 +1,94 @@
+.amazonGiftCards {
+    width: 100%;
+    padding: 20px;
+    .amazonGiftCards__images {
+        display: flex;
+        flex-direction: column;
+        .amazonGiftCards__images-wrapper {
+            display: flex;
+            align-items: center;
+            .amazonGiftCards__image {
+                width: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .amazonGiftCards__carousel-scrollable {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .image__cs-wrapper {
+            max-width: 250px;
+            width: 160px;
+            max-height: calc((250 / 250) * 250px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .amazonGiftCards__carousel {
+        h2 {
+            padding-left: 20px;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 5px;
+        }
+        .carousel__content {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 5px;
+            cursor: pointer;
+            transition: 0.3s all ease;
+            .cc__image {
+                width: 160px;
+                max-width: 160px;
+                height: 196px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .cc__title {
+                font-size: 14px;
+                vertical-align: top;
+                margin-top: 10px;
+                font-weight: 600;
+                line-height: 1.3em;
+            }
+            .cc__contributor {
+                font-size: 14px;
+                color: #555;
+            }
+            .cc__price {
+                font-weight: 600;
+                .cc__price-icon {
+                    position: relative;
+                    top: -6px;
+                    font-size: 12px;
+                }
+                .cc__price-whole {
+                    font-size: 21px;
+                }
+                .cc__price-decimal {
+                    position: relative;
+                    top: -6px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .carousel__content:hover {
+            .cc__title {
+                color: var(--burnt-sienna);
+            }
+        }
+    }
+}

@@ -1,12 +1,26 @@
-import './contents.scss';
 import { categories, sliders } from '../../../../utils/Warehouse';
-import Carousel from './Carousel';
 import ScrollableCarousel from '../../../../components/carousel/ScrollableCarousel';
+import './contents.scss';
+
+const Content = ({ data }) => (
+    <>
+        {data.images.map((product, i) => (
+            <li key={i}>
+                <div className='image__wrapper'>
+                    <img className='image' src={product} alt='Product' />
+                </div>
+            </li>
+        ))}
+    </>
+);
 
 const Contents = () => {
     const style = {
         margin: 0,
         padding: 0,
+    };
+    const styleOl = {
+        height: '200px',
     };
     return (
         <div className='warehouse__contents'>
@@ -25,7 +39,8 @@ const Contents = () => {
             <div className='warehouse__carousel'>
                 <ScrollableCarousel
                     data={sliders}
-                    height={200}
+                    content={Content}
+                    styleOl={styleOl}
                     style={style}
                     isHidden={false}
                 />

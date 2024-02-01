@@ -2,7 +2,14 @@ import { useEffect, useRef, useState } from 'react';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 import './scrollableCarousel.scss';
 
-const ScrollableCarousel = ({ data, height, isHidden, style }) => {
+const ScrollableCarousel = ({
+    data,
+    content: Content,
+    title,
+    isHidden,
+    style,
+    styleOl,
+}) => {
     const [showArrowLeft, setShowArrowLeft] = useState(true);
     const [showArrowRight, setShowArrowRight] = useState(false);
 
@@ -41,7 +48,7 @@ const ScrollableCarousel = ({ data, height, isHidden, style }) => {
 
     return (
         <div className='scrollableCarousel' style={style}>
-            <h1>{data.title}</h1>
+            <h1>{title}</h1>
 
             <div className='sc__container'>
                 <div
@@ -59,9 +66,10 @@ const ScrollableCarousel = ({ data, height, isHidden, style }) => {
                 <ol
                     className='sc__wrapper scroll'
                     ref={carouselRef}
-                    style={{ height: `${height}px` }}
+                    // style={{ height: `${height}px`, gap: `${gap}px` }}
+                    style={styleOl}
                 >
-                    {data.images.map((product, i) => (
+                    {/* {data.images.map((product, i) => (
                         <li key={i}>
                             <div className='image__wrapper'>
                                 <img
@@ -71,7 +79,8 @@ const ScrollableCarousel = ({ data, height, isHidden, style }) => {
                                 />
                             </div>
                         </li>
-                    ))}
+                    ))} */}
+                    <Content data={data} />
                 </ol>
                 <div
                     id='arrowRight'
