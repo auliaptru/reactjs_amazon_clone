@@ -42,6 +42,7 @@ const AmazonGiftCardsContent = ({ data }) => {
         .map((navType) => navType.carouselScrollImgs)
         .flat();
     const dataCarousel2 = data.map((navType) => navType.carouselImgs).flat();
+    const listsOccasion = data.map((navType) => navType.shopByOccasion).flat();
 
     const style = {
         gap: '60px',
@@ -79,9 +80,28 @@ const AmazonGiftCardsContent = ({ data }) => {
                     isHidden={true}
                 />
             </div>
+            <div className='amazonGiftCards__occasion'>
+                <h2>Shop By Occasion</h2>
+                <div className='agc__occasion-img'>
+                    <img
+                        src='https://images-na.ssl-images-amazon.com/images/G/01/GiftCards/GCLP/AGC/D_occ_list_titlebanner.jpg'
+                        alt=''
+                    />
+                </div>
+                <div className='agc__occasion-lists'>
+                    {listsOccasion.map((list, i) => (
+                        <div className='agc__occasion-row' key={i}>
+                            {list.map((item, i) => (
+                                <div key={i} className='agc__occasion-col'>
+                                    <a href={item.url}>{item.name}</a>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </div>
             <div className='amazonGiftCards__carousel'>
                 <h2>{data.map((item) => item.carouselTitle)}</h2>
-
                 <MultipleItemCarousel
                     data={dataCarousel2}
                     content={CarouselData}

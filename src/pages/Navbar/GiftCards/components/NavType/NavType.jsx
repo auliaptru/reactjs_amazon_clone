@@ -9,11 +9,56 @@ const NavType = ({ data, setSelectedType }) => {
                     <ul className='nav__type-lists'>
                         {data.lists.map((list, i) => (
                             <li
-                                className='nav__type-list'
+                                className={`nav__type-list ${
+                                    list.subcategories ? 'has-children' : ''
+                                }`}
                                 key={i}
                                 onClick={() => setSelectedType(list.type)}
                             >
-                                {list.text}
+                                <p>{list.text}</p>
+
+                                {list.subcategories && (
+                                    <ul
+                                        className={`nav__type-subcates-wrapper cate-${i}`}
+                                    >
+                                        {list.subcategories.map((cate, i) => (
+                                            <li
+                                                key={i}
+                                                className={`nav__type-subcate-list ${
+                                                    cate.subcategories
+                                                        ? 'has-children'
+                                                        : ''
+                                                }`}
+                                            >
+                                                <a href=''>{cate.text}</a>
+                                                {cate.subcategories && (
+                                                    <ul
+                                                        className={`nav__type-subcates-wrapper`}
+                                                    >
+                                                        {cate.subcategories.map(
+                                                            (cate, i) => (
+                                                                <li
+                                                                    key={i}
+                                                                    className={`nav__type-subcate-list ${
+                                                                        cate.subcategories
+                                                                            ? 'has-children'
+                                                                            : ''
+                                                                    }`}
+                                                                >
+                                                                    <a href=''>
+                                                                        {
+                                                                            cate.text
+                                                                        }
+                                                                    </a>
+                                                                </li>
+                                                            )
+                                                        )}
+                                                    </ul>
+                                                )}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </li>
                         ))}
                     </ul>

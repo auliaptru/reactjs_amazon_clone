@@ -91,4 +91,37 @@
             }
         }
     }
+    .amazonGiftCards__occasion {
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .agc__occasion-img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .agc__occasion-lists {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px 0 50px 0;
+            .agc__occasion-row {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                .agc__occasion-col {
+                    text-decoration: underline;
+                    font-weight: 600;
+                    width: fit-content;
+                    &:hover {
+                        color: #888;
+                    }
+                }
+            }
+        }
+    }
 }
