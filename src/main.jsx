@@ -16,6 +16,7 @@ import CustomerService from './pages/Navbar/CustomerService/CustomerService.jsx'
 import DigitalServices from './pages/Navbar/CustomerService/DigitalServices.jsx';
 import GiftCards from './pages/Navbar/GiftCards/GiftCards.jsx';
 import './index.css';
+import Sell from './pages/Navbar/Sell/Sell.jsx';
 
 const router = createBrowserRouter([
     {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
     {
         path: '/gift-cards',
         element: <GiftCards />,
+    },
+    {
+        path: '/sell',
+        element: <Sell />,
     },
 ]);
 

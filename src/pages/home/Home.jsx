@@ -1,11 +1,11 @@
 import CardsHome from './components/Cards';
 import FullScreenSlider from './components/FullScreenSlider';
 import Footer from '../../components/footer/Footer';
+import ScrollableCarousel from '../../components/carousel/ScrollableCarousel';
 import { books, games } from '../../utils/DataSliderProducts.json';
 import { data1, data2 } from '../../utils/DataCard.json';
 
 import './home.scss';
-import ScrollableCarousel from '../../components/carousel/ScrollableCarousel';
 
 const Content = ({ data }) => (
     <>

@@ -1,0 +1,177 @@
+.sell {
+    margin-top: 10px;
+    .sell__banner {
+        width: 100%;
+        background: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue50-100.svg');
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        align-items: start;
+        position: relative;
+        .sell__banner-texts {
+            flex: 1;
+            padding: 30px 50px 30px 80px;
+            position: relative;
+            .sell__banner-title {
+                font-size: 75px;
+                line-height: 96px;
+                color: #232f3e;
+            }
+            .sell__banner-desc {
+                padding: 20px 0 40px 0;
+                color: #232f3e;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                sup {
+                    font-size: 8px;
+                }
+            }
+            .sell__banner-btn {
+                padding: 16px 36px;
+                font-size: 24px;
+                font-weight: 600;
+                border-radius: 30px;
+            }
+            .sell__banner-text {
+                display: block;
+                font-size: 12px;
+                padding-top: 8px;
+            }
+        }
+        .sell__banner-img {
+            flex: 1.5;
+            z-index: 1;
+            img {
+                width: 100%;
+                height: 556px;
+                object-fit: contain;
+            }
+        }
+        .sell__banner-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            min-width: 768px;
+            z-index: 0;
+            transform: scaleX(-1);
+        }
+    }
+    .sell__brand-review {
+        width: 100%;
+        padding: 80px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        .sell__video {
+            width: 50%;
+            height: 625px;
+            position: relative;
+            .sell__video-wrapper {
+                width: 100%;
+                background: url('https://m.media-amazon.com/images/G/01/sell/images/posters/new-republic-05.jpg');
+                background-position: center center;
+                background-size: cover;
+                border-radius: 20px;
+                height: 100%;
+                transition: 0.15s all cubic-bezier(0.64, 0.15, 0.53, 0.53);
+                &:hover {
+                    transform: scale(1.03);
+                }
+                .sell__video-play {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: max-content;
+                    left: 50%;
+                    height: 100%;
+                    cursor: pointer;
+                    transition: transform 0.3s
+                            cubic-bezier(0.64, 0.15, 0.53, 0.53),
+                        -webkit-transform 0.3s cubic-bezier(0.64, 0.15, 0.53, 0.53);
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: rgba(0, 0, 0, 0)
+                            url(https://m.media-amazon.com/images/G/01/sell/navigation/spritesheet-icons._TTH_.svg)
+                            no-repeat;
+                        background-position: -1px -286px;
+                        width: 90px;
+                        height: 90px;
+                        z-index: 2;
+                    }
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+        .sell__review-texts {
+            width: 50%;
+            height: 625px;
+            display: flex;
+            .sell__review-wrapper {
+                width: 100%;
+                height: 100%;
+                background-color: #161e2d;
+                border-radius: 20px;
+                padding: 48px 32px 32px 32px;
+                .hh__logo {
+                    padding: 8px 32px 24px 32px;
+                    .hh__logo-wrapper {
+                        width: auto;
+                        height: 14px;
+                        img {
+                            width: auto;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .border__container {
+                    width: 100%;
+                    padding: 8px 32px 24px 32px;
+                    .border__img {
+                        background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue-400.svg');
+                        background-size: cover;
+                        background-position: center center;
+                        width: 80px;
+                        height: 8px;
+                    }
+                }
+                .review__text-wrapper {
+                    width: 100%;
+                    flex: 0 0 auto;
+                    align-content: flex-start;
+                    align-items: stretch;
+                    padding: 8px 24px 24px 32px;
+                    max-width: 500px;
+                    .review__text {
+                        color: white;
+                        font-size: 26px;
+                        line-height: 36px;
+                        font-weight: 600;
+                        text-align: justify;
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-orange {
+    outline: none;
+    border: none;
+    color: #232f3e;
+    background-color: #f90;
+    border: 2px solid #f90;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.35) !important;
+    }
+}

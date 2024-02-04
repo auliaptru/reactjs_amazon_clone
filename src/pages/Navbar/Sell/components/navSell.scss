@@ -1,0 +1,39 @@
+.sell__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    position: sticky;
+    color: #232f3e;
+    h1 {
+        font-size: 24px;
+    }
+    .sell__learn-how {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .learn-how__text {
+            background: linear-gradient(currentColor 99%, rgba(0, 0, 0, 0))
+                no-repeat left 100%;
+            background-size: 100% 2px;
+            padding-bottom: 4px;
+            transition: background-size 0.3s
+                cubic-bezier(0.64, 0.15, 0.53, 0.53);
+            -webkit-transition: background-size 0.3s
+                cubic-bezier(0.64, 0.15, 0.53, 0.53);
+            &:hover {
+                background-size: 0 2px;
+                background-position: right 100%;
+            }
+        }
+        p {
+            letter-spacing: 0.02rem;
+        }
+    }
+    .signUp {
+        padding: 10px 22px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 20px;
+    }
+}
