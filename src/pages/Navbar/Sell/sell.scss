@@ -263,26 +263,6 @@
                             object-fit: contain;
                         }
                     }
-                    span {
-                        a {
-                            margin: 0 5px;
-                            background: linear-gradient(
-                                    currentColor 99%,
-                                    rgba(0, 0, 0, 0)
-                                )
-                                no-repeat left 100%;
-                            background-size: 100% 2px;
-                            padding-bottom: 4px;
-                            transition: background-size 0.3s
-                                cubic-bezier(0.64, 0.15, 0.53, 0.53);
-                            -webkit-transition: background-size 0.3s
-                                cubic-bezier(0.64, 0.15, 0.53, 0.53);
-                            &:hover {
-                                background-size: 0 2px;
-                                background-position: right 100%;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -309,5 +289,48 @@
     cursor: pointer;
     &:hover {
         box-shadow: 0 0 16px rgba(0, 0, 0, 0.35) !important;
+    }
+}
+
+.underlineTransition {
+    margin: 0 5px;
+    background: linear-gradient(currentColor 99%, rgba(0, 0, 0, 0)) no-repeat
+        left 100%;
+    background-size: 100% 2px;
+    padding-bottom: 4px;
+    transition: background-size 0.3s cubic-bezier(0.64, 0.15, 0.53, 0.53);
+    -webkit-transition: background-size 0.3s
+        cubic-bezier(0.64, 0.15, 0.53, 0.53);
+    &:hover {
+        background-size: 0 2px;
+        background-position: right 100%;
+    }
+}
+
+.learnMore {
+    margin-top: 20px;
+    a {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url('https://m.media-amazon.com/images/G/01/sell/navigation/spritesheet-icons._TTH_.svg');
+            background-position: 2px 3px;
+            background-repeat: no-repeat;
+            height: 14px;
+            width: 14px;
+            transform: translate(0);
+            transition: transform 0.2s cubic-bezier(0.64, 0.015, 0.53, 0.53),
+                -webkit-transform 0.2s cubic-bezier(0.64, 0.015, 0.53, 0.53);
+        }
+    }
+    a:hover {
+        &::after {
+            background-position: -17px 3px;
+            transform: translate(4px, -4px);
+        }
     }
 }

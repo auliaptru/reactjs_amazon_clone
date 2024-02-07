@@ -1,6 +1,8 @@
 import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
+import BoxSell from './components/BoxSell';
 import NavSell from './components/NavSell';
+import NavSell2 from './components/NavSell2';
 import './sell.scss';
 
 const Sell = () => {
@@ -194,8 +196,16 @@ const Sell = () => {
                                 </div>
                                 <span>
                                     Get a head start on brand protection,
-                                    <a href=''>product reviews,</a>and more
+                                    <a href='' className='underlineTransition'>
+                                        product reviews,
+                                    </a>
+                                    and more
                                 </span>
+                            </div>
+                            <div className='learnMore'>
+                                <a href='https://sell.amazon.com/grow?initialSessionID=133-7716221-4439163&ld=AZUSSOA-sell'>
+                                    Learn More
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -206,6 +216,8 @@ const Sell = () => {
                         />
                     </div>
                 </div>
+                <NavSell2 />
+                <BoxSell />
             </div>
             <Footer />
         </>
