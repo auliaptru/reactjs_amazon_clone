@@ -1,11 +1,42 @@
+import { useEffect, useState } from 'react';
 import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
+import {
+    dataBox1,
+    dataBox2,
+    dataBox3,
+    aboutLists,
+    ecommerceSelling,
+} from '../../../utils/Sell';
 import BoxSell from './components/BoxSell';
 import NavSell from './components/NavSell';
 import NavSell2 from './components/NavSell2';
 import './sell.scss';
 
 const Sell = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isNavSticky1, setIsNavSticky1] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (scrollPosition >= 6000 && isNavSticky1) {
+            setIsNavSticky1(false);
+        } else if ((scrollPosition < 6000) & !isNavSticky1) {
+            setIsNavSticky1(true);
+        }
+    }, [scrollPosition, isNavSticky1]);
+
     return (
         <>
             <Navbar />
@@ -216,8 +247,305 @@ const Sell = () => {
                         />
                     </div>
                 </div>
-                <NavSell2 />
-                <BoxSell />
+                {isNavSticky1 ? <NavSell2 /> : <NavSell />}
+                <div className='sell__business-at-scale'>
+                    <BoxSell data={dataBox1} heightImgQuote={11} />
+                </div>
+                <div className='sell__brand-experience'>
+                    <BoxSell data={dataBox2} heightImgQuote={24} />
+                </div>
+                <div className='sell__brand-experience'>
+                    <BoxSell
+                        data={dataBox3}
+                        heightImgQuote={28}
+                        heightBanner={100}
+                    />
+                </div>
+                <div className='sell__caseStudies'>
+                    <h1>Brand case studies</h1>
+                    <div className='caseStudies__cards'>
+                        <div className='caseStudies__card'>
+                            <div className='caseStudies__card-img'>
+                                <img
+                                    src='https://m.media-amazon.com/images/G/01/sell/images/posters/freshly-picked-03-sm.jpg'
+                                    alt=''
+                                />
+                            </div>
+                            <div className='caseStudies__card-texts'>
+                                <span>Case study</span>
+                                <h2>Freshly Picked</h2>
+                                <p>
+                                    Freshly Picked sells high-end shoes and
+                                    accessories for babies, children and their
+                                    moms to help make life a little more fun,
+                                    colorful and easier.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='caseStudies__card'>
+                            <div className='caseStudies__card-img'>
+                                <img
+                                    src='https://m.media-amazon.com/images/G/01/sell/images/posters/hope-and-henry-03-sm.jpg'
+                                    alt=''
+                                />
+                            </div>
+                            <div className='caseStudies__card-texts'>
+                                <span>Case study</span>
+                                <h2>Hope & Henry</h2>
+                                <p>
+                                    Hope & Henry sells beautiful, high-quality,
+                                    and affordable clothing using organic cotton
+                                    and sharing profits with the women and men
+                                    who sew them.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='caseStudies__card'>
+                            <div className='caseStudies__card-img'>
+                                <img
+                                    src='https://m.media-amazon.com/images/G/01/sell/images/posters/new-republic-02-sm.jpg'
+                                    alt=''
+                                />
+                            </div>
+                            <div className='caseStudies__card-texts'>
+                                <span>Case study</span>
+                                <h2>New Republic</h2>
+                                <p>
+                                    New Republic sells refined styles of men's
+                                    footwear and accessories that incorporate
+                                    unexpected twists on memorable classics at
+                                    affordable prices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='sell__programs'>
+                    <div className='sell__programs-wrapper'>
+                        <div className='sell__programs-left'>
+                            <div className='programs__left-wrapper'>
+                                <span>Programs</span>
+                                <h1 className='programs__title'>
+                                    Unlock a universe of selling opportunities
+                                </h1>
+                                <p className='programs__desc'>
+                                    What type of Amazon seller are you? Play to
+                                    your strengths and create your selling
+                                    strategy with a variety of programs made to
+                                    support your unique business.
+                                </p>
+                                <div className='programs__button-wrapper'>
+                                    <button className='explore__btn'>
+                                        Explore programs
+                                    </button>
+                                    <button className='watch__btn'>
+                                        Watch Video
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='sell__programs-right'>
+                            <div className='sell__programs-img'>
+                                <img
+                                    src='https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/illustration/sell-universe-3.svg'
+                                    alt=''
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='sell__learnMore'>
+                    <div className='sell__learnMore-wrapper'>
+                        <div className='learnMore__texts'>
+                            <h1>Learn more about selling with Amazon</h1>
+                            <div className='learnMore-lists-wrapper'>
+                                {aboutLists.map((lists, i) => (
+                                    <div className='learnMore__lists' key={i}>
+                                        {lists.links.map((cate) => (
+                                            <div
+                                                className='learnMore'
+                                                key={cate.id}
+                                            >
+                                                <a href={cate.url}>
+                                                    {cate.title}
+                                                </a>
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    <svg
+                        alt=''
+                        className='wave-placement-top'
+                        height='354px'
+                        preserveAspectRatio='none'
+                        role='presentation'
+                        version='1.1'
+                        viewBox='0 0 1440 354'
+                        width='1440px'
+                        xmlns='http://www.w3.org/2000/svg'
+                    >
+                        <g
+                            id='Sandbox'
+                            stroke='none'
+                            strokeWidth='1'
+                            fill='none'
+                            fillRule='evenodd'
+                        >
+                            <path
+                                d='M0,351.933506 C116,262.863915 341.333333,211.08769 676,196.604829 C1010.66667,182.121969 1265.33333,116.587026 1440,0 L1440,354 L0,353.994109 L0,351.933506 Z'
+                                id='Wave'
+                                fill='#fff'
+                            ></path>
+                        </g>
+                    </svg>
+                </div>
+                <div className='sell__ecommerce'>
+                    <h1>Introduction to ecommerce selling</h1>
+                    <div className='sell__ecommerce-wrapper'>
+                        {ecommerceSelling.map((data, i) => (
+                            <div className='ecommerce__cards' key={i}>
+                                <div className='ecommerce__cards-wrapper'>
+                                    {data.data1?.map((card, i) => (
+                                        <div
+                                            className='ecommerce__card'
+                                            key={i}
+                                        >
+                                            <div className='ecommerce__card-img'>
+                                                <img src={card.image} alt='' />
+                                            </div>
+                                            <h2 className='ecommerce__card-title'>
+                                                {card.title}
+                                            </h2>
+                                            <p className='ecommerce__card-desc'>
+                                                {card.content}
+                                            </p>
+                                            <div className='learnMore'>
+                                                <a href={card.link.url}>
+                                                    {card.link.text}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className='ecommerce__cards-wrapper'>
+                                    {data.data2?.map((card, i) => (
+                                        <div
+                                            className='ecommerce__card'
+                                            key={i}
+                                        >
+                                            <div className='ecommerce__card-img'>
+                                                <img src={card.image} alt='' />
+                                            </div>
+                                            <h2 className='ecommerce__card-title'>
+                                                {card.title}
+                                            </h2>
+                                            <p className='ecommerce__card-desc'>
+                                                {card.content}
+                                            </p>
+                                            <div className='learnMore'>
+                                                <a href={card.link.url}>
+                                                    {card.link.text}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className='ecommerce__cards-wrapper'>
+                                    {data.data3?.map((card, i) => (
+                                        <div
+                                            className='ecommerce__card'
+                                            key={i}
+                                        >
+                                            <div className='ecommerce__card-img'>
+                                                <img src={card.image} alt='' />
+                                            </div>
+                                            <h2 className='ecommerce__card-title'>
+                                                {card.title}
+                                            </h2>
+                                            <p className='ecommerce__card-desc'>
+                                                {card.content}
+                                            </p>
+                                            <div className='learnMore'>
+                                                <a href={card.link.url}>
+                                                    {card.link.text}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className='sell__signUp'>
+                    <div className='sell__signUp-wrapper'>
+                        <div className='sell__signUp-top'>
+                            <span>Just have a few items to sell?</span>
+                            <div className='learnMore'>
+                                <a href=''>
+                                    Sign up to become an individual seller
+                                </a>
+                            </div>
+                        </div>
+                        <div className='sell__signUp-bottom'>
+                            <div className='signUp__box'>
+                                <div className='signUp__box-left'>
+                                    <h1>Start selling today</h1>
+                                    <p>
+                                        Put your products in front of the
+                                        millions of customers who search
+                                        Amazon.com every day.
+                                    </p>
+                                    <a href='/register'>
+                                        <button>Sign up</button>
+                                    </a>
+                                    <span>$39.99 a month + selling fees</span>
+                                </div>
+                                <div className='signUp__box-right'>tex</div>
+                            </div>
+                            <div className='signUp__img'>
+                                <img
+                                    src='https://m.media-amazon.com/images/G/01/sell/images/prime-boxes/prime-boxes-6-sm.png'
+                                    alt=''
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <svg
+                        alt=''
+                        className='wave-placement-bottom wave-flip'
+                        height='354px'
+                        preserveAspectRatio='none'
+                        role='presentation'
+                        version='1.1'
+                        viewBox='0 0 1440 354'
+                        width='1440px'
+                        xmlns='http://www.w3.org/2000/svg'
+                    >
+                        <g
+                            id='Sandbox'
+                            stroke='none'
+                            strokeWidth='1'
+                            fill='none'
+                            fillRule='evenodd'
+                        >
+                            <path
+                                d='M0,351.933506 C116,262.863915 341.333333,211.08769 676,196.604829 C1010.66667,182.121969 1265.33333,116.587026 1440,0 L1440,354 L0,353.994109 L0,351.933506 Z'
+                                id='Wave'
+                                fill='#fff'
+                            ></path>
+                        </g>
+                    </svg>
+                </div>
+                <div className='sell__footer-text'>
+                    <span>
+                        <sup> 1</sup> Amazon internal data, FY2021 survey of
+                        21.2K U.S. multichannel sellers
+                    </span>
+                </div>
             </div>
             <Footer />
         </>

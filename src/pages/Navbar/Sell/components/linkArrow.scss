@@ -1,0 +1,28 @@
+.linkArrow {
+    margin-top: 20px;
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 700;
+        gap: 15px;
+        &::after {
+            content: '';
+            display: inline-block;
+            background-image: url('https://m.media-amazon.com/images/G/01/sell/navigation/spritesheet-icons._TTH_.svg');
+            background-position: 2px 3px;
+            background-repeat: no-repeat;
+            height: 14px;
+            width: 14px;
+            transform: translate(0);
+            transition: transform 0.2s cubic-bezier(0.64, 0.015, 0.53, 0.53),
+                -webkit-transform 0.2s cubic-bezier(0.64, 0.015, 0.53, 0.53);
+        }
+    }
+    a:hover {
+        &::after {
+            background-position: -17px 3px;
+            transform: translate(4px, -4px);
+        }
+    }
+}

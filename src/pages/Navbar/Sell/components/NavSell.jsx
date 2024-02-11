@@ -23,7 +23,9 @@ const NavSell = () => {
                         alt=''
                     />
                 </div>
-                <button className='btn-orange signUp'>Sign up</button>
+                <a href='/register'>
+                    <button className='btn-orange signUp'>Sign up</button>
+                </a>
             </div>
         </nav>
     );

@@ -276,6 +276,391 @@
             }
         }
     }
+    .sell__business-at-scale {
+        margin: 40px 0;
+    }
+    .sell__brand-experience {
+        margin-top: 80px;
+    }
+    .sell__caseStudies {
+        max-width: 100%;
+        padding: 40px 80px;
+        h1 {
+            text-align: center;
+            color: #232f3e;
+            font-size: 48px;
+            padding-bottom: 20px;
+        }
+        .caseStudies__cards {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            .caseStudies__card {
+                width: 100%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: transform 0.2s ease;
+                &:hover {
+                    transform: scale(1.03);
+                }
+                .caseStudies__card-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .caseStudies__card-texts {
+                    padding: 20px 40px 30px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    span {
+                        font-size: 14px;
+                        font-weight: 700;
+                        letter-spacing: 0.03rem;
+                        background-color: #eaeded;
+                        padding: 5px 8px;
+                        margin-top: 10px;
+                        width: fit-content;
+                    }
+                    h2 {
+                        margin-top: 10px;
+                        color: #232f3e;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #6c7778;
+                        font-weight: 600;
+                        width: 290px;
+                    }
+                }
+            }
+        }
+    }
+    .sell__programs {
+        padding: 40px 85px;
+        .sell__programs-wrapper {
+            background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/aqua-50.svg');
+            width: 100%;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            .sell__programs-left {
+                padding: 60px 0 60px 80px;
+                flex: 1;
+                .programs__left-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    span {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #161e2d;
+                    }
+                    .programs__title {
+                        font-size: 48px;
+                        line-height: 58px;
+                        font-weight: bold;
+                        color: #232f3e;
+                    }
+                    .programs__desc {
+                        font-size: 15px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        width: 450px;
+                        color: #232f3e;
+                    }
+                    .programs__button-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                        margin-top: 10px;
+                        button {
+                            padding: 10px 22px;
+                            border-radius: 30px;
+                            outline: none;
+                            letter-spacing: 0.04rem;
+                            font-size: 14px;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                        .explore__btn {
+                            color: white;
+                            background-color: #161e2d;
+                            outline: none;
+                            border: 2px solid white;
+                            &:hover {
+                                border: 2px solid white;
+                                box-shadow: 0 0 16px rgba(0, 0, 0, 0.35) !important;
+                            }
+                        }
+                        .watch__btn {
+                            border: 2px solid #232f3e;
+                            background-color: white;
+                            padding-left: 46px;
+                            &::before {
+                                content: '';
+                                background: rgba(0, 0, 0, 0)
+                                    url('https://m.media-amazon.com/images/G/01/sell/navigation/spritesheet-icons._TTH_.svg')
+                                    no-repeat;
+                                background-position: 0 -73px;
+                                background-size: 116px;
+                                display: inline-block;
+                                position: absolute;
+                                height: 18px;
+                                width: 14px;
+                                transform: translate(-22px, -1px);
+                                margin-right: 12px;
+                            }
+                            &:hover {
+                                box-shadow: 0 0 16px rgba(0, 0, 0, 0.35) !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .sell__programs-right {
+                flex: 1;
+                .sell__programs-img {
+                    margin-right: -80px;
+                    height: 350px;
+                    width: auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .sell__learnMore {
+        background: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue-50.svg');
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        padding: 40px 80px;
+        position: relative;
+        .sell__learnMore-wrapper {
+            background-color: white;
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            padding: 40px 0 60px 0;
+            border-radius: 16px;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+            .learnMore__texts {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                color: #232f3e;
+                h1 {
+                    margin-bottom: 20px;
+                }
+                .learnMore-lists-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 100px;
+                    .learnMore-lists {
+                        padding-right: 50px;
+                    }
+                }
+            }
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            bottom: auto;
+            left: 0;
+            width: 100%;
+            min-width: 768px;
+            z-index: 0;
+            transform: scaleY(-1);
+        }
+    }
+    .sell__ecommerce {
+        background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue-50.svg');
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        padding: 40px 0;
+        h1 {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 48px;
+            line-height: 58px;
+            color: #232f3e;
+        }
+        .sell__ecommerce-wrapper {
+            .ecommerce__cards {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                .ecommerce__cards-wrapper {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: start;
+                    gap: 30px;
+                    .ecommerce__card {
+                        background: white;
+                        border-radius: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: space-between;
+                        height: 420px;
+                        padding: 40px;
+                        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+                        .ecommerce__card-img {
+                            width: auto;
+                            height: 64px;
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                        .ecommerce__card-title {
+                            font-size: 32px;
+                            line-height: 38px;
+                            color: #232f3e;
+                        }
+                        .ecommerce__card-desc {
+                            color: #6c7778;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 600;
+                            width: 300px;
+                        }
+                        .learnMore {
+                            color: #232f3e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sell__signUp {
+        width: 100%;
+        background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue-50.svg');
+        background-size: cover;
+        background-position: center center;
+        color: #232f3e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        .sell__signUp-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .sell__signUp-top {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding-top: 20px;
+                span {
+                    margin-top: 15px;
+                }
+            }
+            .sell__signUp-bottom {
+                padding: 80px 0;
+                width: 100%;
+                max-width: 1100px;
+                display: flex;
+                position: relative;
+                z-index: 1;
+                .signUp__box {
+                    display: flex;
+                    align-items: start;
+                    justify-content: flex-start;
+                    background-color: #161e2d;
+                    border-radius: 16px;
+                    padding: 48px;
+                    height: 350px;
+                    width: 100%;
+                    .signUp__box-left {
+                        width: 90%;
+                        position: relative;
+                        z-index: 1;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 0 0 40px;
+                        h1 {
+                            font-size: 64px;
+                            line-height: 76px;
+                            color: white;
+                        }
+                        p {
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #eaeded;
+                            width: 550px;
+                            padding: 10px 0;
+                        }
+                        button {
+                            width: fit-content;
+                            background-color: #f90;
+                            color: #232f3e;
+                            font-size: 24px;
+                            font-weight: 600;
+                            border: 2px solid #f90;
+                            padding: 14px 36px;
+                            border-radius: 36px;
+                            cursor: pointer;
+                            margin: 20px 0 5px 0;
+                        }
+                        span {
+                            font-size: 12px;
+                            color: white;
+                            // margin-top: -13px;
+                        }
+                    }
+                }
+                .signUp__img {
+                    width: auto;
+                    height: 440px;
+                    position: absolute;
+                    z-index: 0;
+                    right: -20px;
+                    bottom: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            min-width: 768px;
+            z-index: 0;
+            transform: scaleX(-1);
+        }
+    }
+    .sell__footer-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80px;
+        span {
+            font-size: 12px;
+            color: #6c7778;
+        }
+    }
 }
 
 .btn-orange {
@@ -308,11 +693,13 @@
 }
 
 .learnMore {
-    margin-top: 20px;
+    padding-top: 5px;
+    margin-top: 10px;
     a {
-        font-weight: 600;
         display: flex;
         align-items: center;
+        font-size: 15px;
+        font-weight: 700;
         gap: 15px;
         &::after {
             content: '';

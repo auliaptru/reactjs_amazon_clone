@@ -4,29 +4,29 @@ const NavSell2 = () => {
     return (
         <nav className='sell__top'>
             <div className='sell__nav-wrapper'>
-                <h1>Your brand + Amazon</h1>
-                <div className='sell__nav-lists'>
-                    <ul className='sell__nav-list'>
-                        <li>
-                            <button>Your business at scale</button>
-                        </li>
-                    </ul>
-                    <ul className='sell__nav-list'>
-                        <li>
-                            <button>Your brand experienced</button>
-                        </li>
-                    </ul>
-                    <ul className='sell__nav-list'>
-                        <li>
-                            <button>Your success supported</button>
-                        </li>
-                    </ul>
-                    <ul className='sell__nav-list'>
-                        <li>
-                            <button>Case studies</button>
-                        </li>
-                    </ul>
-                </div>
+                <a href='#top'>
+                    <h1>Your brand + Amazon</h1>
+                </a>
+                <ul className='sell__nav-lists'>
+                    <li>
+                        <button className='button1'>
+                            Your business at scale
+                        </button>
+                    </li>
+                    <li>
+                        <button className='button2'>
+                            Your brand experienced
+                        </button>
+                    </li>
+                    <li>
+                        <button className='button3'>
+                            Your success supported
+                        </button>
+                    </li>
+                    <li>
+                        <button className='button4'>Case studies</button>
+                    </li>
+                </ul>
             </div>
         </nav>
     );

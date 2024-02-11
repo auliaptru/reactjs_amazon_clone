@@ -1,51 +1,56 @@
-import { dataBox1 } from '../../../../utils/Sell';
+// import { data } from '../../../../utils/Sell';
 import './boxSell.scss';
 
-const BoxSell = () => {
-    console.log(dataBox1.bg);
+const BoxSell = ({ data, heightImgQuote }) => {
     return (
         <div
             className='sell__pricing'
-            style={{ backgroundImage: `url(${dataBox1.bg})` }}
+            style={{ backgroundImage: `url(${data.bg})` }}
         >
             <div className='sell__pricing-wrapper'>
                 <div className='sell__pricing-left'>
                     <div className='pricing__left-explore'>
-                        <div className='border'></div>
+                        <div
+                            className='border'
+                            style={{ backgroundImage: `url(${data.borderBg})` }}
+                        ></div>
                         <div className='pricing__title'>
-                            <h3>{dataBox1.title}</h3>
+                            <h3>{data.title}</h3>
                         </div>
                         <div className='pricing__desc'>
                             <p
                                 dangerouslySetInnerHTML={{
-                                    __html: dataBox1.desc,
+                                    __html: data.desc,
                                 }}
                             ></p>
                         </div>
                         <div className='pricing__button-wrapper'>
                             <button className='explore__btn'>
-                                {dataBox1.btn1}
+                                {data.btn1}
                             </button>
-                            <button className='watch__btn'>
-                                {dataBox1.btn2}
-                            </button>
+                            <button className='watch__btn'>{data.btn2}</button>
                         </div>
                     </div>
                     <div className='pricing__quotes'>
-                        <div className='pricing__quotes-title'>
-                            <img src={dataBox1.titleQuote} alt='' />
+                        <div
+                            className='pricing__quotes-title'
+                            style={{ height: `${heightImgQuote}px` }}
+                        >
+                            <img src={data.titleQuote} alt='' />
                         </div>
-                        <p>{dataBox1.quote}</p>
+                        <p>{data.quote}</p>
                         <div className='pricing__quotes-wrapper'>
-                            <div className='quotes__img'>
-                                <img src={dataBox1.quoteImg} alt='' />
-                            </div>
+                            {data.quoteImg && (
+                                <div className='quotes__img'>
+                                    <img src={data.quoteImg} alt='' />
+                                </div>
+                            )}
                             <div className='quotes__name-wrapper'>
                                 <span className='quotes__name'>
-                                    {dataBox1.quoteName}
+                                    {data.quoteName}
                                 </span>
                                 <span className='quotes__title'>
-                                    {dataBox1.quoteJob}
+                                    {data.quoteJob}
                                 </span>
                             </div>
                         </div>
@@ -53,27 +58,34 @@ const BoxSell = () => {
                 </div>
                 <div className='sell__pricing-right'>
                     <div className='sell__pricing-video'>
-                        <video>
-                            <source src={dataBox1.videoBg} />
+                        <video
+                            preload='false'
+                            autoPlay
+                            style={{ backgroundImage: `url(${data.videoBg})` }}
+                        >
+                            <source type='video/mp4' src={data.videoUrl} />
                         </video>
                     </div>
                 </div>
             </div>
-            <div className='sell__banner'>
+            <div
+                className='sell__banner'
+                style={{ backgroundImage: `url(${data.bg})` }}
+            >
                 <div
                     className='sell__banner-wrapper'
-                    style={{ background: `url(${dataBox1.bgBanner})` }}
+                    style={{ backgroundImage: `url(${data.bgBanner})` }}
                 >
                     <h3
                         dangerouslySetInnerHTML={{
-                            __html: dataBox1.textBanner,
+                            __html: data.textBanner,
                         }}
                     ></h3>
                 </div>
             </div>
             <div className='sell__lists'>
                 <ul className='sell__list-wrapper'>
-                    {dataBox1.lists.map((list, i) => (
+                    {data.lists.map((list, i) => (
                         <li className='sell__list' key={i}>
                             <div className='sell__list-icon'>
                                 <img src={list.icon} alt='icon' />
@@ -84,9 +96,7 @@ const BoxSell = () => {
                                 className='sell__list-desc'
                             ></div>
                             <div className='learnMore'>
-                                <a href='https://sell.amazon.com/grow?initialSessionID=133-7716221-4439163&ld=AZUSSOA-sell'>
-                                    Learn More
-                                </a>
+                                <a href={list.link}>Learn More</a>
                             </div>
                         </li>
                     ))}

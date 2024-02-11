@@ -4,6 +4,7 @@
     position: -webkit-sticky;
     z-index: 10;
     top: 0;
+    transform: opacity 0.5s ease;
     .sell__nav-wrapper {
         display: flex;
         align-items: center;
@@ -13,6 +14,7 @@
         color: #232f3e;
         h1 {
             font-size: 24px;
+            cursor: pointer;
         }
         .sell__nav-lists {
             display: flex;
@@ -21,7 +23,34 @@
             li {
                 list-style: none;
                 button {
-                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 8px 16px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    line-height: 21px;
+                    color: #232f3e;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center center;
+                    background-color: #ebf8fa;
+                    cursor: pointer;
+                    transition: transform 0.2s ease;
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+                .button1 {
+                    background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue-50.svg');
+                }
+                .button2 {
+                    background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/aqua-50.svg');
+                }
+                .button3 {
+                    background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/green-50.svg');
+                }
+                .button4 {
+                    background-image: url('https://m.media-amazon.com/images/G/01/sell/images/colors/squid-ink-50.svg');
                 }
             }
         }
