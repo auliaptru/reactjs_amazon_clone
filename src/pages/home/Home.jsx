@@ -6,6 +6,7 @@ import { books, games } from '../../utils/DataSliderProducts.json';
 import { data1, data2 } from '../../utils/DataCard.json';
 
 import './home.scss';
+import Subnav from '../../components/subnav/Subnav';
 
 const Content = ({ data }) => (
     <>

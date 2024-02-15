@@ -1,5 +1,11 @@
 .sell {
+    overflow: hidden;
+    position: relative;
     margin-top: 10px;
+    // .navsell {
+    //     position: relative;
+    //     // z-index: 0;
+    // }
     .sell__banner {
         width: 100%;
         background: url('https://m.media-amazon.com/images/G/01/sell/images/colors/blue50-100.svg');

@@ -1,11 +1,12 @@
 .sell__top {
+    position: relative;
     display: block;
     position: sticky;
     position: -webkit-sticky;
     z-index: 10;
     top: 0;
-    transform: opacity 0.5s ease;
     .sell__nav-wrapper {
+        transform: opacity 0.5s ease;
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -39,9 +39,9 @@ const Sell = () => {
 
     return (
         <>
-            <Navbar />
             <div className='sell'>
                 <NavSell />
+
                 <div className='sell__banner'>
                     <div className='sell__banner-texts'>
                         <h1 className='sell__banner-title'>
@@ -92,6 +92,7 @@ const Sell = () => {
                         </g>
                     </svg>
                 </div>
+
                 <div className='sell__brand-review'>
                     <div className='sell__video'>
                         <div className='sell__video-wrapper'>
@@ -158,6 +159,7 @@ const Sell = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className='sell__incentives'>
                     <div className='sell__incentives-left'>
                         <button>
@@ -247,13 +249,17 @@ const Sell = () => {
                         />
                     </div>
                 </div>
+
                 {isNavSticky1 ? <NavSell2 /> : <NavSell />}
+
                 <div className='sell__business-at-scale'>
                     <BoxSell data={dataBox1} heightImgQuote={11} />
                 </div>
+
                 <div className='sell__brand-experience'>
                     <BoxSell data={dataBox2} heightImgQuote={24} />
                 </div>
+
                 <div className='sell__brand-experience'>
                     <BoxSell
                         data={dataBox3}
@@ -261,6 +267,7 @@ const Sell = () => {
                         heightBanner={100}
                     />
                 </div>
+
                 <div className='sell__caseStudies'>
                     <h1>Brand case studies</h1>
                     <div className='caseStudies__cards'>
@@ -320,6 +327,7 @@ const Sell = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className='sell__programs'>
                     <div className='sell__programs-wrapper'>
                         <div className='sell__programs-left'>
@@ -354,6 +362,7 @@ const Sell = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className='sell__learnMore'>
                     <div className='sell__learnMore-wrapper'>
                         <div className='learnMore__texts'>
@@ -402,6 +411,7 @@ const Sell = () => {
                         </g>
                     </svg>
                 </div>
+
                 <div className='sell__ecommerce'>
                     <h1>Introduction to ecommerce selling</h1>
                     <div className='sell__ecommerce-wrapper'>
@@ -480,6 +490,7 @@ const Sell = () => {
                         ))}
                     </div>
                 </div>
+
                 <div className='sell__signUp'>
                     <div className='sell__signUp-wrapper'>
                         <div className='sell__signUp-top'>
@@ -540,6 +551,7 @@ const Sell = () => {
                         </g>
                     </svg>
                 </div>
+
                 <div className='sell__footer-text'>
                     <span>
                         <sup> 1</sup> Amazon internal data, FY2021 survey of

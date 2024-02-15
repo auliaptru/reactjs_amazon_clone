@@ -1,9 +1,9 @@
 .sell__top {
     display: block;
+    top: 0;
     position: sticky;
     position: -webkit-sticky;
-    z-index: 10;
-    top: 0;
+    z-index: 0;
     .sell__nav-wrapper {
         display: flex;
         align-items: center;

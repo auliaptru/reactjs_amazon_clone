@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Logo from './Logo';
 import Location from './Location';
 import Search from './Search';
@@ -9,10 +9,16 @@ import ReturnOrder from './ReturnOrder';
 import Cart from './Cart';
 import HorizontalMenu from './HorizontalMenu';
 import SignIn from './SignIn';
+import { Link, useLocation } from 'react-router-dom';
 import './navbar.scss';
-
-const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
-    const [isOpenHmenu, setIsOpenHmenu] = useState(false);
+// { isFocus, setIsFocus, setIsHovered }
+const Navbar = ({
+    isFocus,
+    setIsFocus,
+    setIsHovered,
+    isOpenHmenu,
+    setIsOpenHmenu,
+}) => {
     const [isShowSignin, setIsShowSignin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -47,7 +53,13 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
     };
 
     return (
-        <nav className='navbar'>
+        <nav
+            className='navbar'
+            style={{
+                zIndex: isOpenHmenu && 999,
+                // overflow: isOpenHmenu ? 'hidden' : 'auto',
+            }}
+        >
             <div className='navbar__top'>
                 <div className='navbar__top-left'>
                     {/* LOGO */}
@@ -109,13 +121,13 @@ const Navbar = ({ isFocus, setIsFocus, setIsHovered }) => {
                 </div>
                 <ul className='navbar__links'>
                     <li>
-                        <a href='/gp'>Today&apos;s Deals</a>
+                        <a href='/today-deals'>Today&apos;s Deals</a>
                     </li>
                     <li>
                         <a href='/registry'>Registry</a>
                     </li>
                     <li>
-                        <a href='/customer'>Customer Service</a>
+                        <a href='/cs'>Customer Service</a>
                     </li>
                     <li>
                         <a href='/gift-cards'>Gift Cards</a>

@@ -3,20 +3,7 @@
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
+    // overflow: hidden;
+    width: 100%;
     min-height: 100%;
-    .cover {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 100%;
-        min-width: 1000px;
-        height: 100%;
-        background: #000;
-        z-index: 2;
-        opacity: 0.6;
-        display: none;
-    }
-    .cover.visible {
-        display: block;
-    }
 }

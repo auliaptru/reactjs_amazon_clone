@@ -8,7 +8,6 @@ import './warehouse.scss';
 const Warehouse = () => {
     return (
         <>
-            <Navbar />
             <Subnav />
             <div className='warehouse'>
                 <div className='warehouse__left'>

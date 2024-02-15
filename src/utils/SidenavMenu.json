@@ -7,20 +7,54 @@
                 {
                     "name": "Amazon Music",
                     "arrow": "yes",
-                    "icon": null
+                    "icon": null,
+                    "submenu": [
+                        {
+                            "title": "Stream Music",
+                            "menu": [
+                                "Amazon Music Unlimited",
+                                "Free Streaming Music",
+                                "Podcasts",
+                                "Open Web Player",
+                                "Download the app"
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Kindle E-readers & Books",
                     "arrow": "yes",
-                    "icon": null
+                    "icon": null,
+                    "submenu": [
+                        {
+                            "title": "Kindle E-readers",
+                            "menu": ["Kindle Kids", "Kindle"]
+                        },
+                        {
+                            "title": "Kindle Store",
+                            "menu": ["Kindle Books", "Kindle Unlimited"]
+                        }
+                    ]
                 },
                 {
                     "name": "Amazon Appstore",
                     "arrow": "yes",
-                    "icon": null
+                    "icon": null,
+                    "submenu": [
+                        {
+                            "title": "Amazon Appstore",
+                            "menu": [
+                                "Amazon Music Unlimited",
+                                "Free Streaming Music",
+                                "Podcasts",
+                                "Open Web Player",
+                                "Download the app"
+                            ]
+                        }
+                    ]
                 }
             ],
-            "submenu": [],
+            "hiddenMenu": [],
             "label1": null,
             "label2": null
         },
@@ -49,7 +83,7 @@
                     "icon": null
                 }
             ],
-            "submenu": [
+            "hiddenMenu": [
                 "Automotive",
                 "Baby",
                 "Beauty and personal care",
@@ -98,7 +132,7 @@
                     "icon": null
                 }
             ],
-            "submenu": ["Amazon Second Chance"],
+            "hiddenMenu": ["Amazon Second Chance"],
             "label1": "See All",
             "label2": "See Less"
         },
@@ -143,7 +177,7 @@
                     "icon": null
                 }
             ],
-            "submenu": [],
+            "hiddenMenu": [],
             "label1": null,
             "label2": null
         }

@@ -1,5 +1,9 @@
 .deals {
     padding: 0;
+    // overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
     .deals__container {
         display: flex;
         flex-direction: column;

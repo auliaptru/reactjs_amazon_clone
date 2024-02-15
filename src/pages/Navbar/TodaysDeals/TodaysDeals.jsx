@@ -1,5 +1,4 @@
 import Footer from '../../../components/footer/Footer';
-import Navbar from '../../../components/navbar/Navbar';
 import ProductGrid from '../../../components/productGrid/ProductGrid';
 import DealsCarousel from './components/DealsCarousel';
 import DealsFilter from './components/DealsFilter';
@@ -11,7 +10,6 @@ import './todaysDeals.scss';
 const TodaysDeals = () => {
     return (
         <div className='deals'>
-            <Navbar />
             <div className='deals__container'>
                 <Subnav />
                 <div className='deals__image'>

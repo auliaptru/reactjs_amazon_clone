@@ -17,7 +17,6 @@ import './renewedDeals.scss';
 const RenewedDeals = () => {
     return (
         <>
-            <Navbar />
             <div className='renewedDeals'>
                 <h1>Deals on like-new products on Amazon Renewed </h1>
                 <p>

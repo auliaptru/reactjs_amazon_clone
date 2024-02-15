@@ -8,7 +8,6 @@ import './digitalDeals.scss';
 const DigitalDeals = () => {
     return (
         <>
-            <Navbar />
             <Subnav />
             <div className='digitalDeals'>
                 <DgCarousel data={data} />

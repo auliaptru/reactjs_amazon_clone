@@ -8,7 +8,6 @@ import './coupons.scss';
 const Coupons = () => {
     return (
         <>
-            <Navbar />
             <div className='coupons'>
                 <Subnav />
                 <div className='coupons__img'>

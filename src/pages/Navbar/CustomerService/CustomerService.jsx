@@ -7,7 +7,6 @@ import './customerService.scss';
 const CustomerService = () => {
     return (
         <>
-            <Navbar />
             <div className='cs'>
                 <div className='cs__nav'>
                     <div className='cs__nav-title'>

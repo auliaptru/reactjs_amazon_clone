@@ -2,8 +2,8 @@ import './navSell2.scss';
 
 const NavSell2 = () => {
     return (
-        <nav className='sell__top'>
-            <div className='sell__nav-wrapper'>
+        <div className='sell__top'>
+            <nav className='sell__nav-wrapper'>
                 <a href='#top'>
                     <h1>Your brand + Amazon</h1>
                 </a>
@@ -27,8 +27,8 @@ const NavSell2 = () => {
                         <button className='button4'>Case studies</button>
                     </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
     );
 };
 

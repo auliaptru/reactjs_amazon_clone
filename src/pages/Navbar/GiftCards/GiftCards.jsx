@@ -14,7 +14,6 @@ const GiftCards = () => {
 
     return (
         <>
-            <Navbar />
             <div className='giftCards'>
                 <Subnav />
                 <WideCarousel />
