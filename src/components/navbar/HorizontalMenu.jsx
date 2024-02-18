@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './horizontalMenu.scss';
 import { hmenu } from '../../utils/SidenavMenu.json';
 
@@ -6,6 +6,7 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenSubmenu, setOpenSubmenu] = useState(false);
     const [dataSubmenu, setDataSubmenu] = useState([]);
+    const [isDataLong, setDataLong] = useState(false);
 
     const handleOpenOtherMenu = (index) => {
         setIsOpen({ ...isOpen, [index]: !isOpen[index] });
@@ -28,6 +29,7 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
 
         setDataSubmenu(data);
     };
+
     return (
         <>
             <div
@@ -42,13 +44,13 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
                     onClick={() => setIsOpenHmenu(false)}
                 ></div>
             </div>
+
             <div className={`hmenu__canvas ${isOpenHmenu && 'hmenu__active'}`}>
                 <div className='hmenu__profile'>
                     <div className='nav__sprite hmenu__profile-avatar'></div>
                     <div className='hmenu__profile-text'>Hello, sign in</div>
                 </div>
-                {/* {!isOpenSubmenu ? ( */}
-                <div className='hemnu__wrapper'>
+                <div className='hmenu__content-wrapper'>
                     <div
                         className={`hmenu__content ${
                             isOpenSubmenu ? 'hmenu__hidden' : 'hmenu__active'
@@ -95,13 +97,13 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
                                     </div>
                                 ))}
                                 <ul
-                                    className={`hmenu__hidden ${
+                                    className={`hmenu__other ${
                                         index === 1 ? 'large' : 'small'
                                     } ${!isOpen[index] && 'compressed'}`}
                                 >
                                     <li className='hmenu__separator padding'></li>
 
-                                    {item.hiddenMenu?.map((link, i) => (
+                                    {item.hiddenMenu.map((link, i) => (
                                         <li key={i}>
                                             <a href='' className='hmenu__item'>
                                                 {link}
@@ -144,7 +146,7 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
                         ))}
                     </div>
                     <div
-                        className={`hmenu__submenu ${
+                        className={`hmenu__content ${
                             isOpenSubmenu ? 'hmenu__active' : 'hmenu__hidden'
                         }`}
                     >
@@ -172,7 +174,7 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
                                         }}
                                     >
                                         {item.menu.map((data, i) => (
-                                            <li key={i}>{data}</li>
+                                            <li key={i}>{data.title}</li>
                                         ))}
                                     </ul>
                                 </div>
@@ -180,9 +182,6 @@ const HorizontalMenu = ({ isOpenHmenu, setIsOpenHmenu }) => {
                         </div>
                     </div>
                 </div>
-                {/* ) : ( */}
-                {/* )} */}
-                {/* </div> */}
             </div>
         </>
     );

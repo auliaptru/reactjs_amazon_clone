@@ -31,14 +31,12 @@
 .hmenu__canvas {
     position: fixed;
     background-color: white;
-    height: 100%;
+    height: 100vh;
     width: 365px;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 10000;
-    overflow-x: auto;
-    visibility: hidden;
     will-change: transform;
     transform: translateX(-100%);
     transition: all 0.3s ease-in-out;
@@ -49,6 +47,10 @@
         display: flex;
         align-items: flex-end;
         gap: 10px;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 1;
         .hmenu__profile-avatar {
             background-position: -137px -340px;
             width: 25px;
@@ -61,10 +63,18 @@
             color: white;
         }
     }
-    .hemnu__wrapper {
+    .hmenu__content-wrapper {
         position: relative;
+        overflow-x: hidden;
+        height: 100%;
         .hmenu__content {
-            margin-top: 5px;
+            position: absolute;
+            margin: 5px 0;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            overflow: scroll;
             background-color: white;
             transition: transform 250ms ease-in-out;
             will-change: transform;
@@ -103,14 +113,14 @@
                         background-position: -184px -342px;
                         height: 8px;
                         width: 13px;
-                        margin-left: 19px;
+                        margin-left: 10px;
                     }
                     .hmenu__less-icon {
                         background-position: -184px -342px;
                         height: 8px;
                         width: 13px;
                         transform: rotate(180deg);
-                        margin-left: 10px;
+                        margin-right: 235px;
                     }
                     &:hover:not(.hmenu__title) {
                         background-color: #eaeded;
@@ -136,7 +146,7 @@
                     padding: 0;
                 }
 
-                .hmenu__hidden {
+                .hmenu__other {
                     display: flex;
                     flex-direction: column;
                     visibility: visible;
@@ -148,13 +158,13 @@
                         margin: 5px 20px 5px 35px;
                     }
                 }
-                .hmenu__hidden:not(.compressed) {
+                .hmenu__other:not(.compressed) {
                     transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                         opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1),
                         transform 0.3s ease;
                 }
                 .large {
-                    height: 903px;
+                    height: 830px;
                 }
                 .small {
                     height: 105px;
@@ -167,6 +177,49 @@
                     transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                         opacity 0.4s cubic-bezier(0.4, 0, 0.6, 1),
                         transform 0.3s ease;
+                }
+            }
+            .hmenu__submenu-main {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px 20px 13px 36px;
+                border-bottom: 1px solid #d5dbdb;
+                color: black;
+                font-size: 14px;
+                font-weight: 700;
+                cursor: pointer;
+                .icon {
+                    display: inline-block;
+                    background-image: url('https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB587940754_.png');
+                    background-position: -137px -310px;
+                    width: 16px;
+                    height: 16px;
+                }
+                &:hover {
+                    .icon {
+                        background-position: -166px -310px;
+                    }
+                }
+            }
+            .hmenu__submenu-lists {
+                position: relative;
+                .hmenu__submenu-list {
+                    display: flex;
+                    flex-direction: column;
+                    color: black;
+                    .hmenu__submenu-title {
+                        padding: 13px 20px 8px 36px;
+                    }
+                    .hmenu__submenu-link {
+                        list-style: none;
+                        li {
+                            margin: 0;
+                            font-size: 14px;
+                            font-weight: 600;
+                            padding: 13px 36px;
+                        }
+                    }
                 }
             }
         }
@@ -205,7 +258,6 @@
                     display: flex;
                     flex-direction: column;
                     color: black;
-
                     .hmenu__submenu-title {
                         padding: 13px 20px 8px 36px;
                     }

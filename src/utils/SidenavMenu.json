@@ -12,11 +12,23 @@
                         {
                             "title": "Stream Music",
                             "menu": [
-                                "Amazon Music Unlimited",
-                                "Free Streaming Music",
-                                "Podcasts",
-                                "Open Web Player",
-                                "Download the app"
+                                {
+                                    "title": "Amazon Music Unlimited",
+                                    "link": "amazon-music-unlimited"
+                                },
+                                {
+                                    "title": "Free Streaming Music",
+                                    "link": "free-streaming-music"
+                                },
+                                { "title": "Podcasts", "link": "podcasts" },
+                                {
+                                    "title": "Open Web Player",
+                                    "link": "open-web-player"
+                                },
+                                {
+                                    "title": "Download the app",
+                                    "link": "download-the-app"
+                                }
                             ]
                         }
                     ]
@@ -28,11 +40,76 @@
                     "submenu": [
                         {
                             "title": "Kindle E-readers",
-                            "menu": ["Kindle Kids", "Kindle"]
+                            "menu": [
+                                {
+                                    "title": "Kindle Kids",
+                                    "link": "kindle-kids"
+                                },
+                                { "title": "Kindle", "link": "kindle" },
+                                {
+                                    "title": "Kindle Paperwhite Kids",
+                                    "link": "kindle-paperwhite-kids"
+                                },
+                                {
+                                    "title": "Kindle Paperwhite",
+                                    "link": "kindle-paperwhite"
+                                },
+                                {
+                                    "title": "Kindle Oasis",
+                                    "link": "kindle-oasis"
+                                },
+                                {
+                                    "title": "Kindle Scribe",
+                                    "link": "kindle-scribe"
+                                },
+                                {
+                                    "title": "Accessories",
+                                    "link": "accessories"
+                                },
+                                {
+                                    "title": "See all Kindle E-Readers",
+                                    "link": "see-all-kindle-e-readers"
+                                }
+                            ]
                         },
                         {
                             "title": "Kindle Store",
-                            "menu": ["Kindle Books", "Kindle Unlimited"]
+                            "menu": [
+                                {
+                                    "title": "Kindle Books",
+                                    "link": "kindle-books"
+                                },
+                                {
+                                    "title": "Kindle Unlimited",
+                                    "link": "kindle-unlimited"
+                                },
+                                {
+                                    "title": "Prime Reading",
+                                    "link": "prime-reading"
+                                },
+                                {
+                                    "title": "Kindle Vella",
+                                    "link": "kindle-vella"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "App & Resources",
+                            "menu": [
+                                {
+                                    "title": "Free Kindle Reading Apps",
+                                    "link": "free-kindle-reading-apps"
+                                },
+                                {
+                                    "title": "Kindle for Web",
+                                    "link": "kindle-for-web"
+                                },
+                                {
+                                    "title": "Manage Your Content and Devices",
+                                    "link": "manage-your-content-and-devices"
+                                },
+                                { "title": "Trade-In", "link": "trade-in" }
+                            ]
                         }
                     ]
                 },
@@ -44,11 +121,27 @@
                         {
                             "title": "Amazon Appstore",
                             "menu": [
-                                "Amazon Music Unlimited",
-                                "Free Streaming Music",
-                                "Podcasts",
-                                "Open Web Player",
-                                "Download the app"
+                                {
+                                    "title": "All Apps and Games",
+                                    "link": "all-apps-and-games"
+                                },
+                                { "title": "Games", "link": "games" },
+                                {
+                                    "title": "Amazon Coins",
+                                    "link": "amazon-coins"
+                                },
+                                {
+                                    "title": "Download Amazon Appstore",
+                                    "link": "download-amazon-appstore"
+                                },
+                                {
+                                    "title": "Amazon Apps",
+                                    "link": "amazon-apps"
+                                },
+                                {
+                                    "title": "Your Apps and Subscriptions",
+                                    "link": "your-apps-and-subscriptions"
+                                }
                             ]
                         }
                     ]
@@ -65,12 +158,150 @@
                 {
                     "name": "Electronics",
                     "arrow": "yes",
-                    "icon": null
+                    "icon": null,
+                    "submenu": [
+                        {
+                            "title": "Electronics",
+                            "menu": [
+                                {
+                                    "title": "Accessories & Supplies",
+                                    "link": "accessories-and-supplies"
+                                },
+                                {
+                                    "title": "Camera & Photo",
+                                    "link": "camera-and-photo"
+                                },
+                                {
+                                    "title": "Car & Vehicle Electronics",
+                                    "link": "car-and-vehicle-electronics"
+                                },
+                                {
+                                    "title": "Cell Phones & Accessories",
+                                    "link": "cell-phones-and-accessories"
+                                },
+                                {
+                                    "title": "Computers & Accessories",
+                                    "link": "computers-and-accessories"
+                                },
+                                {
+                                    "title": "GPS & Navigation",
+                                    "link": "gps-and-navigation"
+                                },
+                                { "title": "Headphones", "link": "headphones" },
+                                { "title": "Home Audio", "link": "home-audio" },
+                                {
+                                    "title": "Office Electronics",
+                                    "link": "office-electronics"
+                                },
+                                {
+                                    "title": "Portable Audio & Video",
+                                    "link": "portable-audio-and-video"
+                                },
+                                {
+                                    "title": "Security & Surveillance",
+                                    "link": "security-and-surveillance"
+                                },
+                                {
+                                    "title": "Service Plans",
+                                    "link": "service-plans"
+                                },
+                                {
+                                    "title": "Television & Video",
+                                    "link": "television-and-video"
+                                },
+                                {
+                                    "title": "Video Game Consoles & Accessories",
+                                    "link": "video-game-consoles-and-accessories"
+                                },
+                                {
+                                    "title": "Video Projectors",
+                                    "link": "video-projectors"
+                                },
+                                {
+                                    "title": "Wearable Technology",
+                                    "link": "wearable-technology"
+                                },
+                                {
+                                    "title": "eBook Readers & Accessories",
+                                    "link": "ebook-readers-and-accessories"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Computers",
                     "arrow": "yes",
-                    "icon": null
+                    "icon": null,
+                    "submenu": [
+                        {
+                            "title": "Computers",
+                            "menu": [
+                                {
+                                    "title": "Accessories & Supplies",
+                                    "link": "accessories-and-supplies"
+                                },
+                                {
+                                    "title": "Camera & Photo",
+                                    "link": "camera-and-photo"
+                                },
+                                {
+                                    "title": "Car & Vehicle Electronics",
+                                    "link": "car-and-vehicle-electronics"
+                                },
+                                {
+                                    "title": "Cell Phones & Accessories",
+                                    "link": "cell-phones-and-accessories"
+                                },
+                                {
+                                    "title": "Computers & Accessories",
+                                    "link": "computers-and-accessories"
+                                },
+                                {
+                                    "title": "GPS & Navigation",
+                                    "link": "gps-and-navigation"
+                                },
+                                { "title": "Headphones", "link": "headphones" },
+                                { "title": "Home Audio", "link": "home-audio" },
+                                {
+                                    "title": "Office Electronics",
+                                    "link": "office-electronics"
+                                },
+                                {
+                                    "title": "Portable Audio & Video",
+                                    "link": "portable-audio-and-video"
+                                },
+                                {
+                                    "title": "Security & Surveillance",
+                                    "link": "security-and-surveillance"
+                                },
+                                {
+                                    "title": "Service Plans",
+                                    "link": "service-plans"
+                                },
+                                {
+                                    "title": "Television & Video",
+                                    "link": "television-and-video"
+                                },
+                                {
+                                    "title": "Video Game Consoles & Accessories",
+                                    "link": "video-game-consoles-and-accessories"
+                                },
+                                {
+                                    "title": "Video Projectors",
+                                    "link": "video-projectors"
+                                },
+                                {
+                                    "title": "Wearable Technology",
+                                    "link": "wearable-technology"
+                                },
+                                {
+                                    "title": "eBook Readers & Accessories",
+                                    "link": "ebook-readers-and-accessories"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "name": "Smart Home",
